@@ -42,6 +42,23 @@
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1722595211311008');
+    fbq('track', "PageView");
+    fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -206,7 +223,7 @@
                 </div>
                 <br>
                 <div class="form-group col-sm-12 centered">
-                    <button type="submit" name="submit" class="btn btn-primary"><span class="icon risers-paypal" style="color:#b9f070;"></span> CHECKOUT</button>
+                    <button type="submit" name="submit" class="btn btn-primary" onclick="fbq('track', 'AddToCart')"><span class="icon risers-paypal" style="color:#b9f070;"></span> CHECKOUT</button>
                     <br>
                     <br>
                 </div>
@@ -375,7 +392,7 @@
                         </div>
                         <br>
                         <div class="form-group col-sm-12 centered">
-                            <button type="submit" name="submit" class="btn btn-primary" disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
+                            <button type="submit" name="submit" class="btn btn-primary" onclick="fbq('track', 'AddToCart')" disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
                             <br>
                             <br>
                         </div>
@@ -505,7 +522,7 @@
                         </div>
                         <br>
                         <div class="form-group col-sm-12 centered">
-                            <button type="submit" name="submit" class="btn btn-primary" disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
+                            <button type="submit" name="submit" class="btn btn-primary" onclick="fbq('track', 'AddToCart')" disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
                         </div>
 
                     </form>
@@ -604,7 +621,7 @@
                         </div>
                         <br>
                         <div class="form-group col-sm-12 centered">
-                            <button type="submit" name="submit" class="btn btn-primary" disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
+                            <button type="submit" name="submit" class="btn btn-primary" onclick="fbq('track', 'AddToCart')" disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
                         </div>
 
                     </form>
@@ -732,7 +749,7 @@
                         </div>
                         <br>
                         <div class="form-group col-sm-12 centered">
-                            <button type="submit" name="submit" class="btn btn-primary" disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
+                            <button type="submit" name="submit" class="btn btn-primary" onclick="fbq('track', 'AddToCart')"disabled><span class="icon risers-paypal" style="color:#b9f070;"></span> SOLD OUT</button>
                         </div>
 
                     </form>
