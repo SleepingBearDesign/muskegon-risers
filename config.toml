@@ -1,0 +1,19 @@
+baseurl = "http://muskegonrisers.com/"
+languageCode = "en-us"
+title = "Muskegon Risers"
+theme = "risers"
+googleanalytics = "XX-00000000-0"
+copyright = "© 2016 Muskegon Risers Soccer Club. All Rights Reserved"
+disableRSS = true
+
+[params]
+  twitter = "RisersSC"
+  facebook = "MuskegonRisersSC"
+  fbpageID = "666777940040738"
+  instagram = "riserssc"
+  phone = "(231) 123-4567"
+  address1 = "W Western Ave"
+  address2 = "Muskegon, MI 49440"
+  addresshelp = "Just East of Exit 114 off U.S. 31."
+  googlemaps = "https://goo.gl/maps/iYGcUDE1nVu"
+  email = "riserssc@gmail.com"
