@@ -1,0 +1,59 @@
+<div id="navbar-main">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a class="navbar-brand smoothScroll" href="#home"><span class="risers-risers" style="font-size:20px; color:#b9f070;"></span></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                {{ if .IsHome }}
+                    <li><a href="#home" class="smoothScroll">HOME </a>
+                    </li>
+                    <li> <a href="#about" class="smoothScroll">ABOUT</a>
+                    </li>
+                    <li> <a href="#season" class="smoothScroll">STORE</a>
+                    </li>
+                    <li> <a href="#team" class="smoothScroll">TEAM</a>
+                    </li>
+                    <li> <a href="#staff" class="smoothScroll">STAFF</a>
+                    </li>
+                    <li> <a href="#community" class="smoothScroll">COMMUNITY</a>
+                    </li>
+                    <li> <a href="#partners" class="smoothScroll">PARTNERS</a>
+                    </li>
+                    <li> <a href="#contact" class="smoothScroll">CONTACT</a>
+                    </li>
+                    <li> <a href="/blog" class="smoothScroll">BLOG</a>
+                    </li>
+                {{ else }}
+                    <li><a href="/#home" class="smoothScroll">HOME </a>
+                    </li>
+                    <li> <a href="/#about" class="smoothScroll">ABOUT</a>
+                    </li>
+                    <li> <a href="/#season" class="smoothScroll">STORE</a>
+                    </li>
+                    <li> <a href="/#team" class="smoothScroll">TEAM</a>
+                    </li>
+                    <li> <a href="/#staff" class="smoothScroll">STAFF</a>
+                    </li>
+                    <li> <a href="/#community" class="smoothScroll">COMMUNITY</a>
+                    </li>
+                    <li> <a href="/#partners" class="smoothScroll">PARTNERS</a>
+                    </li>
+                    <li> <a href="/#contact" class="smoothScroll">CONTACT</a>
+                    </li>
+                    <li> <a href="/blog" class="smoothScroll">BLOG</a>
+                    </li>
+                {{ end }}
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>

@@ -1,15 +1,17 @@
 baseurl = "http://muskegonrisers.com/"
 languageCode = "en-us"
 title = "Muskegon Risers"
-theme = "risers"
 googleanalytics = "XX-00000000-0"
 copyright = "© 2016 Muskegon Risers Soccer Club. All Rights Reserved"
 disableRSS = true
 
 [params]
+  keywords = "pro soccer, muskegon, soccer club, soccer, grand haven, whitehall, NPSL, PDL"
+  googleverification = "FGOvBqPlJa4NNhTN58o7Izde6oJ6Gx8Lk2au7QKWY08"
   twitter = "RisersSC"
   facebook = "MuskegonRisersSC"
   fbpageID = "666777940040738"
+  fbpixel = "1722595211311008"
   instagram = "riserssc"
   phone = "(231) 123-4567"
   address1 = "W Western Ave"
