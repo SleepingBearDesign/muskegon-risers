@@ -6,6 +6,6 @@ description = "Get your Risers Jersey now!"
 mini = "Get your Risers Jersey now!"
 slug = "replica-jersey"
 Categories = ["","apparel"]
-imgurl = "/img/jerseyreplicas.jpg"
+imgurl = "img/jerseyreplicas.jpg"
 price = "44.00"
 +++

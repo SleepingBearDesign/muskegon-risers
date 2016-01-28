@@ -6,6 +6,6 @@ description = "Stay warm and look fresh with this MKG down-filled winter jacket.
 mini = "Get your Risers Winter Jacket now!"
 slug = "jacket"
 Categories = ["","apparel"]
-imgurl = "/img/jacket.jpg"
+imgurl = "img/jacket.jpg"
 price = "120.00"
 +++

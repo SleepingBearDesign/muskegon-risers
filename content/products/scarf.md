@@ -6,6 +6,6 @@ description = "Scarf detail includes the Howmet Playhouse, Industrial Shipping, 
 mini = "Get your MKG Lakeshore Scarf today!"
 slug = "scarf"
 Categories = ["","apparel"]
-imgurl = "/img/scarf.jpg"
+imgurl = "img/scarf.jpg"
 price = "24.00"
 +++
