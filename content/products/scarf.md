@@ -7,5 +7,6 @@ mini = "Get your MKG Lakeshore Scarf today!"
 slug = "scarf"
 Categories = ["","apparel"]
 imgurl = "img/scarf.jpg"
+prodimgs = []
 price = "24.00"
 +++

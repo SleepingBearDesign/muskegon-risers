@@ -7,5 +7,6 @@ mini = "Get your Risers Shirt now!"
 slug = "shirt"
 Categories = ["","apparel"]
 imgurl = "img/mkgshirts.jpg"
+prodimgs = []
 price = "19.00"
 +++

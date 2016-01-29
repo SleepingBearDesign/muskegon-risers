@@ -7,5 +7,6 @@ mini = "Get your Risers Winter Jacket now!"
 slug = "jacket"
 Categories = ["","apparel"]
 imgurl = "img/jacket.jpg"
+prodimgs = ["img/jacket_front.jpg", "img/jacket_back.jpg"]
 price = "120.00"
 +++
