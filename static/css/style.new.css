@@ -152,12 +152,38 @@ a:hover, a:active, a:focus {
     margin-right: auto;
     width: 120px;
 }
+.panel {
+    background-color: #fff;
+    }
+.panel-default .panel-heading {
+  background-color: #fff;
+  }
+  .panel-default a {
+  color: #66615b; }
+  .panel-default a:hover, .panel-default a:active, .panel-default a:focus {
+    color: #5dbe42; }
+.carousel-control {
+    background-color: #4dea21;
+}
+.carousel-indicators .active, .carousel-control:hover {
+    background-color: #5dbe42;
+}
+
+
 .contact-form label {
     margin-top: 15px;
 }
 .contact-form, .contact-form .btn, #contact h5 {
     margin-top: 30px;
 }
+.contact-form .form-control {
+  background-color: #66615B;
+  opacity: 0.3;
+  color: #fff }
+  .contact-form .form-control:focus {
+    background-color: #333;
+    }
+
 .subscribe-line {
   background-color: #F9F9F7;
  }
