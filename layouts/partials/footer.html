@@ -50,9 +50,11 @@
     <script src="js/photoswipe/photoswipe.min.js"></script>
     <script src="js/photoswipe/photoswipe-ui-default.js"></script>
     <script src="js/photoswipe/init-gallery.js"></script>
-
+    {{ if .Site.Params.instagram }}<script src="js/instafeed.min.js"></script>{{ end }}
+    {{ if .Site.Params.twitterwidgetID }} <script src="js/twitterFetcher_min.js"></script>{{ end }}
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="js/smoothscroll.js"></script>    
     <script src="js/ct-paper.js"></script>    
+    <script src="js/moment.min.js"></script>    
     <script src="js/main.js"></script>    
 </html>

@@ -66,6 +66,39 @@
                     </div>
                 </div>
             </div>
+
+            {{ if .Site.Params.instagram }}
+            <div class="section section-white text-center landing-section" id="instagram" name="instagram">
+                <div class="container">
+                    <div class="row">
+                        <h2>Follow <a href="http://instagram.com/{{ .Site.Params.instagram }}" target="_blank">@{{ .Site.Params.instagram }}</a> on Instagram</h2>
+                    </div>
+                    <div class="row">
+                        <div id="instafeed"></div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            
+            {{ if .Site.Params.twitterwidgetID }}
+            <div class="section section-gray text-center landing-section" id="twitter" name="twitter">
+                <div class="container">
+                    <div class="row">
+                        <h2><a href="http://twitter.com/{{ .Site.Params.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></h2>
+                        <h3><a href="http://twitter.com/{{ .Site.Params.twitter }}" target="_blank"><span class="at-symbol">@</span>{{ .Site.Params.twitter }}</a></h3>
+                    </div>
+                    <div class="row">
+                        <div id="twitterfeed" class="single-tweet-wrap" data-widgetid="{{ .Site.Params.twitterwidgetID }}"></div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            {{ if .Site.Params.fbpageID }}
+            <div class="section section-white text-center landing-section" id="facebook" name="facebook" data-pageid="{{ .Site.Params.fbpageID }}">
+                <div id="events"></div>
+            </div>
+            {{ end }}
             
             <div class="section section-dark text-center landing-section" id="staff" name="staff">
                 <div class="container">
