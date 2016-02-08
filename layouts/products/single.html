@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 <body class="buy-product">
     {{ partial "navbar.html" . }}
+    {{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
     <div class="wrapper">
         <div class="main">
             <div class="section section-white-gray">
@@ -74,11 +75,12 @@
                             <hr>
                             <div class="row">
                                 <div class="col-md-7 col-md-offset-5 col-sm-8">
-                                    <a href="#" class="btn btn-default btn-fill btn-lg btn-block snipcart-add-item" data-item-id="{{ .Params.id }}"
+                                    <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg btn-block snipcart-add-item" data-item-id="{{ .Params.id }}"
                                     data-item-name="{{ .Params.title }}"
                                     data-item-price="{{ .Params.price }}"
                                     data-item-weight="{{ .Params.weight }}"
                                     data-item-url="{{ .Permalink }}">Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
+                                    {{ if .Site.Params.fbpixel }}<script type="text/javascript">$('#addtocart').click(function(){ onfbq('track', 'ViewContent'); });</script>{{ end }}
                                 </div>
                             </div>
                         </div>

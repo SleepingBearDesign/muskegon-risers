@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 <body>
 	{{ partial "navbar.html" . }}
+    {{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
 <div class="wrapper">
     <div class="main">
         <div class="section">
