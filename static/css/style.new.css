@@ -153,6 +153,9 @@ a:hover, a:active, a:focus {
     margin-right: auto;
     width: 120px;
 }
+.team-player p {
+    min-height: 350px;
+}
 .panel {
     background-color: #fff;
     }
