@@ -9,4 +9,7 @@ Categories = ["","apparel"]
 imgurl = "img/jacket.jpg"
 prodimgs = ["img/jacket_front.jpg", "img/jacket_back.jpg"]
 price = "120.00"
+sizes = ["Small","Medium","Large"]
+colors = ["Black"]
+freeshipping = false
 +++

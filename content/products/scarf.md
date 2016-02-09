@@ -9,4 +9,7 @@ Categories = ["","apparel"]
 imgurl = "img/scarf.jpg"
 prodimgs = []
 price = "24.00"
+sizes = ["One Size"]
+colors = ["Blue/Green"]
+freeshipping = false
 +++

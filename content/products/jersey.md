@@ -9,4 +9,7 @@ Categories = ["","apparel"]
 imgurl = "img/jerseyreplicas.jpg"
 prodimgs = ["img/ReplicaJerseyGREY.jpg", "img/ReplicaJerseyLIME.jpg"]
 price = "44.00"
+sizes = ["Small","Medium","Large"]
+colors = ["Blue", "Green"]
+freeshipping = false
 +++

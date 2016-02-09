@@ -9,4 +9,7 @@ Categories = ["","apparel"]
 imgurl = "img/mkgshirts.jpg"
 prodimgs = []
 price = "19.00"
+sizes = ["Small","Medium","Large"]
+colors = ["Blue","Green"]
+freeshipping = false
 +++

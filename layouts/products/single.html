@@ -46,37 +46,40 @@
                             <h2>{{ .Title }}</h2>
                             <h4 class="price"><strong>${{ .Params.price }}</strong></h4>
                             <hr>
-                            <p>This blazer in suede is a must-have of your wardrobe. Team it with a angora blazer and a angora sweater.</p>
-                            <span class="label label-default shipping">Free shipping to Europe </span>
+                            <p>{{ .Description }}</p>
+                            {{ if .Params.freeshipping }}<span class="label label-default shipping">Free shipping</span>{{ end }}
 
                             <div class="row">
+                                {{ if .Params.colors }}
                                 <div class="col-md-6 col-sm-6">
                                     <label>Select color</label>
                                     <div class="form-group">
                                         <select name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="" style="display: none;">
-                                            <option value="1">Black </option>
-                                            <option value="2">Gray</option>
-                                            <option value="3">White</option>
+                                          {{ range .Params.colors }}
+                                            <option value="{{.}}">{{.}}</option>
+                                          {{ end }}
                                         </select>
                                     </div>
                                 </div>
+                                {{ end }}
+                                {{ if .Params.sizes }}
                                 <div class="col-md-6 col-sm-6">
                                     <label>Select size</label>
                                     <div class="form-group">
                                         <select name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="" style="display: none;">
-                                            <option value="1">Small </option>
-                                            <option value="2">Medium</option>
-                                            <option value="3">Large</option>
-
+                                          {{ range .Params.sizes }}
+                                            <option value="{{.}}">{{.}}</option>
+                                          {{ end }}
                                         </select>
                                     </div>
                                 </div>
+                                {{ end }}
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-md-7 col-md-offset-5 col-sm-8">
                                     <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg btn-block snipcart-add-item" data-item-id="{{ .Params.id }}"
-                                    data-item-name="{{ .Params.title }}"
+                                    data-item-name="{{ .Title }}"
                                     data-item-price="{{ .Params.price }}"
                                     data-item-weight="{{ .Params.weight }}"
                                     data-item-url="{{ .Permalink }}">Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
