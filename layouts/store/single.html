@@ -52,7 +52,7 @@
                             <div class="row">
                                 {{ if .Params.colors }}
                                 <div class="col-md-6 col-sm-6">
-                                    <label>Select color</label>
+                                    <label>Select Color</label>
                                     <div class="form-group">
                                         <select name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="" style="display: none;">
                                           {{ range .Params.colors }}
@@ -64,7 +64,7 @@
                                 {{ end }}
                                 {{ if .Params.sizes }}
                                 <div class="col-md-6 col-sm-6">
-                                    <label>Select size</label>
+                                    <label>Select Size</label>
                                     <div class="form-group">
                                         <select name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="" style="display: none;">
                                           {{ range .Params.sizes }}
@@ -74,6 +74,34 @@
                                     </div>
                                 </div>
                                 {{ end }}
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                  <label>Share</label>
+                                  <!-- Load Facebook SDK for JavaScript -->
+                                  <div id="fb-root"></div>
+                                  <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                  }(document, 'script', 'facebook-jssdk'));</script>
+
+                                  <!-- Your share button code -->
+                                  <div class="fb-share-button" 
+                                    data-href="{{ .Permalink }}" 
+                                    data-layout="button_count">
+                                  </div>
+
+                                  <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="I just ordered {{ .Title }} from {{ .Site.BaseURL }}" {{ with .Site.Params.twitter }}data-via="{{.}}"{{ end }} data-size="large" data-related="SleepingBearDsn" data-hashtags="ImARiser">Tweet</a>
+                                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+                                  <a data-pin-do="buttonPin" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ .Site.BaseURL }}img/pinterest-share.jpg&description={{ .Title }} -- {{ .Site.Title }}" data-pin-color="red"></a>
+                                  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+                                </div>
                             </div>
                             <hr>
                             <div class="row">
