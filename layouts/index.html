@@ -104,11 +104,23 @@
                 <div class="container">
                     <h2>Meet our Staff</h2>
                     {{ range sort $.Site.Data.staff "weight" "asc"}}
-		                {{ partial "staff.html" . }}
-		            {{ end }} 
+                        {{ partial "staff.html" . }}
+                    {{ end }} 
                 </div>
             </div>
-            <div class="section section-white-gray landing-section" id="contact">
+            <div class="section section-white-gray text-center landing-section" id="community" name="community">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2>Project Rising</h2>
+                            <h5>Project Rising is a community outreach program set to launch in May of 2015. The single purpose of Project Rising is to make a positive impact on the Muskegon lakeshore through soccer. Efforts will largely focus on establishing soccer programs for youth in the urban neighborhoods of Muskegon and Muskegon Heights. Please donate or list yourself as an interested volunteer for this cause.</h5>
+                            <div class="col-lg-6"><button class="btn btn-default btn-lg">Donate</button></div>
+                            <div class="col-lg-6"><a href="#contact" class="btn btn-default btn-lg smoothScroll">Volunteer</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-white landing-section" id="contact">
                 <div class="container">
                     <div class="row">
 	                    <div id="contact-message"></div>
