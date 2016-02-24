@@ -5,8 +5,8 @@
     <div class="homepage-hero-module" id="home">
         <div class="video-container">
             <div class="title-container">
-                <div class="headline">
-                    <img src="img/mkg_logo.png" height="120" alt="">
+                <div class="headline text-center">
+                    <img src="assets/img/video-logo.png" height="160" alt="">
                 </div>
             </div>
             <div class="filter"></div>
@@ -29,7 +29,7 @@
     <div class="section">
         <div class="container" id="about">
            <h1 class="text-center">Our Purpose</h1>
-           <p>Muskegon Risers SC was founded to help facilitate positive social and economic change along the Muskegon Lakeshore through the game of soccer. A Riser is someone who understands our community's potential and who pushes themselves and others to realize that potential. Our 'Risers' name was inspired by the 'Muskegon, Together Rising' sculpture that stands in the heart of downtown Muskegon. Risers are not limited to an era, industry or ethnicity. Muskegon Risers SC strives to represent the spirit of our area's people in past, present and future tense.</p>
+           <p class="text-center">Muskegon Risers SC was founded to help facilitate positive social and economic change along the Muskegon Lakeshore through the game of soccer. A Riser is someone who understands our community's potential and who pushes themselves and others to realize that potential. Our 'Risers' name was inspired by the 'Muskegon, Together Rising' sculpture that stands in the heart of downtown Muskegon. Risers are not limited to an era, industry or ethnicity. Muskegon Risers SC strives to represent the spirit of our area's people in past, present and future tense.</p>
         </div><!-- end container -->
     </div> <!-- end section -->
 
@@ -42,8 +42,8 @@
                 {{ end }}
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 col-sm-12">
-                    <a href="store" class="btn btn-default btn-lg btn-block">View All Products &nbsp;<i class="fa fa-chevron-right"></i></a>
+                <div class="col-md-4 col-md-offset-4 col-sm-12 text-center">
+                    <a href="store" class="btn btn-default btn-lg btn-round">View All Products</a>
                 </div>
             </div>
         </div><!-- end container -->
@@ -66,21 +66,24 @@
                 <div id="contact-message"></div>
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="text-center">Reach Out</h2>
+                    <p class="text-center">Feel free to get in touch with questions, concerns, or volunteer opportunities and we'll get back to you as soon as possible. If you feel inclined, please sign up for our newsletter below and receive the latest updates and possible volunteer opportunities.<br><br></p>
                     <form id="contact-form" class="contact-form" action="#">
                         <div class="row">
-                            <div class="col-md-6">
-                                <label>Name</label>
+                            <div class="col-md-6 form-group">
+                                <label>Your name</label>
                                 <input id="nameid" class="form-control" placeholder="Name" type="text" name="name" required>
                             </div>
-                            <div class="col-md-6">
-                                <label>Email</label>
+                            <div class="col-md-6 form-group">
+                                <label>Your email</label>
                                 <input id="emailid" class="form-control" placeholder="Email" type="email" name="_replyto" required>
                             </div>
                         </div>
-                        <label>Message</label>
-                        <textarea id="textareaid" class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..." name="message" required></textarea>
+                        <div class="form-group">
+                            <label>Your message</label>
+                            <textarea id="textareaid" class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..." name="message" required></textarea>
+                        </div>
                         <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
+                            <div class="col-md-4 col-md-offset-4 submit text-center">
                                 <input class="btn btn-default btn-round btn-lg" type="submit" name="send" value="Send Message">
                             </div>
                         </div>
@@ -106,24 +109,29 @@
                         return false; //to stop the form from submitting
                       });
                     </script>
-                    <h5 class="text-center">Feel free to get in touch with questions, concerns, or volunteer opportunities and we'll get back to you as soon as possible. If you feel inclined, please sign up for our newsletter below and receive the latest updates and possible volunteer opportunities.</h5>
                 </div>
             </div>
         </div><!-- end container -->
     </div> <!-- end section -->
+
+
+<!--End mc_embed_signup-->
     <div class="subscribe-line subscribe-line-transparent" style="background-image: url('assets/img/thumb.jpg')">
          <div class="container">
-            <div class="row">
-                 <div class="col-md-9">
-                    <form class="">
-                         <div class="form-group">
-                              <input type="text" value="" class="form-control" placeholder="Enter your email...">
+            <div id="mc_embed_signup" class="row">
+                <form action="//muskegonrisers.us9.list-manage.com/subscribe/post?u=fcf121a2d5e4c66d5ee168321&amp;id=b4bd2ebb16" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="col-md-9">
+                             <div class="form-group mc-field-group">
+                                  <input type="email" name="EMAIL" value="" class="form-control" placeholder="Enter your email..." id="mce-EMAIL">
+                             </div>
+                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcf121a2d5e4c66d5ee168321_b4bd2ebb16" tabindex="-1" value=""></div>
                          </div>
-                     </form>
-                 </div>
-                 <div class="col-md-3">
-                     <button type="button" class="btn btn-default btn-fill btn-round">Subscribe Now!</button>
-                 </div>
+                         <div class="clear col-md-3">
+                             <input type="submit" value="Subscribe Now!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-fill btn-round">
+                         </div>
+                     </div>
+                 </form>
             </div>
          </div><!-- end container -->
     </div> <!-- end subscribe -->
