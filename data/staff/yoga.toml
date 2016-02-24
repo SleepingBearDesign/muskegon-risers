@@ -1,5 +1,6 @@
 weight = "7"
 name = "Muskegon Yoga Center"
 position = "Yoga Partner"
-imgUrl = "img/staff/yoga.jpg"
-description = "Muskegon Yoga Center is the official Yoga Partner of Muskegon Risers SC and has been a premier yoga studio on the West Michigan Lakeshore for the past six years. Muskegon Yoga is committed to enhancing the health and lifestyle of Risers players by providing a high quality, safe, and fun yoga experience. The inspiring instructors of Muskegon Yoga Center are at the core of its success. Each instructor brings expertise, knowledge and yoga love with RYT 200 level certification. We are excited to partner with Muskegon Yoga Center and look forward to the positive impact their instructors will have on player performance."
+imgUrl = "assets/img/staff/yoga.jpg"
+hometown = "Muskegon, MI"
+description = "Muskegon Yoga Center is the official Yoga Partner of Muskegon Risers SC and has been a premier yoga studio on the West Michigan Lakeshore for the past six years."

@@ -1,5 +1,6 @@
 weight = "8"
 name = "Salim Al-Shatel"
 position = "Partnership Coordinator"
-imgUrl = "img/staff/salim.jpg"
-description = "Salim represents Muskegon Risers SC as a Partnership Coordinator in the Muskegon Market. An engineering student at Michigan State University, Salim plans to pursue a career in professional sports as an agent following graduation. We look forward to observing the positive impact Salim will have on the Risers organization."
+imgUrl = "assets/img/staff/salim.jpg"
+hometown = "Kalamazoo, MI"
+description = "Salim represents Muskegon Risers SC as a Partnership Coordinator in the Muskegon Market. An engineering student at Michigan State University, Salim plans to pursue a career in professional sports as an agent following graduation."
