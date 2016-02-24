@@ -3,23 +3,29 @@
   
   <url>
     <loc>http://bhberson.github.io/muskegon-risers/</loc>
+    <lastmod>2013-06-21T11:27:27-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bhberson.github.io/muskegon-risers/products/jacket/</loc>
+    <loc>http://bhberson.github.io/muskegon-risers/blog/nitro/</loc>
+    <lastmod>2013-06-21T11:27:27-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bhberson.github.io/muskegon-risers/products/scarf/</loc>
+    <loc>http://bhberson.github.io/muskegon-risers/store/jacket/</loc>
   </url>
   
   <url>
-    <loc>http://bhberson.github.io/muskegon-risers/products/replica-jersey/</loc>
+    <loc>http://bhberson.github.io/muskegon-risers/store/scarf/</loc>
   </url>
   
   <url>
-    <loc>http://bhberson.github.io/muskegon-risers/products/shirt/</loc>
+    <loc>http://bhberson.github.io/muskegon-risers/store/replica-jersey/</loc>
+  </url>
+  
+  <url>
+    <loc>http://bhberson.github.io/muskegon-risers/store/shirt/</loc>
   </url>
   
 </urlset>
