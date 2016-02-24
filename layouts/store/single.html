@@ -1,262 +1,217 @@
 {{ partial "header.html" . }}
 <body class="buy-product">
-    {{ partial "navbar.html" . }}
-    {{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
-    <div class="wrapper">
-        <div class="main">
-            <div class="section section-white-gray">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-6">
-                            <div id="carousel">
-                                <div id="carousel-example-generic" class="carousel slide" data-interval="false">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                        {{ $.Scratch.Set "tagCounter" 1 }}
-                                        {{ range .Params.prodimgs }}
-                                          <li data-target="#carousel-example-generic" data-slide-to="{{ $.Scratch.Get "tagCounter" }}" class=""></li>
-                                          {{ $.Scratch.Add "tagCounter" 1 }}
-                                        {{ end }}
-                                      </ol>
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          {{ $.Scratch.Set "altTxt" .Title }}
-                                          <img src="{{ .Params.imgurl }}" alt="{{ $.Scratch.Get "altTxt" }}">
-                                        </div>
-                                        {{ range .Params.prodimgs }}
-                                            <div class="item">
-                                              <img src="{{ . }}" alt="{{ $.Scratch.Get "altTxt" }}">
-                                            </div>
-                                        {{ end }}
-                                      </div>
-
-                                      <!-- Controls -->
-                                      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                      </a>
-                                      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                      </a>
-                                </div>
-                            </div> <!-- end carousel -->
-                        </div>
-                        <div class="col-md-5 col-sm-6">
-                            <h2>{{ .Title }}</h2>
-                            <h4 class="price"><strong>${{ .Params.price }}</strong></h4>
-                            <hr>
-                            <p>{{ .Description }}</p>
-                            {{ if .Params.freeshipping }}<span class="label label-default shipping">Free shipping</span>{{ end }}
-
-                            <div class="row">
-                                {{ if .Params.colors }}
-                                <div class="col-md-6 col-sm-6">
-                                    <label>Select Color</label>
-                                    <div class="form-group">
-                                        <select name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="" style="display: none;">
-                                          {{ range .Params.colors }}
-                                            <option value="{{.}}">{{.}}</option>
-                                          {{ end }}
-                                        </select>
-                                    </div>
-                                </div>
-                                {{ end }}
-                                {{ if .Params.sizes }}
-                                <div class="col-md-6 col-sm-6">
-                                    <label>Select Size</label>
-                                    <div class="form-group">
-                                        <select name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="" style="display: none;">
-                                          {{ range .Params.sizes }}
-                                            <option value="{{.}}">{{.}}</option>
-                                          {{ end }}
-                                        </select>
-                                    </div>
-                                </div>
-                                {{ end }}
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                  <label>Share</label>
-                                  <!-- Load Facebook SDK for JavaScript -->
-                                  <div id="fb-root"></div>
-                                  <script>(function(d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                  }(document, 'script', 'facebook-jssdk'));</script>
-
-                                  <!-- Your share button code -->
-                                  <div class="fb-share-button" 
-                                    data-href="{{ .Permalink }}" 
-                                    data-layout="button_count">
-                                  </div>
-
-                                  <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="I just ordered {{ .Title }} from {{ .Site.BaseURL }}" {{ with .Site.Params.twitter }}data-via="{{.}}"{{ end }} data-size="large" data-related="SleepingBearDsn" data-hashtags="ImARiser">Tweet</a>
-                                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-                                  <a data-pin-do="buttonPin" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ .Site.BaseURL }}img/pinterest-share.jpg&description={{ .Title }} -- {{ .Site.Title }}" data-pin-color="red"></a>
-                                  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-7 col-md-offset-5 col-sm-8">
-                                    <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg btn-block snipcart-add-item" data-item-id="{{ .Params.id }}"
+{{ partial "navbar.html" . }}
+{{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           <div class="tab-content">
+                        <div class="tab-pane active" id="product-page1">
+                             <img src="../assets/img/examples/product-page1.jpg">
+                          </div>
+                          <div class="tab-pane" id="product-page2">
+                              <img src="../assets/img/examples/product-page2.jpg">
+                         </div>
+                          <div class="tab-pane" id="product-page3">
+                              <img src="../assets/img/examples/product-page3.jpg">
+                          </div>
+                          <div class="tab-pane" id="product-page4">
+                              <img src="../assets/img/examples/product-page4.jpg">
+                          </div>
+                          <div class="tab-pane" id="product-page5">
+                              <img src="../assets/img/examples/product-page5.jpg">
+                          </div>
+                          <div class="tab-pane" id="product-page6">
+                              <img src="../assets/img/examples/product-page6.jpg">
+                          </div>
+            </div>
+            <div class="nbs-flexisel-container"><div class="nbs-flexisel-inner"><ul class="nav nav-text nbs-flexisel-ul" role="tablist" id="flexiselDemo1" style="left: -113.75px;">
+                       <li class="nbs-flexisel-item" style="width: 113.75px;">
+                       <a href="#product-page6" role="tab" data-toggle="tab" aria-expanded="true">
+                            <img src="../assets/img/examples/product-page6-xs.jpg">
+                       </a>
+                      </li><li class="active nbs-flexisel-item" style="width: 113.75px;">
+                        <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
+                             <img src="../assets/img/examples/product-page1-xs.jpg">
+                        </a>
+                      </li>
+                      <li class="nbs-flexisel-item" style="width: 113.75px;">
+                        <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false"> 
+                            <img src="../assets/img/examples/product-page2-xs.jpg">
+                        </a>
+                      </li>
+                      <li class="nbs-flexisel-item" style="width: 113.75px;">
+                        <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
+                            <img src="../assets/img/examples/product-page3-xs.jpg">
+                        </a>
+                      </li>
+                      <li class="nbs-flexisel-item" style="width: 113.75px;">
+                       <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
+                            <img src="../assets/img/examples/product-page4-xs.jpg">
+                       </a>
+                      </li>
+                      <li class="nbs-flexisel-item" style="width: 113.75px;">
+                       <a href="#product-page5" role="tab" data-toggle="tab" aria-expanded="true">
+                            <img src="../assets/img/examples/product-page5-xs.jpg">
+                       </a>
+                      </li>
+                      <li class="nbs-flexisel-item" style="width: 113.75px;">
+                       <a href="#product-page6" role="tab" data-toggle="tab" aria-expanded="true">
+                            <img src="../assets/img/examples/product-page6-xs.jpg">
+                       </a>
+                      </li>
+            <li class="active nbs-flexisel-item" style="width: 113.75px;">
+                        <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
+                             <img src="../assets/img/examples/product-page1-xs.jpg">
+                        </a>
+                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
+                        <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false"> 
+                            <img src="../assets/img/examples/product-page2-xs.jpg">
+                        </a>
+                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
+                        <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
+                            <img src="../assets/img/examples/product-page3-xs.jpg">
+                        </a>
+                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
+                       <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
+                            <img src="../assets/img/examples/product-page4-xs.jpg">
+                       </a>
+                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
+                       <a href="#product-page5" role="tab" data-toggle="tab" aria-expanded="true">
+                            <img src="../assets/img/examples/product-page5-xs.jpg">
+                       </a>
+                      </li></ul></div><div class="nbs-flexisel-nav-left" style="visibility: visible; font-size: 22px; top: 37.5px;"><i class="fa fa-angle-left"></i></div><div class="nbs-flexisel-nav-right" style="visibility: visible; font-size: 22px; top: 37.5px;"><i class="fa fa-angle-right"></i></div></div>
+            <div class="clearout"></div>
+        </div>  
+        <div class="col-md-6">
+            <div class="product-details">
+              <h3 class="title">{{ .Title }}</h3>
+              <p class="description">
+                {{ .Params.mini }}                   
+              </p>
+                                   
+              {{ if .Params.saleprice }}
+                <span class="price price-old">${{ .Params.price }}</span>
+                <span class="price price-new">${{ .Params.saleprice }}</span>
+              {{ else }}
+                <span class="price">${{ .Params.price }}</span>
+              {{ end }}
+            </div>   
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Product Description
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                   {{ .Description }} 
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Size &amp; Fit
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <ul style="padding-left: 20px;">
+                        <li style="list-style-position: outside;"> Fits small to size</li>
+                        <li style="list-style-position: outside;"> Model wears a UK 40R</li>
+                        <li style="list-style-position: outside;"> Model measures: chest 39"/ 99cm, height 6'1"/ 185cm</li>
+                        
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Details
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    85% wool, 15% linen. Dry-clean only
+                  </div>
+                </div>
+              </div>
+               <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                     Delivery &amp; Return
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">
+                    Find out more about our delivery options
+                    Please try items in the comfort of your own home. If you don't like them, or they don't fit, we'll happily collect them from your home or office for free.
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Acordeon  -->
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <div class="actions">
+            <div class="pull-left">
+              <div class="form-group">
+                    <div class="btn-group bootstrap-select">
+                    <select name="huge" class="selectpicker" data-style="btn" data-menu-style="dropdown-blue">
+                      <option value="en" selected="">Select SIze</option>
+                      {{ range .Params.sizes }}
+                        <option value="{{.}}">{{.}}</option>
+                      {{ end }}                              
+                    </select></div>
+                </div>
+            </div>
+            <div class="pull-right">
+              <button class="btn btn-danger btn-simple btn-hover" rel="tooltip" title="" data-placement="left" data-original-title="Add to wishlist">
+                        <i class="fa fa-heart-o"></i>
+              </button> 
+              
+              <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="{{ .Params.id }}"
                                     data-item-name="{{ .Title }}"
                                     data-item-price="{{ .Params.price }}"
                                     data-item-weight="{{ .Params.weight }}"
                                     data-item-url="{{ .Permalink }}">Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
                                     {{ if .Site.Params.fbpixel }}<script type="text/javascript">$('#addtocart').click(function(){ onfbq('track', 'ViewContent'); });</script>{{ end }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="section section-white">
-        <div class="container">
-            <div class="row details-row">
-                <div class="col-md-4 col-sm-4">
-                   <div class="info">
-                        <div class="icon">
-                            <i class="fa fa-truck"></i>
-                        </div>
-                        <div class="description">
-                            <h4> 3 Days Delivery </h4>
-                            <p>Orders will be shipped USPS Ground immediately from Muskegon.</p>
-                        </div>
-                   </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                   <div class="info">
-                        <div class="icon">
-                            <i class="fa fa-history"></i>
-                        </div>
-                        <div class="description">
-                            <h4> Refundable Policy </h4>
-                            <p>If for whatever reason you do not like your product, just reach out and let us know.</p>
-                        </div>
-                   </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                   <div class="info">
-                        <div class="icon">
-                            <i class="fa fa-heart"></i>
-                        </div>
-                        <div class="description">
-                            <h4> Give Back </h4>
-                            <p>20% of each purchase will be kicked to a local youth soccer affiliate of your choice.</p>
-                        </div>
-                   </div>
-                </div>
-            </div>
-            <hr>
-                <p>Want to find out more about how we build give back? <a class="link-danger" data-toggle="modal" data-target="#myModal">Learn more.</a></p>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                      </div>
-                      <div class="modal-body">
-                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. 
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Dismiss</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            <hr>
-            <div class="faq">
-
-                <h4>Frequently Asked Questions</h4>
-                <div id="acordeon">
-                <div class="panel-group" id="accordion">
-                  <div class="panel panel-border panel-default">
-                    <a data-toggle="collapse" href="http://demos.creative-tim.com/paper-kit-pro/examples/product-page.html#collapseOne" class="collapsed" aria-expanded="false">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                              How do I find out my size?
-                              <i class="fa fa-chevron-down"></i>
-                          </h4>
-
-                        </div>
-                    </a>
-                    <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-border panel-default">
-                    <a data-toggle="collapse" href="http://demos.creative-tim.com/paper-kit-pro/examples/product-page.html#collapseTwo">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                              How can I use a coupon I have received?
-                              <i class="fa fa-chevron-down"></i>
-                          </h4>
-
-                        </div>
-                    </a>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-border panel-default">
-                    <a data-toggle="collapse" href="http://demos.creative-tim.com/paper-kit-pro/examples/product-page.html#collapseThree">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                              What are the delivery prices outside of Europe?
-                              <i class="fa fa-chevron-down"></i>
-                          </h4>
-
-                        </div>
-                    </a>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-            </div><!--  end acordeon -->
-            </div>
-            {{ if .NextInSection }}
+      </div>
+      {{ if .NextInSection }}
             <div class="row add-row">
-                <div class="col-md-4 col-sm-4">
-                    <h4>Need more gear?</h4>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <h5>{{.NextInSection.Title}}</h5>
-                    <p class="price"><strong>${{.NextInSection.Params.price}}</strong></p>
+              <div class="container container-border">
+                  <div class="col-md-4 col-sm-4">
+                      <h4>Need more gear?</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                      <h5>{{.NextInSection.Title}}</h5>
+                      <p class="price"><strong>${{.NextInSection.Params.price}}</strong></p>
 
-                    <p>{{.NextInSection.Params.mini}}</p>
-                    <a href="{{ .NextInSection.Permalink }}" class="btn btn-fill btn-default"> View Now</a>
-                </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-4">
-                    <img src="{{.NextInSection.Params.imgurl}}" alt="Rounded Image" class="img-rounded img-responsive">
+                      <p>{{.NextInSection.Params.mini}}</p>
+                      <a href="{{ .NextInSection.Permalink }}" class="btn btn-fill btn-default"> View Now</a>
+                  </div>
+                  <div class="col-md-3 col-md-offset-1 col-sm-4">
+                      <img src="{{.NextInSection.Params.imgurl}}" alt="Rounded Image" class="img-rounded img-responsive">
+                  </div>
                 </div>
             </div>
             {{ end }}
-        </div>
     </div>
-    
-
-
-
-{{ partial "footer.html" . }}
+  </div>
+{{ partial "footer.html" . }}    

@@ -5,6 +5,8 @@ var tomorrowsDate = moment().add(1, 'days').format('MMMM Do');
 var eventsArray = [];
 
 $(document).ready(function(){
+    $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
+    
 	var $contactForm = $('.contact-form');
 	var $contactMessage = $('#contact-message');
 	$contactForm.submit(function(e) {

@@ -1,177 +1,131 @@
 {{ partial "header.html" . }}
-<body id="home">
-	{{ partial "navbar.html" . }}
-	<div class="alert alert-riser landing-alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-        <i class="alert-icon fa-soccer-ball-o"></i>
-         <div class="container text-center">
-             <h5>Have you saved your seat? February 13 @ 6pm - Risers v Waza Flo. <a href="http://www.startickets.com/events/item/muskegon-risers-vs-detroit-waza-flo-3">Buy Now</a>!</h5>
+<body>
+{{ partial "navbar.html" . }}
+<div class="wrapper">
+    <div class="homepage-hero-module" id="home">
+        <div class="video-container">
+            <div class="title-container">
+                <div class="headline">
+                    <img src="img/mkg_logo.png" height="120" alt="">
+                </div>
+            </div>
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="video/mp4/Beach-Ball.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="video/webm/Beach-Ball.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster hidden">
+                <img src="video/snapshot/Beach-Ball.jpg" alt="">
+            </div>
+            <div style="position: absolute; bottom: 50px; left: 50%; margin-left: -19px; z-index: 200;">
+                <a class="coverr-nav-item smoothScroll" href="#about">
+                    <h1>
+                        <i class="fa fa-angle-down"></i>
+                    </h1>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="homepage-hero-module">
-		    <div class="video-container">
-		    	<div class="title-container">
-		            <div class="headline">
-		                <img src="img/mkg_logo.png" height="120" alt="">
-		                <h3 class="text-white text-thin"></h3>
-		                <h5 class="text-white text-thin"></h5>
-		            </div>
-		        </div>
-		        <div class="filter"></div>
-		        <video autoplay loop class="fillWidth">
-		            <source src="video/mp4/Beach-Ball.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-		            <source src="video/webm/Beach-Ball.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-		        </video>
-		        <div class="poster hidden">
-		            <img src="video/snapshot/Beach-Ball.jpg" alt="">
-		        </div>
-		        <div style="position: absolute; bottom: 50px; left: 50%; margin-left: -19px; z-index: 200;">
-		            <a class="coverr-nav-item smoothScroll" href="#about">
-		                <h1>
-		                    <i class="fa fa-angle-down"></i>
-		                </h1>
-		            </a>
-		        </div>
-		    </div>
-		</div>
-        <div class="main">
-            <div class="section section-white text-center landing-section" id="about" name="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <h2>Our Purpose</h2>
-                            <h5>Muskegon Risers Soccer Club is an independent men’s soccer team that will begin competition in May of 2015. The highest priority of the organization is continuing the growth and excitement surrounding soccer in the greater Muskegon area – defined as Whitehall, Muskegon, and Grand Haven. The Risers will strive to be a representation of local soccer through both on-field performance and off-field community service. Our vision is to be a unifying force between area students, professionals, and families alike. Through the game of soccer, we have a distinct opportunity to generate a lasting social and economic impact across the greater Muskegon community.</h5>
-                            <br />
-                            <h5>It is important to communicate the creative vision behind Muskegon Risers SC. The Risers lime/royal color scheme is designed to reflect our area's natural beauty - which includes Lake Michigan, park forests, and the inland lakes which shape Whitehall, Muskegon, and Grand Haven. What is a Riser? A person of the Muskegon area. Someone who understands the area's potential and who pushes themselves and others to realize that potential. The name is not limited to an era or industry. Muskegon Risers SC strives to represent the spirit of our area's people in past, present, and future tense.</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-            
-            <div class="section section-gray landing-section" id="store" name="store">
-                <div class="container">
-	                <h2 class="text-center">Gear Up</h2>
-                    <div class="row">
-			            {{ range first 4 .Data.Pages }}
-				            {{ .Render "summary"}}
-				        {{ end }}
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-4 col-sm-12">
-                            <a href="store" class="btn btn-default btn-lg btn-block">View All Products &nbsp;<i class="fa fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="section">
+        <div class="container" id="about">
+           <h1 class="text-center">Our Purpose</h1>
+           <p>Muskegon Risers SC was founded to help facilitate positive social and economic change along the Muskegon Lakeshore through the game of soccer. A Riser is someone who understands our community's potential and who pushes themselves and others to realize that potential. Our 'Risers' name was inspired by the 'Muskegon, Together Rising' sculpture that stands in the heart of downtown Muskegon. Risers are not limited to an era, industry or ethnicity. Muskegon Risers SC strives to represent the spirit of our area's people in past, present and future tense.</p>
+        </div><!-- end container -->
+    </div> <!-- end section -->
 
-            {{ if .Site.Params.instagram }}
-            <div class="section section-white text-center landing-section" id="instagram" name="instagram">
-                <div class="container">
-                    <div class="row">
-                        <h2>Follow <a href="http://instagram.com/{{ .Site.Params.instagram }}" target="_blank">@{{ .Site.Params.instagram }}</a> on Instagram</h2>
-                    </div>
-                    <div class="row">
-                        <div id="instafeed"></div>
-                    </div>
+    <div class="section section-gray">
+        <div class="container" id="store">
+           <h1 class="text-center">Store</h1>
+           <div class="row">
+                {{ range first 3 .Data.Pages }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-12">
+                    <a href="store" class="btn btn-default btn-lg btn-block">View All Products &nbsp;<i class="fa fa-chevron-right"></i></a>
                 </div>
             </div>
-            {{ end }}
-            
-            {{ if .Site.Params.twitterwidgetID }}
-            <div class="section section-gray text-center landing-section" id="twitter" name="twitter">
-                <div class="container">
-                    <div class="row">
-                        <h2><a href="http://twitter.com/{{ .Site.Params.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></h2>
-                        <h3><a href="http://twitter.com/{{ .Site.Params.twitter }}" target="_blank"><span class="at-symbol">@</span>{{ .Site.Params.twitter }}</a></h3>
-                    </div>
-                    <div class="row">
-                        <div id="twitterfeed" class="single-tweet-wrap" data-widgetid="{{ .Site.Params.twitterwidgetID }}"></div>
-                    </div>
-                </div>
-            </div>
-            {{ end }}
+        </div><!-- end container -->
+    </div> <!-- end section -->
 
-            {{ if .Site.Params.fbpageID }}
-            <div class="section section-white text-center landing-section" id="facebook" name="facebook" data-pageid="{{ .Site.Params.fbpageID }}">
-                <div id="events"></div>
+    <div class="section">
+        <div class="container" id="staff">
+            <h1 class="text-center">Staff</h1>
+            <div class="row">
+                {{ range sort $.Site.Data.staff "weight" "asc"}}
+                    {{ partial "staff.html" . }}
+                {{ end }}
             </div>
-            {{ end }}
-            
-            <div class="section section-dark text-center landing-section" id="staff" name="staff">
-                <div class="container">
-                    <h2>Meet our Staff</h2>
-                    {{ range sort $.Site.Data.staff "weight" "asc"}}
-                        {{ partial "staff.html" . }}
-                    {{ end }} 
-                </div>
-            </div>
-            <div class="section section-white-gray text-center landing-section" id="community" name="community">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <h2>Project Rising</h2>
-                            <h5>Project Rising is a community outreach program set to launch in May of 2015. The single purpose of Project Rising is to make a positive impact on the Muskegon lakeshore through soccer. Efforts will largely focus on establishing soccer programs for youth in the urban neighborhoods of Muskegon and Muskegon Heights. Please donate or list yourself as an interested volunteer for this cause.</h5>
-                            <div class="col-lg-6"><button class="btn btn-default btn-lg">Donate</button></div>
-                            <div class="col-lg-6"><a href="#contact" class="btn btn-default btn-lg smoothScroll">Volunteer</a></div>
+        </div><!-- end container -->
+    </div> <!-- end section -->
+
+    <div class="section section-gray">
+        <div class="container" id="contact">
+            <div class="row">
+                <div id="contact-message"></div>
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center">Reach Out</h2>
+                    <form id="contact-form" class="contact-form" action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Name</label>
+                                <input id="nameid" class="form-control" placeholder="Name" type="text" name="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <input id="emailid" class="form-control" placeholder="Email" type="email" name="_replyto" required>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section section-white landing-section" id="contact">
-                <div class="container">
-                    <div class="row">
-	                    <div id="contact-message"></div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2 class="text-center">Reach Out</h2>
-                            <form id="contact-form" class="contact-form" action="#">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label>Name</label>
-                                        <input id="nameid" class="form-control" placeholder="Name" type="text" name="name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Email</label>
-                                        <input id="emailid" class="form-control" placeholder="Email" type="email" name="_replyto" required>
-                                    </div>
-                                </div>
-                                <label>Message</label>
-                                <textarea id="textareaid" class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..." name="message" required></textarea>
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-4">
-	                                    <input class="btn btn-default btn-block btn-lg" type="submit" name="send" value="Send Message">
-                                    </div>
-                                </div>
-                                <input type="hidden" name="_subject" value="Contact from {{ .Site.Title }}!" />
-                                <input class="hidden" type="text" name="_gotcha" style="display:none" />
-                            </form>
-                            <script type="text/javascript">
-                              $('#contact-form').submit(function(){
-                                $.ajax({
-                                  dataType: 'json',
-                                  method: 'POST',
-                                  url: "//formspree.io/riserssc@gmail.com",
-                                  data: $('#contact-form').serialize() 
-                                }).done(function() {
-                                  //callback which can be used to show a thank you message
-                                  //and reset the form
-                                  $('#nameid').val('');
-                                  $('#emailid').val('');
-                                  $('#textareaid').val('');
-                                  $('contact-message"').css({"display": "block"});
-                                  $('contact-message"').append("<p class='text-center'>Thank you for contacting us. We will get back to you soon!</p>");
-                                });
-                                return false; //to stop the form from submitting
-                              });
-                            </script>
-                            <h5 class="text-center">Feel free to get in touch with questions, concerns, or volunteer opportunities and we'll get back to you as soon as possible. If you feel inclined, please sign up for our newsletter below and receive the latest updates and possible volunteer opportunities.</h5>
+                        <label>Message</label>
+                        <textarea id="textareaid" class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..." name="message" required></textarea>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <input class="btn btn-default btn-round btn-lg" type="submit" name="send" value="Send Message">
+                            </div>
                         </div>
-                    </div>
-                    
+                        <input type="hidden" name="_subject" value="Contact from {{ .Site.Title }}!" />
+                        <input class="hidden" type="text" name="_gotcha" style="display:none" />
+                    </form>
+                    <script type="text/javascript">
+                      $('#contact-form').submit(function(){
+                        $.ajax({
+                          dataType: 'json',
+                          method: 'POST',
+                          url: "//formspree.io/riserssc@gmail.com",
+                          data: $('#contact-form').serialize() 
+                        }).done(function() {
+                          //callback which can be used to show a thank you message
+                          //and reset the form
+                          $('#nameid').val('');
+                          $('#emailid').val('');
+                          $('#textareaid').val('');
+                          $('contact-message"').css({"display": "block"});
+                          $('contact-message"').append("<p class='text-center'>Thank you for contacting us. We will get back to you soon!</p>");
+                        });
+                        return false; //to stop the form from submitting
+                      });
+                    </script>
+                    <h5 class="text-center">Feel free to get in touch with questions, concerns, or volunteer opportunities and we'll get back to you as soon as possible. If you feel inclined, please sign up for our newsletter below and receive the latest updates and possible volunteer opportunities.</h5>
                 </div>
             </div>
-        </div>     
-    </div>    
+        </div><!-- end container -->
+    </div> <!-- end section -->
+    <div class="subscribe-line subscribe-line-transparent" style="background-image: url('assets/img/thumb.jpg')">
+         <div class="container">
+            <div class="row">
+                 <div class="col-md-9">
+                    <form class="">
+                         <div class="form-group">
+                              <input type="text" value="" class="form-control" placeholder="Enter your email...">
+                         </div>
+                     </form>
+                 </div>
+                 <div class="col-md-3">
+                     <button type="button" class="btn btn-default btn-fill btn-round">Subscribe Now!</button>
+                 </div>
+            </div>
+         </div><!-- end container -->
+    </div> <!-- end subscribe -->
+</div>
 {{ partial "footer.html" . }}

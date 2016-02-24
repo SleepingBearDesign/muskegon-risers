@@ -3,17 +3,15 @@
 	{{ partial "navbar.html" . }}
     {{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
 <div class="wrapper">
-    <div class="main">
-        <div class="section">
-            <div class="container">
-            	<h2>{{ .Title }}</h2>
-                <div class="row">
-		        {{ range .Data.Pages }}
-		            {{ .Render "summary"}}
-		        {{ end }}
-		        </div>
-	        </div>
-        </div>
-    </div>
+    <div class="section section-gray">
+        <div class="container" id="store">
+           <h1 class="text-center">{{ .Title }}</h1>
+           <div class="row">
+                {{ range .Data.Pages }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            </div>
+        </div><!-- end container -->
+    </div> <!-- end section -->
 </div>
 {{ partial "footer.html" . }}

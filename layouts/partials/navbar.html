@@ -1,55 +1,64 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation-demo" id="demo-navbar">
+<nav class="navbar navbar-default {{ if .IsHome }}navbar-transparent{{end}} navbar-fixed-top" role="navigation">
+    {{ if .IsHome }}
+    <div class="alert alert-success">        
+        <div class="container">
+            <i class="fa fa-soccer-ball-o"></i> Have you saved your seat?!? February 13 @ 6pm - Risers v Waza Flo. <a href="http://www.startickets.com/events/item/muskegon-risers-vs-detroit-waza-flo-3">Buy Now</a>!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
+    {{ end }}
+
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mr-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand smoothScroll" href="#home"><span class="risers-risers" style="font-size:20px;"></span></a>
+      {{ if .IsHome }}
+          <a class="navbar-brand smoothScroll" href="#home">MKG</a>
+      {{ else }}
+          <a class="navbar-brand" href="{{ .Site.BaseURL }}">MKG</a>
+      {{ end }}
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navigation-example-2">
+    <div class="collapse navbar-collapse" id="mr-navbar">
       <ul class="nav navbar-nav navbar-right">
-        {{ if .IsHome }}
-            <li><a href="#home" class="smoothScroll btn btn-simple">Home</a>
-            </li>
-            <li> <a href="#about" class="smoothScroll btn btn-simple">About</a>
-            </li>
-            <li> <a href="#store" class="smoothScroll btn btn-simple">Store</a>
-            </li>
-            <li> <a href="#staff" class="smoothScroll btn btn-simple">Staff</a>
-            </li>
-            <li> <a href="#community" class="smoothScroll btn btn-simple">Community</a>
-            </li>
-            <li> <a href="#contact" class="smoothScroll btn btn-simple">Contact</a>
-            </li>
-            <li>
-            <a href="#" class="btn snipcart-checkout"><i class="fa fa-shopping-cart"></i><div class="snipcart-summary">(<span class="snipcart-total-items"></span>)</div> Cart</a>
-            </li>
-        {{ else }}
-            <li><a href="{{ .Site.BaseURL }}" class="btn btn-simple">Home</a>
-            </li>
-            <li> <a href="{{ .Site.BaseURL }}#about" class="btn btn-simple">About</a>
-            </li>
-            <li> <a href="{{ .Site.BaseURL }}store" class="btn btn-simple">Store</a>
-            </li>
-            <li> <a href="{{ .Site.BaseURL }}#staff" class="btn btn-simple">Staff</a>
-            </li>
-            <li> <a href="{{ .Site.BaseURL }}#community" class="btn btn-simple">Community</a>
-            </li>
-            <li> <a href="{{ .Site.BaseURL }}#partners" class="btn btn-simple">Partners</a>
-            </li>
-            <li> <a href="{{ .Site.BaseURL }}#contact" class="btn btn-simple">Contact</a>
-            </li>
-            <li>
-            <a href="#" class="btn snipcart-checkout"><i class="fa fa-shopping-cart"></i><div class="snipcart-summary">(<span class="snipcart-total-items"></span>)</div> Cart</a>
-            </li>
-        {{ end }}
+            {{ if .IsHome }}
+                <li><a href="#home" class="smoothScroll">Home</a>
+                </li>
+                <li> <a href="#about" class="smoothScroll">About</a>
+                </li>
+                <li> <a href="#store" class="smoothScroll">Store</a>
+                </li>
+                <li> <a href="#staff" class="smoothScroll">Staff</a>
+                </li>
+                <li> <a href="#contact" class="smoothScroll">Contact</a>
+                </li>
+                <li>
+                <a href="#" class="btn btn-round btn-default snipcart-checkout"><i class="fa fa-shopping-cart"></i><div class="snipcart-summary"> (<span class="snipcart-total-items"></span>)</div> Cart</a>
+                </li>
+            {{ else }}
+                <li><a href="{{ .Site.BaseURL }}">Home</a>
+                </li>
+                <li> <a href="{{ .Site.BaseURL }}#about">About</a>
+                </li>
+                <li> <a href="{{ .Site.BaseURL }}store">Store</a>
+                </li>
+                <li> <a href="{{ .Site.BaseURL }}#staff">Staff</a>
+                </li>
+                <li> <a href="{{ .Site.BaseURL }}#partners">Partners</a>
+                </li>
+                <li> <a href="{{ .Site.BaseURL }}#contact">Contact</a>
+                </li>
+                <li>
+                <a href="#" class="btn btn-round btn-default snipcart-checkout"><i class="fa fa-shopping-cart"></i><div class="snipcart-summary"> (<span class="snipcart-total-items"></span>)</div> Cart</a>
+                </li>
+            {{ end }}
        </ul>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-->
-</nav> 
+  </div><!-- /.container-fluid -->
+</nav>
