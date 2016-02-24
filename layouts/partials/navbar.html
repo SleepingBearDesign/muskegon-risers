@@ -21,7 +21,7 @@
       {{ if .IsHome }}
           <a class="navbar-brand smoothScroll" href="#home"><img src="img/mkg_logo.png" width="50px" /></a>
       {{ else }}
-          <a class="navbar-brand" href="{{ .Site.BaseURL }}">MKG</a>
+          <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="img/mkg_logo.png" width="50px" /></a>
       {{ end }}
     </div>
 
@@ -37,6 +37,8 @@
                 <li> <a href="#staff" class="smoothScroll">Staff</a>
                 </li>
                 <li> <a href="#contact" class="smoothScroll">Contact</a>
+                </li>
+                <li> <a href="blog">Blog</a>
                 </li>
                 <li>
                 <a href="#" class="btn btn-round btn-default snipcart-checkout"><i class="fa fa-shopping-cart"></i><div class="snipcart-summary"> (<span class="snipcart-total-items"></span>)</div> Cart</a>
