@@ -6,8 +6,9 @@ tags        = [ "Development", "Go", "profiling" ]
 category      = "News"
 slug        = "nitro"
 project_url = "https://github.com/spf13/nitro"
+header_img	= "assets/img/blog/nitro.jpg"
 author		= "Brody Berson"
-author_title= "Brody Berson"
+author_title= "Web Dev"
 author_url	= "http://www.brodyberson.com"
 +++
 # Nitro

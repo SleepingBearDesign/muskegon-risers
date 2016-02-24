@@ -4,7 +4,7 @@
 <div class="wrapper">
     <div class="parallax">
         <div class="parallax-image">
-            <img src="../assets/img/examples/blog_post.jpg" style="top: 0px;">
+            <img src="{{ .Params.header_img }}" style="top: 0px;">
         </div>             
     </div>
 
@@ -45,7 +45,7 @@
                   <div class="media media-author">
                       <a class="pull-left" href="{{ .Params.author_url }}">
                         <div class="avatar">
-                            <img class="media-object" src="../assets/img/authors/{{ .Params.author | urlize }}.jpg" alt="{{ .Params.author }}">
+                            <img class="media-object" src="assets/img/authors/{{ .Params.author | urlize }}.jpg" alt="{{ .Params.author }}">
                         </div>
                       </a>
                       <div class="media-body">

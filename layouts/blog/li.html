@@ -1,7 +1,7 @@
  <div class="col-md-8">
     <div class="card">
         <div class="image" style="background-image: url(&quot;../assets/img/examples/blog_page2.jpg&quot;); background-size: cover; background-position: 50% 50%;">
-            <img src="../assets/img/examples/blog_page2.jpg" alt="..." style="display: none;">
+            <img src="{{ .Params.header_img }}" alt="{{ .Title }}" style="display: none;">
             <div class="filter filter-azure">
                 <a href="{{ .Permalink }}" type="button" class="btn btn-info btn-round btn-fill">
                     <i class="fa fa-align-left"></i> Read More
@@ -16,7 +16,7 @@
              <div class="footer">
                 <div class="author">
                     <a class="card-link" href="{{ .Permalink }}">
-                       <img src="../assets/img/faces/{{ .Params.author | urlize }}.jpg" alt="{{ .Params.author }}" class="avatar">
+                       <img src="assets/img/authors/{{ .Params.author | urlize }}.jpg" alt="{{ .Params.author }}" class="avatar">
                        <span> {{ .Params.author }}</span>
                     </a>
                 </div>
