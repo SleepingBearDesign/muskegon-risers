@@ -53,227 +53,28 @@ a:hover, a:active, a:focus,
     opacity: 0.7; }
     .alert-riser .close:hover {
       opacity: 1; }
-.switch{
-    margin-right: 20px;
-}
-#navbar-full .navbar{
-    border-radius: 0 !important;
-    margin-bottom: 0;
-    z-index: 2;
-}
-.space{
-    height: 130px;
-    display: block;
-}
-.space-110{
-    height: 110px;
-    display: block;
-}
-.space-50{
-    height: 50px;
-    display: block;
-}
-.space-70{
-    height: 70px;
-    display: block;
-}
-.navigation-example .img-src{
-    background-attachment: scroll; 
-}
 
-.main{
-    background-color: #FFFFFF;
-/*     position: relative; */
-
-}
-.navigation-example{
-    height: 360px;
-    background-position: center center;
-    background-size: cover;
+.social-line-transparent {
+    background-color: rgba(30, 30, 30, 0.97);
+    color: #DDDDDD;
     background-attachment: fixed;
-    margin-top:0;
-}
-#notifications{
-    background-color: #FFFFFF;
-    display: block;
-    width: 100%;
+    background-size: cover;
     position: relative;
 }
-.tim-note{
-    text-transform: capitalize;
+.social-line-transparent .container {
+    z-index: 2;
+    position: relative;
 }
-
-.footer-card{
-    background-color: #FFFFFF;
-    padding: 10px 0 20px;
-    width: 100%;
-}
-.footer-card h3{
-/*     margin-bottom: 20px; */
-}
-.footer-card button{
-/*     margin-top: 30px; */
-}
-.subscribe-form{
-    padding-top: 20px;
-}
-.subscribe-form .form-control{
-    
-}
-
-.space-100{
-    height: 100px;
-    display: block;
-    width: 100%;
-}
-
-.be-social{
-    padding-bottom: 20px;
-/*     border-bottom: 1px solid #aaa; */
-    margin: 0 auto 40px;
-}
-.txt-white{
-    color: #FFFFFF;
-}
-.txt-gray{
-    color: #ddd !important;
-}
-
-.social-share{
-    float: left;
-    margin-right: 8px;
-}
-.social-share a{
-    color: #FFFFFF;
-}
-#subscribe_email{
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-}
-.pick-class-label{
-    border-radius: 8px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 75%;
-    font-weight: bold;
-    line-height: 1;
-    margin-right: 10px;
-    padding: 23px;
-    text-align: center;
-    vertical-align: baseline;
-    white-space: nowrap;
-}
-
-.parallax{
-  width:100%;
-  height:570px;
- 
+.social-line-transparent::after, .footer-transparent::after, .subscribe-line-transparent::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.5);
   display: block;
-  background-attachment: fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center center;
-  
-}
-
-.logo-container .logo{
-    overflow: hidden;
-    border-radius: 50%;
-    border: 1px solid #333333;
-    width: 50px; 
-    float: left;
-}
-
-.logo-container .brand{
-    font-size: 18px;
-    color: #FFFFFF;
-    line-height: 20px;
-    float: left;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 50px;
-    height: 50px;
-}
-.logo-container{
-    margin-top: 10px;
-}
-.logo-container .logo img{
-    width: 100%;
-}
-.navbar-small .logo-container .brand{
-    color: #333333;
-}
-.parallax .motto{
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 600;
-    position: relative;
-    text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
-    text-transform: uppercase;
-    z-index: 3;
-    margin: 0 auto;
-    top: 22%;
-    width: 285px;
-}
-.motto .pro{
-    position: absolute;
-    bottom: 74px;
-    right: -28px;
-    font-size: 18px;
-    background-color: #FFFFFF;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 70px;
-    color: #333333;
-    text-shadow: 0 0 0;
-}
-.parallax .motivation{
-    color: #FFFFFF;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
-    top: 400px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-/*     font-size: 25px; */
-}
-.parallax .motto .border{
-    float: left;
-    border: 3px solid #FFFFFF;
-    padding: 0px 30px;
-    text-align: center;
-}
-.parallax .motto .no-right-border{
-    border-right: none;
-}
-.parallax .parallax-image{
-    width: 100%;
-    overflow: hidden;
-    position: absolute;  
-}
-.parallax .parallax-image img{
-    width: 100%;
-}
-
-@media (max-width: 768px){
-    .parallax .parallax-image{
-         width: 100%;
-         height: 640px;
-         overflow: hidden;
-     }
-    .parallax .parallax-image img{
-       height: 100%;
-       width: auto;
-   }
-   .parallax .motivation {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    padding: 5px;
-    font-size: 20px !important ;
-   }
+  content: "";
+  z-index: 1;
 }
 .ct-heart{
     color: #F74933;
