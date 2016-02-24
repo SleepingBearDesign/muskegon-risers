@@ -67,7 +67,7 @@
         <div class="container" id="store">
            <h1 class="text-center">Store</h1>
            <div class="row">
-                {{ range first 3 .Data.Pages }}
+                {{ range first 3 (where .Data.Pages "Section" "store") }}
                     {{ .Render "summary"}}
                 {{ end }}
             </div>
