@@ -1,9 +1,0 @@
-{{ partial "header.html" . }}
-<body>
-	{{ partial "navbar.html" . }}
-	{{ if .Params.page }}
-        {{ partial .Params.page . }}
-	 {{ else }}
-	 <!-- Render content normally -->
-	 {{ end }}
-{{ partial "footer.html" . }}
