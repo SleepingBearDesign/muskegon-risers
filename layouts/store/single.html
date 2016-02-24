@@ -8,80 +8,17 @@
         <div class="col-md-6">
            <div class="tab-content">
                         <div class="tab-pane active" id="product-page1">
-                             <img src="../assets/img/examples/product-page1.jpg">
+                             <img src="{{ .Params.imgurl }}" class="img-responsive">
                           </div>
-                          <div class="tab-pane" id="product-page2">
-                              <img src="../assets/img/examples/product-page2.jpg">
-                         </div>
-                          <div class="tab-pane" id="product-page3">
-                              <img src="../assets/img/examples/product-page3.jpg">
-                          </div>
-                          <div class="tab-pane" id="product-page4">
-                              <img src="../assets/img/examples/product-page4.jpg">
-                          </div>
-                          <div class="tab-pane" id="product-page5">
-                              <img src="../assets/img/examples/product-page5.jpg">
-                          </div>
-                          <div class="tab-pane" id="product-page6">
-                              <img src="../assets/img/examples/product-page6.jpg">
-                          </div>
+                          {{ $.Scratch.Set "altTxt" .Title }}
+                          {{ $.Scratch.Set "tagCounter" 2 }}
+                          {{ range .Params.prodimgs }}
+                            <div class="tab-pane" id="product-page{{ $.Scratch.Get "tagCounter" }}">
+                                <img src="{{ . }}" class="img-responsive" alt="{{ $.Scratch.Get "altTxt" }}">
+                           </div>
+                            {{ $.Scratch.Add "tagCounter" 1 }}
+                          {{ end }}
             </div>
-            <div class="nbs-flexisel-container"><div class="nbs-flexisel-inner"><ul class="nav nav-text nbs-flexisel-ul" role="tablist" id="flexiselDemo1" style="left: -113.75px;">
-                       <li class="nbs-flexisel-item" style="width: 113.75px;">
-                       <a href="#product-page6" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product-page6-xs.jpg">
-                       </a>
-                      </li><li class="active nbs-flexisel-item" style="width: 113.75px;">
-                        <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
-                             <img src="../assets/img/examples/product-page1-xs.jpg">
-                        </a>
-                      </li>
-                      <li class="nbs-flexisel-item" style="width: 113.75px;">
-                        <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false"> 
-                            <img src="../assets/img/examples/product-page2-xs.jpg">
-                        </a>
-                      </li>
-                      <li class="nbs-flexisel-item" style="width: 113.75px;">
-                        <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product-page3-xs.jpg">
-                        </a>
-                      </li>
-                      <li class="nbs-flexisel-item" style="width: 113.75px;">
-                       <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product-page4-xs.jpg">
-                       </a>
-                      </li>
-                      <li class="nbs-flexisel-item" style="width: 113.75px;">
-                       <a href="#product-page5" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product-page5-xs.jpg">
-                       </a>
-                      </li>
-                      <li class="nbs-flexisel-item" style="width: 113.75px;">
-                       <a href="#product-page6" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product-page6-xs.jpg">
-                       </a>
-                      </li>
-            <li class="active nbs-flexisel-item" style="width: 113.75px;">
-                        <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
-                             <img src="../assets/img/examples/product-page1-xs.jpg">
-                        </a>
-                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
-                        <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false"> 
-                            <img src="../assets/img/examples/product-page2-xs.jpg">
-                        </a>
-                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
-                        <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product-page3-xs.jpg">
-                        </a>
-                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
-                       <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product-page4-xs.jpg">
-                       </a>
-                      </li><li class="nbs-flexisel-item" style="width: 113.75px;">
-                       <a href="#product-page5" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product-page5-xs.jpg">
-                       </a>
-                      </li></ul></div><div class="nbs-flexisel-nav-left" style="visibility: visible; font-size: 22px; top: 37.5px;"><i class="fa fa-angle-left"></i></div><div class="nbs-flexisel-nav-right" style="visibility: visible; font-size: 22px; top: 37.5px;"><i class="fa fa-angle-right"></i></div></div>
             <div class="clearout"></div>
         </div>  
         <div class="col-md-6">
@@ -114,25 +51,6 @@
                 </div>
               </div>
               <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Size &amp; Fit
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
-                    <ul style="padding-left: 20px;">
-                        <li style="list-style-position: outside;"> Fits small to size</li>
-                        <li style="list-style-position: outside;"> Model wears a UK 40R</li>
-                        <li style="list-style-position: outside;"> Model measures: chest 39"/ 99cm, height 6'1"/ 185cm</li>
-                        
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingThree">
                   <h4 class="panel-title">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -142,7 +60,7 @@
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                    85% wool, 15% linen. Dry-clean only
+                    {{ .Params.details }}
                   </div>
                 </div>
               </div>
@@ -157,7 +75,7 @@
                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                   <div class="panel-body">
                     Find out more about our delivery options
-                    Please try items in the comfort of your own home. If you don't like them, or they don't fit, we'll happily collect them from your home or office for free.
+                    Please try items in the comfort of your own home. If you don't like them, or they don't fit, please reach out and let us know.
                   </div>
                 </div>
               </div>
@@ -168,27 +86,59 @@
         <div class="col-md-6 col-md-offset-6">
           <div class="actions">
             <div class="pull-left">
+            {{ if .Params.colors }}
               <div class="form-group">
-                    <div class="btn-group bootstrap-select">
-                    <select name="huge" class="selectpicker" data-style="btn" data-menu-style="dropdown-blue">
-                      <option value="en" selected="">Select SIze</option>
-                      {{ range .Params.sizes }}
-                        <option value="{{.}}">{{.}}</option>
-                      {{ end }}                              
-                    </select></div>
+                <div class="btn-group bootstrap-select">
+                  <label>Select Color</label>
+                  <div class="form-group">
+                      <select id="my-color" name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="dropdown-blue">
+                        {{ range .Params.colors }}
+                          <option>{{.}}</option>
+                        {{ end }}
+                      </select>
+                  </div>
                 </div>
+              </div>
+              {{ end }}
+              {{ if .Params.sizes }}
+              <div class="form-group">
+                <div class="btn-group bootstrap-select">
+                  <label>Select Size</label>
+                  <div class="form-group">
+                      <select id="my-size" name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="dropdown-blue">
+                        {{ range .Params.sizes }}
+                          <option>{{.}}</option>
+                        {{ end }}
+                      </select>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
             </div>
             <div class="pull-right">
-              <button class="btn btn-danger btn-simple btn-hover" rel="tooltip" title="" data-placement="left" data-original-title="Add to wishlist">
-                        <i class="fa fa-heart-o"></i>
-              </button> 
-              
               <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="{{ .Params.id }}"
                                     data-item-name="{{ .Title }}"
-                                    data-item-price="{{ .Params.price }}"
+                                    data-item-price="{{ if .Params.saleprice }}{{ .Params.saleprice }}{{else}}{{ .Params.price }}{{end}}"
                                     data-item-weight="{{ .Params.weight }}"
-                                    data-item-url="{{ .Permalink }}">Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
+                                    data-item-url="{{ .Permalink }}"
+                                    >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
                                     {{ if .Site.Params.fbpixel }}<script type="text/javascript">$('#addtocart').click(function(){ onfbq('track', 'ViewContent'); });</script>{{ end }}
+                                    <script type="text/javascript">
+                                    {{ if .Params.sizes }}
+                                      $('#addtocart').data('item-custom1-name', 'Size');
+                                      $('#addtocart').data('item-custom1-options', '{{ delimit .Params.sizes "|" }}');
+                                      $('#my-size').change(function() {
+                                        $('#addtocart').data('item-custom1-value', $(this).val());
+                                      });
+                                    {{ end }}
+                                    {{ if .Params.colors }}
+                                      $('#addtocart').data('item-custom2-name', 'Color');
+                                      $('#addtocart').data('item-custom2-options', '{{ delimit .Params.colors "|" }}');
+                                      $('#my-color').change(function() {
+                                        $('#addtocart').data('item-custom2-value', $(this).val());
+                                      });
+                                    {{ end }}
+                                    </script>
             </div>
           </div>
         </div>
@@ -214,4 +164,5 @@
             {{ end }}
     </div>
   </div>
+
 {{ partial "footer.html" . }}    

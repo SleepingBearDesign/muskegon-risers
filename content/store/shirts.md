@@ -5,7 +5,6 @@ shorttitle = "MKG Risers Shirt"
 description = "Get your Risers Shirt now!"
 mini = "Get your Risers Shirt now!"
 slug = "shirt"
-Categories = ["","apparel"]
 imgurl = "assets/img/store/shirts/mkgshirts.jpg"
 prodimgs = []
 price = "19.00"
