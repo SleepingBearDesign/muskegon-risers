@@ -79,6 +79,27 @@ a:hover, a:active, a:focus,
 .ct-heart{
     color: #F74933;
 }
+.filter.filter-riser {
+    background-color: rgba(2, 86, 150, 0.69);
+}
+
+.btn-riser {
+    color: #fff;
+    background-color: #025696;
+    border-color: #025696;
+}
+.btn-riser.btn-fill {
+    color: #FFFFFF;
+    background-color: #025696;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.btn-riser.btn-fill:hover, .btn-riser.btn-fill:focus, .btn-riser.btn-fill:active, .btn-riser.btn-fill.active, .open > .btn-riser.btn-fill.dropdown-toggle {
+    color: #FFFFFF;
+    background-color: #014579;
+    border-color: #014579;
+}
+
 .separator{
     content: "Separator";
     color: #FFFFFF;
