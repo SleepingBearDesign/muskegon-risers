@@ -38,10 +38,7 @@
                 </li>
                 <li> <a href="#contact" class="smoothScroll">Contact</a>
                 </li>
-                <li> <a href="blog">Blog</a>
-                </li>
-                <li>
-                <a href="#" class="btn btn-round btn-default snipcart-checkout"><i class="fa fa-shopping-cart"></i><div class="snipcart-summary"> (<span class="snipcart-total-items"></span>)</div> Cart</a>
+                <li> <a href="#blog" class="smoothScroll">Blog</a>
                 </li>
             {{ else }}
                 <li><a href="{{ .Site.BaseURL }}">Home</a>
@@ -58,10 +55,10 @@
                 </li>
                 <li> <a href="{{ .Site.BaseURL }}blog">Blog</a>
                 </li>
+            {{ end }}
                 <li>
                 <a href="#" class="btn btn-round btn-default snipcart-checkout"><i class="fa fa-shopping-cart"></i><div class="snipcart-summary"> (<span class="snipcart-total-items"></span>)</div> Cart</a>
                 </li>
-            {{ end }}
        </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
