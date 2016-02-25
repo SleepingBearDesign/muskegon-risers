@@ -15,20 +15,21 @@
                     <h1 class="title title-blog">{{ .Title }}</h1> 
                     <p>{{ .Content }}</p>
                 </div>
-
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="link"></div>
                 <div class="col-md-3 col-md-offset-1">
                   <div class="social-buttons"> 
                       <h3 class="title title-blog">Share</h3>
-                      <a href="#" class="btn btn-social btn-round btn-fill btn-facebook">
+                      <a href="http://www.facebook.com/sharer/sharer.php?u={{.Permalink}}&title={{.Title}}" target="_blank" class="btn btn-social btn-round btn-fill btn-facebook">
                           <i class="fa fa-facebook"></i>
                       </a>
-                      <a href="#" class="btn btn-social btn-round btn-fill btn-twitter">
+                      <a href="http://twitter.com/intent/tweet?status={{.Title}}+{{.Permalink}}" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
                           <i class="fa fa-twitter"></i>
                       </a>
-                      <a href="#" class="btn btn-social btn-round btn-fill btn-google">
+                      <a href="https://plus.google.com/share?url={{.Permalink}}" target="_blank" class="btn btn-social btn-round btn-fill btn-google">
                           <i class="fa fa-google-plus"></i>
                       </a>
-                      <a href="#" class="btn btn-social btn-round btn-fill btn-pinterest">
+                      <a href="http://pinterest.com/pin/create/bookmarklet/?media={{ .Site.BaseURL }}assets/img/social/pinterest.jpg&url={{.Permalink}}&is_video=false&description={{.Title}}
+" target="_blank" class="btn btn-social btn-round btn-fill btn-pinterest">
                           <i class="fa fa-pinterest"></i>
                       </a>
                   </div>
