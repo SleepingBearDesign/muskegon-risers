@@ -1,9 +1,9 @@
  <div class="col-md-8">
     <div class="card">
-        <div class="image" style="background-image: url(&quot;../assets/img/examples/blog_page2.jpg&quot;); background-size: cover; background-position: 50% 50%;">
+        <div class="image" style="background-image: url(&quot;{{ .Params.header_img }}&quot;); background-size: cover; background-position: 50% 50%;">
             <img src="{{ .Params.header_img }}" alt="{{ .Title }}" style="display: none;">
-            <div class="filter filter-azure">
-                <a href="{{ .Permalink }}" type="button" class="btn btn-info btn-round btn-fill">
+            <div class="filter filter-riser">
+                <a href="{{ .Permalink }}" type="button" class="btn btn-riser btn-round btn-fill">
                     <i class="fa fa-align-left"></i> Read More
                 </a>
             </div>
