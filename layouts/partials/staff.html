@@ -16,7 +16,8 @@
                     </div>
                     <div class="footer">
                         <div class="social-links text-center">
-	                        {{ with .twitter }}<a href="http://twitter.com/{{.}}" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw">{{ end }}</i></a>
+	                        {{ with .twitter }}<a href="http://twitter.com/{{.}}" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
+                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
 	                    </div>
                     </div>
                 </div>
@@ -33,6 +34,7 @@
 	                <div class="footer">
 		                <div class="social-links text-center">
 		                    {{ with .twitter }}<a href="http://twitter.com/{{.}}" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
+                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
 		                </div>
 		            </div>
 	            </div>
