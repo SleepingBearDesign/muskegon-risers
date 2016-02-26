@@ -114,44 +114,8 @@
         <div class="container">
             <h2 class="text-center">Corporate Partners</h2>
             <br><br>
-             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">                            
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                    {{ with $.Site.Data.sponsors}}
-                       {{ if .row1 }}
-                       <div class="item active">
-                          <div class="row">
-                          {{ range .row1 }}
-                            <div class="col-md-3">
-                                <img src="assets/img/sponsors/{{ . | urlize }}.png" alt="{{ . }}" class="img-responsive">
-                            </div>
-                         {{ end }}
-                          </div>
-                        </div>
-                       {{ end }}
-                       {{ if .row2 }}
-                       <div class="item">
-                          <div class="row">
-                          {{ range .row2 }}
-                            <div class="col-md-3">
-                                <img src="assets/img/sponsors/{{ . | urlize }}.png" alt="{{ . }}" class="img-responsive">
-                            </div>
-                         {{ end }}
-                          </div>
-                        </div>
-                       {{ end }}
-                    {{ end }}
-                  </div>
-                
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#testimonials-carousel" data-slide="prev">
-                    <span class="fa fa-angle-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#testimonials-carousel" data-slide="next">
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-            </div>
-        </div><!-- end container -->
+            {{ partial "sponsors.html" . }}
+         </div><!-- end container -->
     </div><!-- end section -->
 
     <div class="section section-gray">
