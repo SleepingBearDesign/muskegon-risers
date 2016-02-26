@@ -1,7 +1,7 @@
 baseurl = "http://bhberson.github.io/muskegon-risers/"
 languageCode = "en-us"
 title = "Muskegon Risers"
-googleanalytics = "XX-00000000-0"
+googleanalytics = "UA-74374211-1"
 copyright = "© 2016 Muskegon Risers Soccer Club. All Rights Reserved"
 disableRSS = true
 
