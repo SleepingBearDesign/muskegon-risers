@@ -1082,3 +1082,12 @@ a:hover, a:active, a:focus,
 .coverr-nav-item:hover, .coverr-nav-item:active, .coverr-nav-item:focus {
     color: #5dbe42;
 }
+
+.sponsor-container {
+    height: 125px;
+}
+.sponsor-img {
+    position: relative;
+    top: 62.5px;
+    transform: translateY(-50%);
+}
