@@ -28,8 +28,5 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-    <!-- {{ with .Site.Params.googleverification }}<meta name="google-site-verification" content="{{ . }}" />{{ end }}
-    {{ if .Site.GoogleAnalytics }}{{ partial "ga.html" . }}{{ end }}
-    {{ if .Site.Params.googleremarket }}{{ partial "google_remarketing.html" . }}{{ end }}
-    {{ if .Site.Params.fbpixel }}{{ partial "facebook_pixel.html" . }}{{ end }} -->
+    {{ partial "remarketing.html" . }}
 </head>

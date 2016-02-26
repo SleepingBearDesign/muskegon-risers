@@ -1,0 +1,6 @@
+<!-- Remarketing -->
+<!-- {{ with .Site.Params.googleverification }}<meta name="google-site-verification" content="{{ . }}" />{{ end }}
+{{ if .Site.GoogleAnalytics }}{{ partial "ga.html" . }}{{ end }}
+{{ if .Site.Params.googleremarket }}{{ partial "remarketing/google.html" . }}{{ end }}
+{{ if .Site.Params.fbpixel }}{{ partial "remarketing/facebook.html" . }}{{ end }} -->
+{{ if .Site.Params.twitterremarket }}{{ partial "remarketing/twitter.html" . }}{{ end }}
