@@ -91,7 +91,7 @@
                 <div class="btn-group bootstrap-select">
                   <label>Select Color</label>
                   <div class="form-group">
-                      <select id="my-color" name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="dropdown-blue">
+                      <select id="my-color" name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="dropdown-blue" title="Select a Color">
                         {{ range .Params.colors }}
                           <option>{{.}}</option>
                         {{ end }}
@@ -105,7 +105,7 @@
                 <div class="btn-group bootstrap-select">
                   <label>Select Size</label>
                   <div class="form-group">
-                      <select id="my-size" name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="dropdown-blue">
+                      <select id="my-size" name="huge" class="selectpicker" data-style="btn btn-block" data-menu-style="dropdown-blue" title="Select a Size">
                         {{ range .Params.sizes }}
                           <option>{{.}}</option>
                         {{ end }}
@@ -122,23 +122,24 @@
                                     data-item-weight="{{ .Params.weight }}"
                                     data-item-url="{{ .Permalink }}"
                                     >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
-                                    {{ if .Site.Params.fbpixel }}<script type="text/javascript">$('#addtocart').click(function(){ onfbq('track', 'ViewContent'); });</script>{{ end }}
                                     <script type="text/javascript">
+                                    $(function() {
                                     {{ if .Params.sizes }}
                                       $('#addtocart').data('item-custom1-name', 'Size');
                                       $('#addtocart').data('item-custom1-options', '{{ delimit .Params.sizes "|" }}');
-                                      $('#my-size').change(function() {
-                                        $('#addtocart').data('item-custom1-value', $(this).val());
+                                      $('#my-size').on('changed.bs.select', function() {
+                                        $('#addtocart').data('item-custom1-value', $(this).find("option:selected").val());
                                       });
                                     {{ end }}
                                     {{ if .Params.colors }}
                                       $('#addtocart').data('item-custom2-name', 'Color');
                                       $('#addtocart').data('item-custom2-options', '{{ delimit .Params.colors "|" }}');
-                                      $('#my-color').change(function() {
-                                        $('#addtocart').data('item-custom2-value', $(this).val());
+                                      $('#my-color').on('changed.bs.select', function() {
+                                        $('#addtocart').data('item-custom2-value', $(this).find("option:selected").val());
                                       });
                                     {{ end }}
-                                    </script>
+                                    });
+                                  </script>
             </div>
           </div>
         </div>
