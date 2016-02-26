@@ -16,15 +16,15 @@
                     </div>
                     <div class="footer">
                         <div class="social-links text-center">
-	                        {{ with .twitter }}<a href="http://twitter.com/{{.}}" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
-                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
+	                        {{ with .twitter }}<a href="http://twitter.com/{{.}}" target="_blank" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
+                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" target="_blank" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
 	                    </div>
                     </div>
                 </div>
             </div> <!-- end front panel -->
             <div class="back">
 	            <div class="header">
-	                {{ with .motto }}<h5 class="motto">"{{.}}"</h5>{{ end }}
+	                <h5 class="motto">{{ .name }}</h5>
 	            </div> 
 	            <div class="content">
 	                <div class="main">
@@ -33,8 +33,8 @@
 	                </div>
 	                <div class="footer">
 		                <div class="social-links text-center">
-		                    {{ with .twitter }}<a href="http://twitter.com/{{.}}" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
-                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
+		                    {{ with .twitter }}<a href="http://twitter.com/{{.}}" target="_blank" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
+                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" target="_blank" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
 		                </div>
 		            </div>
 	            </div>
