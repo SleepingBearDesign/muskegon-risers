@@ -8,7 +8,6 @@ details = "85% wool, 15% linen. Dry-clean only"
 slug = "scarf"
 imgurl = "assets/img/store/scarf/scarf.jpg"
 prodimgs = []
-price = "30.00"
-saleprice = "24.00"
+price = "24.00"
 freeshipping = false
 +++
