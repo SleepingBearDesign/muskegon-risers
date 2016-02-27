@@ -1090,4 +1090,6 @@ a:hover, a:active, a:focus,
     position: relative;
     top: 62.5px;
     transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
 }
