@@ -17,4 +17,4 @@ disableRSS = true
   fbpixel = "1722595211311008"
   instagram = "riserssc"
   email = "riserssc@gmail.com"
-  notification = "<i class=\"fa fa-soccer-ball-o\"></i> Have you saved your seat?!? Grab your 2016 Season Tickets <a href=\"{{ .Site.BaseURL }}store/season_ticket_package/\">now</a>! <i class=\"fa fa-soccer-ball-o\"></i>"
+  notification = "<i class=\"fa fa-soccer-ball-o\"></i> Have you saved your seat?!? Grab your 2016 Season Tickets <a href=\"{{ .Site.BaseURL }}store/season-ticket-package/\">now</a>! <i class=\"fa fa-soccer-ball-o\"></i>"
