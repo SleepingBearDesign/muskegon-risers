@@ -22,7 +22,7 @@
                       <a href="http://www.facebook.com/sharer/sharer.php?u={{.Permalink}}&title={{.Title}}" target="_blank" class="btn btn-social btn-round btn-fill btn-facebook">
                           <i class="fa fa-facebook"></i>
                       </a>
-                      <a href="http://twitter.com/intent/tweet?status={{.Title}}+{{.Permalink}}" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
+                      <a href="http://twitter.com/intent/tweet?text={{.Title}}&url={{.Permalink}}&via={{ .Site.Params.twitter }}&related=watchmuskegon,{{ .Site.Params.twitter }}&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
                           <i class="fa fa-twitter"></i>
                       </a>
                       <a href="https://plus.google.com/share?url={{.Permalink}}" target="_blank" class="btn btn-social btn-round btn-fill btn-google">
