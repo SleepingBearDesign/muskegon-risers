@@ -1,0 +1,73 @@
+{{ partial "header.html" . }}
+<body>
+{{ partial "navbar.html" . }}
+<div class="wrapper">
+	<div class="parallax">
+        <div class="parallax-image">
+            <img src="assets/img/header.jpg">
+        </div>
+        <div class="motto">
+            <img src="assets/video/logo.png" height="160" alt="">
+        </div>
+    </div>
+
+    <div class="social-line social-line-black">
+         <div class="container">
+            <div class="row">
+                 <div class="col-md-3">
+                    <h4 class="title">Share Us!</h4>
+                </div>
+                 <div class="col-md-2">
+                     <a href="http://www.facebook.com/sharer/sharer.php?u={{.Site.BaseURL}}&title={{.Site.Title}}" target="_blank" class="btn btn-round btn-fill btn-social btn-facebook">
+                         <i class="fa fa-facebook-square"></i> Share
+                     </a>
+                 </div>
+                  <div class="col-md-2">
+                     <a href="http://twitter.com/intent/tweet?status={{.Site.Title}}+{{.Site.BaseURL}}" target="_blank" class="btn btn-round btn-fill btn-social btn-twitter">
+                         <i class="fa fa-twitter"></i> Tweet
+                     </a>
+                 </div>
+                  <div class="col-md-2">
+                     <a href="https://plus.google.com/share?url={{.Site.BaseURL}}" target="_blank" class="btn btn-round btn-fill btn-social btn-google">
+                         <i class="fa fa-google-plus-square"></i> Share
+                     </a>
+                 </div>
+                 <div class="col-md-2">
+                     <a href="http://pinterest.com/pin/create/bookmarklet/?media={{ .Site.BaseURL }}assets/img/social/pinterest.jpg&url={{.Site.BaseURL}}&is_video=false&description={{.Site.Title}}
+" target="_blank" class="btn btn-round btn-social  btn-fill btn-youtube">
+                         <i class="fa fa-pinterest"></i> Pin it
+                     </a>
+                 </div>
+            </div>
+         </div>
+     </div>
+
+    <div class="section">
+        <div class="container" id="{{ .Title | urlize }}">
+           <h1 class="text-center">{{ .Title }}</h1>
+           <p class="text-center">{{ .Content }}</p>
+        </div><!-- end container -->
+    </div> <!-- end section -->
+
+    <!--End mc_embed_signup-->
+    <div class="subscribe-line subscribe-line-transparent" style="background-image: url('assets/img/thumb.jpg')">
+         <div class="container">
+            <div id="mc_embed_signup" class="row">
+                <form action="//muskegonrisers.us9.list-manage.com/subscribe/post?u=fcf121a2d5e4c66d5ee168321&amp;id=b4bd2ebb16" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="col-md-9">
+                             <div class="form-group mc-field-group">
+                                  <input type="email" name="EMAIL" value="" class="form-control" placeholder="Enter your email..." id="mce-EMAIL">
+                             </div>
+                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcf121a2d5e4c66d5ee168321_b4bd2ebb16" tabindex="-1" value=""></div>
+                         </div>
+                         <div class="clear col-md-3">
+                             <input type="submit" value="Subscribe Now!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-fill btn-round">
+                         </div>
+                     </div>
+                 </form>
+            </div>
+         </div><!-- end container -->
+    </div> <!-- end subscribe -->
+</div>
+{{ partial "footer.html" . }}
