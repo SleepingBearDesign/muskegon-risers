@@ -25,7 +25,8 @@
                       <a href="http://twitter.com/intent/tweet?text={{.Title}}&url={{.Permalink}}&via={{ .Site.Params.twitter }}&related=watchmuskegon,{{ .Site.Params.twitter }}&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
                           <i class="fa fa-twitter"></i>
                       </a>
-                      <a href="https://plus.google.com/share?url={{.Permalink}}" target="_blank" class="btn btn-social btn-round btn-fill btn-google">
+                      <a href="https://plus.google.com/share?url={{.Permalink}}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn btn-social btn-round btn-fill btn-google">
                           <i class="fa fa-google-plus"></i>
                       </a>
                       <a href="http://pinterest.com/pin/create/bookmarklet/?media={{ .Site.BaseURL }}assets/img/social/pinterest.jpg&url={{.Permalink}}&is_video=false&description={{.Title}}
