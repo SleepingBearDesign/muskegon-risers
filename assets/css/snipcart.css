@@ -1,0 +1,291 @@
+/* Change the style of every button */
+ #snipcart-main-container a.snipcart-btn, #snipcart-main-container button.snipcart-btn {
+    margin: 16px 3px;
+    padding: 8px 16px;
+    height: auto;
+    color: #777;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    border-width: 1px;
+    border-radius: 30px !important;
+    background-color: transparent;
+    font-weight: 400;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    border-color: #888888;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+/* Add a hover style the buttons */
+ #snipcart-main-container a.snipcart-btn:hover, #snipcart-main-container button.snipcart-btn:hover {
+    color: #014579;
+    border-color: #014579;
+}
+}
+
+#snipcart-discounts-code {
+    background-color: #66615B;
+    opacity: 0.3;
+    color: #fff;
+}
+
+/* Change the style of the primary buttons */
+ #snipcart-main-container a.snipcart-next,
+ #snipcart-main-container a.snipcart-finalize,
+ #snipcart-main-container a.snipcart-mainaction {
+ /*   background: #444;
+    border: none;
+    text-shadow: none;*/
+}
+
+ #snipcart-main-container a.snipcart-next:hover,
+ #snipcart-main-container a.snipcart-finalize:hover,
+ #snipcart-main-container a.snipcart-mainaction:hover {
+    background: #66615b;
+}
+
+/* Change the default color of links */
+ #snipcart-main-container a {
+    color: #333;
+}
+
+/* Remove the footer with "Powered by Snipcart" */
+ #snipcart-main-container #snipcart-footer {
+    display: none;
+}
+
+/* Change the title color and add a logo*/
+ #snipcart-main-container #snipcart-header #snipcart-title {
+    color: #025696;
+    background: url('../img/mkg-logo.png') no-repeat 0 center;
+    background-size: 50px 22px;
+    padding-left: 60px;
+}
+
+/* Change the color of the header, add a blue border so we can see the "x" button,
+    add a shadow for effect and make sure this shadow is over every element */
+ #snipcart-main-container #snipcart-header {
+    background: #F9F9F7;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    position: relative;
+    z-index: 200;
+}
+
+/* Make sure the "x" button is always in the header top border */
+ #snipcart-main-container #snipcart-close {
+    top: 10px;
+}
+#snipcart-close i {
+    color: #66615b;
+}
+
+/* Change the style of the total box */
+ #snipcart-main-container #snipcart-header #snipcart-header-total {
+    padding: 1px;
+    background: #fff;
+    border-color: #bbb;
+}
+
+ #snipcart-main-container #snipcart-header #snipcart-total {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    opacity: 0.5;
+}
+ #snipcart-main-container #snipcart-header #snipcart-total span.snipcart-amount {
+    color: #333;
+}
+
+/* Change the appearance of the cart bottom part with the action buttons so that
+     it is similar to the header*/
+ #snipcart-main-container div#snipcart-actions,
+ #snipcart-main-container div.snipcart-additional-option {
+    background: #F9F9F7;
+    -webkit-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    0px -2px 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:         0px -2px 2px 0px rgba(0, 0, 0, 0.3);
+    border-bottom: 8px solid #66615b;
+}
+
+/* Push the middle part away from the header and the bottom part */
+ #snipcart-main-content #snipcart-sub-content {
+    padding-top: 20px;
+}
+ #snipcart-main-content .snipcart-step-container {
+    padding-bottom: 20px;
+}
+
+ #snipcart-main-container #snipcart-cartitems-continue-top {
+    top: 65px;
+}
+
+/* Input Boxes */
+#snipcart-main-container input[type=password], #snipcart-main-container input[type=text], #snipcart-main-container select {
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    color: #444444;
+    padding: 8px 16px;
+    height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Change the font-family of every element using brandon grotesque */
+ #snipcart-main-container span.snipcart-unit-price, 
+ #snipcart-main-container span.snipcart-total-price,
+ #snipcart-main-container table.snipcart-list span.snipcart-product-name,
+ #snipcart-main-container table.snipcart-list span.snipcart-shipping-method-name,
+  #snipcart-main-container table.snipcart-list span.snipcart-shipping-method-price,
+ #snipcart-main-container table.snipcart-list span.snipcart-confirm-item-quantity,
+ #snipcart-main-container table.snipcart-list span.snipcart-confirm-item-price,
+ #snipcart-main-container table.snipcart-list span.snipcart-confirm-item-total-price,
+ #snipcart-main-container label,
+ ul#snipcart-steps li span.snipcart-step-text,
+ #snipcart-main-container table.snipcart-list th,
+ #snipcart-main-content .snipcart-column span.snipcart-title,
+ table#snipcart-confirm-prices tr td span,
+ #snipcart-main-container .snipcart-full-width-text span.snipcart-title,
+ #snipcart-main-container .snipcart-full-width-text,
+ #snipcart-step-content-emptycart .snipcart-full-width-text p,
+ #snipcart-blocked .snipcart-full-width-text p,
+ #snipcart-header #snipcart-total span,
+ #snipcart-header #snipcart-title,
+ #snipcart-main-container a.snipcart-btn, #snipcart-main-container button.snipcart-btn  {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
+    text-transform: capitalize;
+}
+
+/* Change the appearance of the step tabs */
+ ul#snipcart-steps li {
+    background: #F9F9F7;
+    opacity: 0.5;
+}
+ ul#snipcart-steps li.active {
+    background-color: #F9F9F7;
+    opacity: 1;
+}
+
+ul#snipcart-steps li.active {
+    background: #F9F9F7;
+    background: -moz-linear-gradient(top,rgba(240,241,231,1) 0,rgba(255,255,255,1) 99%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(227,227,227,1)),color-stop(99%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top,rgba(240,241,231,1) 0,rgba(255,255,255,1) 99%);
+    background: -o-linear-gradient(top,rgba(240,241,231,1) 0,rgba(255,255,255,1) 99%);
+    background: -ms-linear-gradient(top,rgba(240,241,231,1) 0,rgba(255,255,255,1) 99%);
+    background: linear-gradient(to bottom,rgba(240,241,231,1) 0,rgba(255,255,255,1) 99%);
+}
+ ul#snipcart-steps {
+    background: transparent;
+}
+
+/* Change the background color of the promocodes section*/
+ #snipcart-promocodes {
+    background: #F9F9F7;
+}
+
+/* Confirmation error textarea  */
+ #snipcart-main-container .snipcart-comments-box textarea {
+    resize: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    background: #F9F9F7;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+/* Empty cart message*/
+ #snipcart-step-content-emptycart .snipcart-full-width-text p {
+    color: #333;
+    padding-bottom: 20px;
+}
+
+/* Sign in user bar */
+ #snipcart-main-content #snipcart-current-user #snipcart-user-infos {
+    background: #66615b;
+}
+
+/* We need the !important here because there is one in the default stylesheet */
+ #snipcart-main-content #snipcart-current-user .snipcart-welcome {
+    color: #ddd !important;
+}
+
+.snipcart-summary {
+    display: inline;
+}
+
+/* Change the step icons to number */
+ ul#snipcart-steps li span.snipcart-step-number {
+    font-family: 'Work Sans', sans-serif;
+}
+
+ .icon-Snipcart-6:before {
+    content: "1";
+}
+
+ .icon-Snipcart-4:before {
+    content: "2";
+}
+
+ .icon-Snipcart-3:before {
+    content: "3";
+}
+
+ .icon-Snipcart-2:before {
+    content: "4";
+}
+ .icon-Snipcart:before {
+    content: "5";
+}
+ .icon-Snipcart-5:before {
+    content: "6";
+}
+ .icon-Snipcart-7:before {
+    content: "7";
+}
