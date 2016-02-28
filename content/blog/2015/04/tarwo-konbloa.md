@@ -1,0 +1,13 @@
++++
+date        = "2015-04-04T14:21:00-05:00"
+title       = "Tarwo Konbloa"
+description = "Tarwo Konbloa"
+tags        = [ "Team Highlight" ]
+category    = "News"
+slug        = "tarwo-konbloa"
+header_img	= "assets/img/blog/tarwo-konbloa.jpg"
+author		= "Adam Walter"
+author_title= "Marketing Intern"
+author_url	= "https://twitter.com/RisersSC"
++++
+Is it safe to say that we all enjoy a touching story?  How about a miracle?  Regardless of how you feel about a touching story or whether you believe in miracles it is certainly safe to say that Tarwo has overcome a lot, and that he is a young man that has his head and heart in the right place.  Tarwo is a native of the Ivory Coast, and his early childhood days revolved around living in a refugee camp and playing soccer whenever possible. Fortunately for Tarwo, he had his brother Abe and cousin Titus with him in the camp, and as he so eloquently told me, he believes that those two along with the rest of his family were the main reasons for him getting over to the United States where they eventually ended up in the Grand Rapids area.  Tarwo began playing soccer at the age of five, however it wasn’t until he first arrived in the states in 2004 where he first learned the fundamentals of the game from coach Hagene.  Thanks to coach Hagene, Tarwo quickly found his footing in the United States, and he would later go on to win three state titles at East Kentwood along with a championship at the Michigan Wolves.  Tarwo is grateful for more than just the opportunity to be a part of the Risers, rather he is grateful for God, the opportunity to go to Hope College, and most of all knowing that the days of oppression from the refugee camp are behind him.  Tarwo is incredibly religious, has an affinity for writing poetry, is incredibly humble, and has an insatiable appetite to succeed and give back to his community.  Tarwo is currently attending Hope College where he hopes to attain a Bachelor of Arts degree in kinesiology.  After college, Tarwo hopes to get into coaching at the professional level.  Furthermore, Tarwo is extremely passionate about becoming a coach, as he wants to give back to the younger generations the same morals and fundamentals that he learned from his coaches. Tarwo believes that God put him on this planet to work hard and to help others, and by going into coaching he believes that he will be fulfilling those duties, while also taking a stand to cut down on the overall obesity rate in America.  Tarwo has certainly had no trouble finding success in the United States, and with his outlook on life there is absolutely no doubt that he has a chance to fulfill and live out his dreams.

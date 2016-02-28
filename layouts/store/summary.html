@@ -1,0 +1,25 @@
+<div class="col-md-4">
+    <div class="card card-product card-plain">
+        <div class="image">
+            <a href="{{ .Permalink }}">
+                <img src="{{ .Params.imgurl }}" alt="...">
+            </a>
+        </div>
+        <div class="content">
+            <a href="{{ .Permalink }}">
+                <h4 class="title">{{ .Params.shorttitle }}</h4>
+            </a> 
+            <p class="description">
+               {{ .Params.mini }} 
+            </p>
+            <div class="footer">
+             {{ if .Params.saleprice }}
+                <span class="price price-old">${{ .Params.price }}</span>
+                <span class="price price-new">${{ .Params.saleprice }}</span>
+             {{ else }}
+                <span class="price">${{ .Params.price }}</span>
+             {{ end }}
+            </div>
+        </div>
+    </div> <!-- end card -->
+ </div>

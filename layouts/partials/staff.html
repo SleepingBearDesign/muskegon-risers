@@ -1,0 +1,44 @@
+<div class="col-md-4 col-sm-6">
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <div class="cover">
+                    <img src="{{ .coverImg }}"/>
+                </div>
+                <div class="user">
+                    <img class="img-circle" src="{{ .imgUrl }}"/>
+                </div>
+                <div class="content">
+                    <div class="main">
+                        <h3 class="name">{{ .name }}</h3>
+                        <p class="profession">{{ .position }}</p>
+                        {{ with .hometown }}<h5><i class="fa fa-map-marker fa-fw text-muted"></i> {{ . }}</h5>{{ end }}
+                    </div>
+                    <div class="footer">
+                        <div class="social-links text-center">
+	                        {{ with .twitter }}<a href="http://twitter.com/{{.}}" target="_blank" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
+                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" target="_blank" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
+	                    </div>
+                    </div>
+                </div>
+            </div> <!-- end front panel -->
+            <div class="back">
+	            <div class="header">
+	                <h5 class="motto">{{ .name }}</h5>
+	            </div> 
+	            <div class="content">
+	                <div class="main">
+	                    <h4 class="text-center">Experience</h4>
+                        <p>{{ .description }}</p>
+	                </div>
+	                <div class="footer">
+		                <div class="social-links text-center">
+		                    {{ with .twitter }}<a href="http://twitter.com/{{.}}" target="_blank" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
+                            {{ with .facebook }}<a href="http://facebook.com/{{.}}" target="_blank" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
+		                </div>
+		            </div>
+	            </div>
+	        </div> <!-- end back panel -->
+        </div> <!-- end card -->
+    </div> <!-- end card-container -->
+</div>

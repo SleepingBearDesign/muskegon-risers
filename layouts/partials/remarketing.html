@@ -1,0 +1,4 @@
+<!-- Remarketing -->
+{{ if .Site.Params.googleremarket }}{{ partial "remarketing/google.html" . }}{{ end }}
+{{ if .Site.Params.fbpixel }}{{ partial "remarketing/facebook.html" . }}{{ end }}
+{{ if .Site.Params.twitterremarket }}{{ partial "remarketing/twitter.html" . }}{{ end }}

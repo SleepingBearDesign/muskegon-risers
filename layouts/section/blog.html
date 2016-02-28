@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+<body>
+{{ partial "navbar.html" . }}
+<div class="wrapper">
+    <div class="section section-gray">
+        <div class="container" id="blog">
+           <h1 class="text-center">Riser Review</h1>
+           <div class="row">
+                {{ range where .Data.Pages "Section" "blog" }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            </div>
+        </div><!-- end container -->
+    </div> <!-- end section -->
+</div>
+{{ partial "footer.html" . }}

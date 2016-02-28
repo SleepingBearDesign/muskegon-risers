@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<body>
+{{ partial "navbar.html" . }}
+{{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
+<div class="wrapper">
+    <div class="section section-gray">
+        <div class="container" id="store">
+           <h1 class="text-center">{{ .Title | singularize }}</h1>
+           <div class="row">
+                {{ range where .Data.Pages "Section" "store"  }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            </div>
+        </div><!-- end container -->
+    </div> <!-- end section -->
+</div>
+{{ partial "footer.html" . }}

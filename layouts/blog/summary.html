@@ -1,0 +1,29 @@
+<div class="col-md-4">
+    <div class="card">
+        <div class="image" style="background-image: url(&quot;{{ .Params.header_img }}&quot;); background-size: cover; background-position: 50% 50%;">
+            <img src="{{ .Params.header_img }}" alt="{{ .Title }}" style="display: none;">
+            <div class="filter filter-riser">
+                <a href="{{ .Permalink }}" type="button" class="btn btn-riser btn-round btn-fill">
+                    <i class="fa fa-align-left"></i> Read More
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <p class="category">{{ .Params.category }}</p>
+            <a class="card-link" href="{{ .Permalink }}">
+                <h4 class="title">{{ .Title }}</h4>
+            </a>
+             <div class="footer">
+                <div class="author">
+                    <a class="card-link" href="{{ .Permalink }}">
+                       <img src="assets/img/authors/{{ .Params.author | urlize }}.jpg" alt="{{ .Params.author }}" class="avatar">
+                       <span> {{ .Params.author }}</span>
+                    </a>
+                </div>
+                <div class="stats pull-right">
+                    <i class="fa fa-clock-o"></i> {{ .ReadingTime }} Minutes 
+                </div>
+            </div>
+        </div>
+    </div> <!-- end card -->
+</div>
