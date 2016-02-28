@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 <body>
+{{ partial "facebook-SDK.html" . }}
 {{ partial "navbar.html" . }}
 <div class="wrapper">
     <div class="parallax">
@@ -15,13 +16,12 @@
                     <h1 class="title title-blog">{{ .Title }}</h1> 
                     <p>{{ .Content }}</p>
                 </div>
-<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="link"></div>
                 <div class="col-md-3 col-md-offset-1">
                   <div class="social-buttons"> 
                       <h3 class="title title-blog">Share</h3>
-                      <a href="http://www.facebook.com/sharer/sharer.php?u={{.Permalink}}&title={{.Title}}" target="_blank" class="btn btn-social btn-round btn-fill btn-facebook">
+                      <button class="btn btn-social btn-round btn-fill btn-facebook" onclick="FB.ui({method: 'share', href: '{{.Permalink}}',}, function(response){});">
                           <i class="fa fa-facebook"></i>
-                      </a>
+                      </button>
                       <a href="http://twitter.com/intent/tweet?text={{.Title}}&url={{.Permalink}}&via={{ .Site.Params.twitter }}&related=watchmuskegon,{{ .Site.Params.twitter }}&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
                           <i class="fa fa-twitter"></i>
                       </a>

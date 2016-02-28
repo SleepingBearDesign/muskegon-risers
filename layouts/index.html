@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 <body>
+{{ partial "facebook-SDK.html" . }}
 {{ partial "navbar.html" . }}
 <div class="wrapper">
     <div class="homepage-hero-module" id="home">
@@ -59,9 +60,9 @@
                     <h4 class="title">Share Us!</h4>
                 </div>
                  <div class="col-md-2">
-                     <a href="http://www.facebook.com/sharer/sharer.php?u={{.Site.BaseURL}}&title={{.Site.Title}}" target="_blank" class="btn btn-round btn-fill btn-social btn-facebook">
+                     <button class="btn btn-round btn-fill btn-social btn-facebook" onclick="FB.ui({method: 'share', href: '{{.Site.BaseURL}}',}, function(response){});">
                          <i class="fa fa-facebook-square"></i> Share
-                     </a>
+                     </button>
                  </div>
                   <div class="col-md-2">
                      <a href="http://twitter.com/intent/tweet?text={{.Site.Title}}&url={{.Site.BaseURL}}&via={{ .Site.Params.twitter }}&related=watchmuskegon,{{ .Site.Params.twitter }}&hashtags=gomkg" target="_blank" class="btn btn-round btn-fill btn-social btn-twitter">
