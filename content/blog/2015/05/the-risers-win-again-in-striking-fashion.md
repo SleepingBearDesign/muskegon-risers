@@ -1,0 +1,17 @@
++++
+date        = "2015-05-21T15:41:00-05:00"
+title       = "The Risers Win Again In Striking Fashion"
+description = "Risers win!"
+tags        = [ "Game Review" ]
+category    = "News"
+slug        = "the-risers-win-again-in-striking-fashion"
+header_img	= "assets/img/blog/field-alt.jpg"
+author		= "Adam Walter"
+author_title= "Marketing Intern"
+author_url	= "https://twitter.com/RisersSC"
++++
+The Riser’s contest against FC Adrenaline this past Saturday was not just any ordinary match, rather this time the Riser’s were playing for some hardware. This team may be new to the scene, but they certainly did not show any trepidation when the lights were shining at their brightest this weekend, as they dominated the pitch to bring home the Stealth Founders Cup. The Risers tamed the Adrenaline and in the process cruised to a 3-0 victory. In a game that consisted of a multitude of free kicks, a red card given to each respective side, and a plethora of questionable calls it was the Riser’s offense that broke through and made the game a joy to behold if you were a Riser’s fan on Saturday. The Risers have quickly proven that they have a wealth of offensive talent, and in utilizing that talent to its fullest potential the Risers were able to outshoot FC Adrenaline 12-3, while also creating numerous scoring chances throughout the game.
+
+The Riser’s have to be extremely proud of their performance on Saturday, although without the three individuals that each chipped in with a goal, who knows what the end result might have been. Furthermore, Diego Bobadilla, Damian Goncalves, and Jai Maw whom all put the ball in the back of the net on Saturday are my three stars from the match. There are a number of players from the squad on Saturday that easily could have made my top three, but for the sake of keeping it simple I decided to go with the three goal scorers. First, Diego’s goal came just 12 minutes into the game, and it was an absolute rocket of a shot from just outside the box. Diego’s goal was the ultimate difference in the game, as FC Adrenaline was held scoreless. Next, Damian’s goal came in the 74th minute of the game, and secured what ultimately ended in a 3-0 victory for the boys from Muskegon. Damian provided a spark for the offense throughout the game, and with his goal proved to be more than just a minor part of the offense on Saturday. Last and not least, Jai’s goal in the 83rd minute was the final nail in the coffin. As Jai can normally be found on defense it was a pleasant surprise to witness his presence on the offensive side of things. Jai has given a lot to this team all season, and he certainly added to that on Saturday.
+
+So, let us now look ahead to Saturday’s home match against Warta. CKS Warta Soccer Club is based out of Chicago, so far this season they are 0-0-2, and they are apart of the NSL Major Division. The Riser’s will head into this match with a record of 2-0-1, and as the team has made great strides from the first game of the season against DCFC I would say that they should have all the confidence in the world heading into this match on Saturday. Two questions remain though, which include whether the offense can continue to generate as many chances as it has in the past two games, and of course will coach Wood take the field again? As the cliché goes, “only time will tell”, but if you want to see for yourself, then the best bet would be to head over to the field at Reeths-Puffer high school this Saturday at 6:00.

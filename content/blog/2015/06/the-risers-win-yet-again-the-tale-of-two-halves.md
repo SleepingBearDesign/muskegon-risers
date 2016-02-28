@@ -1,0 +1,17 @@
++++
+date        = "2015-06-01T11:26:00-05:00"
+title       = "The Risers Win Yet Again: The Tale of Two Halves"
+description = "Risers win again!"
+tags        = [ "Game Review" ]
+category    = "News"
+slug        = "the-risers-win-yet-again-the-tale-of-two-halves"
+header_img	= "assets/img/blog/field.jpg"
+author		= "Adam Walter"
+author_title= "Marketing Intern"
+author_url	= "https://twitter.com/RisersSC"
++++
+It was cold, the winds were howling, and the rain was fierce, yet that did not stop the Risers from finding their way to a 3-0 victory this past Saturday against CKS Warta. With the weather being just downright brutal and the field in less than ideal condition there was no certainty that we would see the same kind of domination from the boys, as was on display in the previous match against FC Adrenaline. In the first half the game was primarily played in the neutral part of the field, and at the end of the half it could be argued that Mother Nature was winning the game. In the second half was when the Risers finally gained some momentum, and with this subsequent momentum came a multitude of chances. The first goal for the Risers came at the 55-minute mark, and at just ten minutes into the second half it proved to be the difference in the match. The Riser’s final two goals came in the last 30 minutes of action, with the capper being scored at the 70-minute mark by Brogan Shrimpton.
+
+Let us now look at the top three men of the match. As always, there are a variety of players who deserve this recognition. My number one man of the match goes to Brogan Shrimpton. Brogan is no stranger to this list as he made my list with his two-goal performance in the second match against Dayton. Furthermore, Brogan tallied another two goals against CKS Warta, and his first goal at the 55-minute mark was all that the Risers would need to seal the deal. Brogan’s second goal came with just 20 minutes left in the contest, and it was the cherry on top of a dominant second half performance by the squad. Next, Jamie Waters is my second man of the match. Jamie assisted on both of Brogan’s goals, and he also provided a major spark to the Riser’s attack in the second half. Last and not least, my third man of the match is Jeff McClure. Jeff scored the second goal for the Risers with around 30 minutes to go in the match, and while his goal was spectacular it was his power slide celebration near the Riser’s sideline that was most memorable. Jeff has been a stud on offense this season with his speed, agility, and elite athleticism, which as usual were on full display. My honorable mentions for the man of the match goes to the Riser’s defensive unit, which did not allow a shot on goal all game, and finally to the fans that showed out for the game despite the dreary weather.
+
+Next, the Risers will be on the road this coming Saturday for a match against the Des Moines Menace. With the Riser’s taking a 2-1 loss against AFC Ann Arbor this past Sunday it will be interesting to see how the team responds on Saturday. Another thing to note is that the Riser’s have picked up at least one red card in their last three matches respectively, dating back to the second home match against FC Adrenaline. This squad has all the tools to be an elite team, but if they cannot become more disciplined at the end of games then the team’s success could come to a screeching halt.
