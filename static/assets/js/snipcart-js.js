@@ -1,4 +1,3 @@
-Snipcart.execute('config', 'show_continue_shopping', true);
 Snipcart.execute("bind", "order.completed", function(order) {
     // We have to compute taxes total.
     var taxes = 0;
@@ -9,7 +8,7 @@ Snipcart.execute("bind", "order.completed", function(order) {
     // Now we push the transaction to Google Analytics
     _gaq.push(['_addTrans',
       order.token, // This is the unique ID of the transaction
-      'Muskegon Riser Soccer Club Store' // Replace by your store name
+      'Muskegon Riser Soccer Club Store', // Replace by your store name
       order.grandTotal,
       taxes, // We use the value we computed before
       order.shippingFees,

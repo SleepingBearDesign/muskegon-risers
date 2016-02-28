@@ -9,5 +9,6 @@ slug = "scarf"
 imgurl = "assets/img/store/scarf/scarf.jpg"
 prodimgs = []
 price = "24.00"
+customizable = false
 freeshipping = false
 +++

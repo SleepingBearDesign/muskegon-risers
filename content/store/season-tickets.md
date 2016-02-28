@@ -10,5 +10,6 @@ imgurl = "assets/img/store/season-tickets/season-tickets.jpg"
 prodimgs = ["assets/img/store/scarf/scarf.jpg"]
 price = "63.00"
 saleprice = "39.00"
+customizable = false
 freeshipping = false
 +++

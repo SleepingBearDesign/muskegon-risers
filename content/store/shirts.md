@@ -4,11 +4,12 @@ title = "MKG Risers Shirt"
 shorttitle = "MKG Risers Shirt"
 description = "Get your Risers Shirt now!"
 mini = "Get your Risers Shirt now!"
-slug = "shirt"
+slug = "mkg-shirt"
 imgurl = "assets/img/store/shirts/mkgshirts.jpg"
 prodimgs = []
 price = "19.00"
-sizes = ["Small","Medium","Large"]
-colors = ["Blue","Green"]
+sizes = ["Youth Small","Youth Medium","Youth Large","Youth XL","Small","Medium","Large","XL","XXL"]
+colors = ["Blue","Lime"]
+customizable = false
 freeshipping = false
 +++
