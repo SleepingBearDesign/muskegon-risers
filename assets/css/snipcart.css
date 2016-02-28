@@ -259,33 +259,3 @@ ul#snipcart-steps li.active {
 .snipcart-summary {
     display: inline;
 }
-
-/* Change the step icons to number */
- ul#snipcart-steps li span.snipcart-step-number {
-    font-family: 'Work Sans', sans-serif;
-}
-
- .icon-Snipcart-6:before {
-    content: "1";
-}
-
- .icon-Snipcart-4:before {
-    content: "2";
-}
-
- .icon-Snipcart-3:before {
-    content: "3";
-}
-
- .icon-Snipcart-2:before {
-    content: "4";
-}
- .icon-Snipcart:before {
-    content: "5";
-}
- .icon-Snipcart-5:before {
-    content: "6";
-}
- .icon-Snipcart-7:before {
-    content: "7";
-}

@@ -31,6 +31,8 @@ Snipcart.execute("bind", "order.completed", function(order) {
     _gaq.push(['_trackTrans']);
 
     fbq('track', 'Purchase', {value: order.grandTotal, currency: 'USD'});
+    var url = '/thankyou?order=' + order.token;
+    window.location.href = url;
   });
 
 Snipcart.subscribe('item.added', function (item) {
