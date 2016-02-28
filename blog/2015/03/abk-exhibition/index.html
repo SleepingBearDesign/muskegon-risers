@@ -106,6 +106,25 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
 </head>
 
 <body>
+ 
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '535790599912124',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
     
 
@@ -166,17 +185,17 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
 <p>In the bigger scheme of things, the Saturday night exhibition match between the two clubs not only provided an exciting night for the fans, but for the Red Card Cancer foundation. Due to the charity exhibition match between the two teams, the tournament was able to raise awareness for this disease, which has affected so many of our loved ones, by playing a sport we have all grown to enjoy around the company our loved ones.</p>
 </p>
                 </div>
-<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="link"></div>
                 <div class="col-md-3 col-md-offset-1">
                   <div class="social-buttons"> 
                       <h3 class="title title-blog">Share</h3>
-                      <a href="http://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f03%2fabk-exhibition%2f&title=ABK%20Exhibition" target="_blank" class="btn btn-social btn-round btn-fill btn-facebook">
+                      <button class="btn btn-social btn-round btn-fill btn-facebook" onclick="FB.ui({method: 'share', href: 'http:\/\/bhberson.github.io\/muskegon-risers\/blog\/2015\/03\/abk-exhibition\/',}, function(response){});">
                           <i class="fa fa-facebook"></i>
-                      </a>
-                      <a href="http://twitter.com/intent/tweet?status=ABK%20Exhibition+http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f03%2fabk-exhibition%2f" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
+                      </button>
+                      <a href="http://twitter.com/intent/tweet?text=ABK%20Exhibition&url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f03%2fabk-exhibition%2f&via=RisersSC&related=watchmuskegon,RisersSC&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
                           <i class="fa fa-twitter"></i>
                       </a>
-                      <a href="https://plus.google.com/share?url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f03%2fabk-exhibition%2f" target="_blank" class="btn btn-social btn-round btn-fill btn-google">
+                      <a href="https://plus.google.com/share?url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f03%2fabk-exhibition%2f" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn btn-social btn-round btn-fill btn-google">
                           <i class="fa fa-google-plus"></i>
                       </a>
                       <a href="http://pinterest.com/pin/create/bookmarklet/?media=http://bhberson.github.io/muskegon-risers/assets/img/social/pinterest.jpg&url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f03%2fabk-exhibition%2f&is_video=false&description=ABK%20Exhibition

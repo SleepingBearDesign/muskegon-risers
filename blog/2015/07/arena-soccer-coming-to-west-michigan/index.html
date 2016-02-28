@@ -106,6 +106,25 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
 </head>
 
 <body>
+ 
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '535790599912124',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
     
 
@@ -162,17 +181,17 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                     <p><p>On Saturday December 12, 2015, Muskegon Risers SC will play Detroit Waza Flo (Major Arena Soccer League) at the L.C. Walker Arena in downtown Muskegon. This will be the first professional arena soccer event to visit West Michigan, creating an exciting sports experience in the heart of downtown Muskegon which includes excellent breweries, hotels, and restaurants. Doors will open at 5pm, with kickoff scheduled for 6pm. Tickets go on sale August 1 and are just $5. Orders may be placed at <a href="http://muskegonrisers.com">muskegonrisers.com</a> or by calling or visiting the L.C. Walker Arena Ticket Office at 231.724.5225 // 955 4th St, Muskegon, MI 49440</p>
 </p>
                 </div>
-<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="link"></div>
                 <div class="col-md-3 col-md-offset-1">
                   <div class="social-buttons"> 
                       <h3 class="title title-blog">Share</h3>
-                      <a href="http://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f07%2farena-soccer-coming-to-west-michigan%2f&title=Arena%20Soccer%20Coming%20to%20West%20Michigan%21" target="_blank" class="btn btn-social btn-round btn-fill btn-facebook">
+                      <button class="btn btn-social btn-round btn-fill btn-facebook" onclick="FB.ui({method: 'share', href: 'http:\/\/bhberson.github.io\/muskegon-risers\/blog\/2015\/07\/arena-soccer-coming-to-west-michigan\/',}, function(response){});">
                           <i class="fa fa-facebook"></i>
-                      </a>
-                      <a href="http://twitter.com/intent/tweet?status=Arena%20Soccer%20Coming%20to%20West%20Michigan%21+http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f07%2farena-soccer-coming-to-west-michigan%2f" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
+                      </button>
+                      <a href="http://twitter.com/intent/tweet?text=Arena%20Soccer%20Coming%20to%20West%20Michigan%21&url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f07%2farena-soccer-coming-to-west-michigan%2f&via=RisersSC&related=watchmuskegon,RisersSC&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
                           <i class="fa fa-twitter"></i>
                       </a>
-                      <a href="https://plus.google.com/share?url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f07%2farena-soccer-coming-to-west-michigan%2f" target="_blank" class="btn btn-social btn-round btn-fill btn-google">
+                      <a href="https://plus.google.com/share?url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f07%2farena-soccer-coming-to-west-michigan%2f" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn btn-social btn-round btn-fill btn-google">
                           <i class="fa fa-google-plus"></i>
                       </a>
                       <a href="http://pinterest.com/pin/create/bookmarklet/?media=http://bhberson.github.io/muskegon-risers/assets/img/social/pinterest.jpg&url=http%3a%2f%2fbhberson.github.io%2fmuskegon-risers%2fblog%2f2015%2f07%2farena-soccer-coming-to-west-michigan%2f&is_video=false&description=Arena%20Soccer%20Coming%20to%20West%20Michigan%21

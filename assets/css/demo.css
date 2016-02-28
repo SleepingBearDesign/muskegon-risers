@@ -79,6 +79,11 @@ a:hover, a:active, a:focus,
 .ct-heart{
     color: #F74933;
 }
+.watch-mkg{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .filter.filter-riser {
     background-color: rgba(2, 86, 150, 0.69);
 }

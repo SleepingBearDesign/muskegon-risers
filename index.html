@@ -111,6 +111,25 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
 </head>
 
 <body>
+ 
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '535790599912124',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
     
     
@@ -190,6 +209,9 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
         <div class="container" id="about">
            <h1 class="text-center">Our Purpose</h1>
            <p class="text-center">Muskegon Risers SC was founded to help facilitate positive social and economic change along the Muskegon Lakeshore through the game of soccer. A Riser is someone who understands our community's potential and who pushes themselves and others to realize that potential. Our 'Risers' name was inspired by the 'Muskegon, Together Rising' sculpture that stands in the heart of downtown Muskegon. Risers are not limited to an era, industry or ethnicity. Muskegon Risers SC strives to represent the spirit of our area's people in past, present and future tense.</p>
+           <a href="http://watchmuskegon.com/" target="_blank">
+               <img src="assets/img/watch-muskegon-logo.png" class="img-responsive watch-mkg" alt="WATCH mUSkeGOn">
+           </a>
         </div>
     </div> 
 
@@ -284,17 +306,18 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                     <h4 class="title">Share Us!</h4>
                 </div>
                  <div class="col-md-2">
-                     <a href="http://www.facebook.com/sharer/sharer.php?u=http://bhberson.github.io/muskegon-risers/&title=Muskegon%20Risers" target="_blank" class="btn btn-round btn-fill btn-social btn-facebook">
+                     <button class="btn btn-round btn-fill btn-social btn-facebook" onclick="FB.ui({method: 'share', href: 'http:\/\/bhberson.github.io\/muskegon-risers\/',}, function(response){});">
                          <i class="fa fa-facebook-square"></i> Share
-                     </a>
+                     </button>
                  </div>
                   <div class="col-md-2">
-                     <a href="http://twitter.com/intent/tweet?status=Muskegon%20Risers+http://bhberson.github.io/muskegon-risers/" target="_blank" class="btn btn-round btn-fill btn-social btn-twitter">
+                     <a href="http://twitter.com/intent/tweet?text=Muskegon%20Risers&url=http://bhberson.github.io/muskegon-risers/&via=RisersSC&related=watchmuskegon,RisersSC&hashtags=gomkg" target="_blank" class="btn btn-round btn-fill btn-social btn-twitter">
                          <i class="fa fa-twitter"></i> Tweet
                      </a>
                  </div>
                   <div class="col-md-2">
-                     <a href="https://plus.google.com/share?url=http://bhberson.github.io/muskegon-risers/" target="_blank" class="btn btn-round btn-fill btn-social btn-google">
+                     <a href="https://plus.google.com/share?url=http://bhberson.github.io/muskegon-risers/" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn btn-round btn-fill btn-social btn-google">
                          <i class="fa fa-google-plus-square"></i> Share
                      </a>
                  </div>
