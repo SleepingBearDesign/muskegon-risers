@@ -8,7 +8,7 @@
 <meta name="author" content="Sleeping Bear Design - SleepingBearDesign.com">
 
 <!-- Facebook OG -->
-<meta property="og:title" content="{{ .Title | singularize }}" />
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title | singularize }}{{ end }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 {{ with .Site.Params.twitter }}<meta name="twitter:site" content="@{{ . }}"/>{{ end }}
 <meta name="twitter:image" content="{{ .Site.BaseURL }}assets/img/social/twitter.jpg">
-<meta name="twitter:title" content="{{ .Site.Title | singularize }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title | singularize }}{{ end }}">
 <meta name="twitter:description" content="{{ .Site.Params.description }}">
 <!-- Windows 8.1 Tiles -->
 <meta name="application-name" content="{{ .Site.Title | singularize }}"/>
