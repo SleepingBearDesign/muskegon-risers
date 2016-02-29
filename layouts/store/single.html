@@ -93,7 +93,7 @@
                   <div class="form-group">
                       <select id="my-color" name="huge" class="selectpicker" data-style="form-control" title="Select a Color">
                         {{ range .Params.colors }}
-                          <option>{{.}}</option>
+                          <option value="{{.}}">{{.}}</option>
                         {{ end }}
                       </select>
                   </div>
@@ -107,7 +107,7 @@
                   <div class="form-group">
                       <select id="my-size" name="huge" class="selectpicker" data-style="form-control" title="Select a Size">
                         {{ range .Params.sizes }}
-                          <option>{{.}}</option>
+                          <option value="{{.}}">{{.}}</option>
                         {{ end }}
                       </select>
                   </div>
