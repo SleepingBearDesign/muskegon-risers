@@ -222,6 +222,10 @@ a:hover, a:active, a:focus,
     color: #FF3B30;
 }
 
+.add-row {
+  margin-top: 3%;
+}
+
 .product-page .tab-content {
   overflow: hidden;
   width: 100%;

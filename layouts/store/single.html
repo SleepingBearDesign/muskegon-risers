@@ -217,6 +217,28 @@
                 </div>
               </div>
             </div>
+            {{ else }}
+            <div class="row add-row">
+              <div class="container container-border">
+                <div class="col-md-4 col-sm-4">
+                  <h4>Need more gear?</h4>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <h5>{{.PrevInSection.Title}}</h5>
+                  
+                  {{ if .PrevInSection.Params.saleprice }}
+                  <p class="price"><span class="price-old">${{ .PrevInSection.Params.price }}</span> <strong class="price-new">${{ .PrevInSection.Params.saleprice }}</strong></p>
+                  {{ else }}
+                  <p class="price"><strong>${{.PrevInSection.Params.price}}</strong></p>
+                  {{ end }}
+                  <p>{{.PrevInSection.Params.mini}}</p>
+                  <a href="{{ .PrevInSection.Permalink }}" class="btn btn-fill btn-default"> View Now</a>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-4">
+                  <img src="{{.PrevInSection.Params.imgurl}}" alt="Rounded Image" class="img-rounded img-responsive">
+                </div>
+              </div>
+            </div>
             {{ end }}
           </div>
         </div>
