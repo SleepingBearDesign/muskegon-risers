@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "south-african-product-alexi-munro-signs-today"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Assistant Coach Mike Lee is very enthusiastic about the latest signing for Risers SC – South African product, Alexi Munro.
