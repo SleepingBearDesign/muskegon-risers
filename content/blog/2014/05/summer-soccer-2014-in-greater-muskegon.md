@@ -6,8 +6,8 @@ tags        = [ "Clinics","Tournaments","Tryouts" ]
 category    = "News"
 slug        = "summer-soccer-2014-in-greater-muskegon"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 It’s that time again! Time to continue developing and showcasing motivated players in the summer sun. The lakeshore has fantastic opportunities to do just that. Check them out and enjoy the grind.
