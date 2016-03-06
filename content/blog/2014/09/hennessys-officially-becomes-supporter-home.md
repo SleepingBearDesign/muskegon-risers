@@ -6,8 +6,8 @@ tags        = [ "Sponsors" ]
 category    = "News"
 slug        = "hennessys-officially-becomes-supporter-home"
 header_img	= "assets/img/blog/hennessys.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 We all hoped this was coming, and now its official. Hennessy’s Irish Pub & Restaurant in Downtown Muskegon has agreed to host all US National Soccer Team watch parties through 2015. In doing so, Hennessy’s also becomes the first local restaurant to sponsor the Risers during our inaugural season.
