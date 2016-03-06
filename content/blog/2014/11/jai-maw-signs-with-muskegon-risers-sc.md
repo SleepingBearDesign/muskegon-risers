@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "jai-maw-signs-with-muskegon-risers-sc"
 header_img	= "assets/img/blog/jai-maw.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Jai Maw is the second player in as many weeks to sign with Muskegon Risers Soccer Club ahead of the 2015 season.
