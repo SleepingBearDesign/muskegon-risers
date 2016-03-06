@@ -1,13 +1,13 @@
 +++
 id = "2"
-title = "MKG Risers Shirt"
-shorttitle = "MKG Risers Shirt"
-description = "Get your Risers Shirt now!"
-mini = "Get your Risers Shirt now!"
+title = "April 10 Tryouts"
+shorttitle = "April 10 Tryouts"
+description = "Tryouts for our 2016 summer season will be held at Reeths-Puffer Middle School from 5:30 to 8:30pm on April 10! Registrants will also receive a lime shirt."
+mini = "Tryouts for our summer 2016 season will be held at Reeths-Puffer Middle School from 5:30 to 8:30pm on April 10. Registrants will also receive a lime shirt."
 slug = "mkg-shirt"
-imgurl = "assets/img/store/shirts/ShirtGrid.jpg"
-prodimgs = ["assets/img/store/shirts/Green1.jpg", "assets/img/store/shirts/Green2.jpg", "assets/img/store/shirts/Green3.jpg", "assets/img/store/shirts/Green4.jpg", "assets/img/store/shirts/Blue1.jpg", "assets/img/store/shirts/Blue2.jpg", "assets/img/store/shirts/Black1.jpg", "assets/img/store/shirts/Black2.jpg", "assets/img/store/shirts/Black3.jpg"]
-price = "19.00"
+imgurl = "assets/img/store/tryouts/Tryouts1.jpg"
+prodimgs = ["assets/img/store/tryouts/Green1.jpg"]
+price = "50.00"
 sizes = ["Small","Medium","Large","XL","XXL"]
 colors = ["Lime","Blue","Black"]
 customizable = false
