@@ -6,8 +6,8 @@ tags        = [ "Training" ]
 category    = "News"
 slug        = "winter-training-opportunities"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 The winter offseason is a great time for players to develop technique and push themselves to improve their game in a variety of ways. Below are a few opportunities for players to do just that along the lakeshore!
