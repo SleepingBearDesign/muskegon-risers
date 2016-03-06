@@ -6,8 +6,8 @@ tags        = [ "Sponsors" ]
 category    = "News"
 slug        = "risers-enter-3-year-deal-with-pegliyl"
 header_img	= "assets/img/blog/pegliyl.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Today, the Muskegon Risers Soccer Club inked a 3-year deal with PEGLIYL, LLC, making PEGLIYL the club’s exclusive goalie glove provider through 2017.
