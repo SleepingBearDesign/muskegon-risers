@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "job-potter-signs-with-mkg"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 We are excited to announce Job Potter has signed with Muskegon Risers SC.
