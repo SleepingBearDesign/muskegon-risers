@@ -9,7 +9,7 @@ imgurl = "assets/img/store/tryouts/Tryouts1.jpg"
 prodimgs = ["assets/img/store/tryouts/Green1.jpg"]
 price = "50.00"
 sizes = ["Small","Medium","Large","XL","XXL"]
-colors = ["Lime","Blue","Black"]
+colors = ["Lime"]
 customizable = false
 freeshipping = false
 +++
