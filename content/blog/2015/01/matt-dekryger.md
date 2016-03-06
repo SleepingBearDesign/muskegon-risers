@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "matt-dekryger"
 header_img	= "assets/img/blog/muskegon-proud.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Matt DeKryger is the final Riser we will announce today.
