@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "risers-land-miguel-angeles"
 header_img	= "assets/img/blog/hackley.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Our coaching staff continues to build a professional product on the field, and the signing of Miguel Angeles is a direct result of that mission.
