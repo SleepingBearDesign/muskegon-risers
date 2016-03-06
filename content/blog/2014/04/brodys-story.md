@@ -6,8 +6,8 @@ tags        = [ "Web Development" ]
 category    = "News"
 slug        = "brodys-story"
 header_img	= "assets/img/blog/brody.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 *Passionate people and the execution of their ideas ultimately defines the success of any organization.*
