@@ -6,8 +6,8 @@ tags        = [ "Sponsors" ]
 category    = "News"
 slug        = "risers-announce-jersey-provider-3-year-contract"
 header_img	= "assets/img/blog/stealth.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 A team’s uniform provider has massive implications on brand identity. Today, the Risers are proud to announce Stealth Soccer as our exclusive kit supplier. This agreement, which extends through 2017, represents the club’s dedication to partnering with brands who share our core values both on and off the field.
