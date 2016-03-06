@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "welcome-diego-bobadilla"
 header_img	= "assets/img/blog/hackley.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Rounding out today’s announcements is Holland, MI native Diego Bobadilla.
