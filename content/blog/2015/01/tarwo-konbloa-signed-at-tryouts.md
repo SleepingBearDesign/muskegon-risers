@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "tarwo-konbloa-signed-at-tryouts"
 header_img	= "assets/img/blog/field.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Tarwo Konbloa is the second signing announced following tryouts last weekend. Tarwo wrote an excellent bio, which we have quoted below.
