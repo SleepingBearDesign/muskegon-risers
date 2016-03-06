@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "ibrahim-konbloa-honored-to-join-mkg"
 header_img	= "assets/img/blog/arial.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Following a very competitive trial period in Muskegon on December 26 and 27, the Risers coaching staff has selected ten athletes to add to the 2015 roster.
