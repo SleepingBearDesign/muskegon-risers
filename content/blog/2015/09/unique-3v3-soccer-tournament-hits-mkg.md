@@ -6,8 +6,8 @@ tags        = [ "Arena Soccer", "Community" ]
 category    = "News"
 slug        = "unique-3v3-soccer-tournament-hits-mkg"
 header_img	= "assets/img/blog/arena.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Muskegon Risers SC was created to help promote positive social and economic change along the MKG lakeshore. In the spirit of this purpose, the team will play Detroit Waza Flo in the L.C. Walker Arena on December 12 at 6pm, marking the first event of its kind in downtown Muskegon.
