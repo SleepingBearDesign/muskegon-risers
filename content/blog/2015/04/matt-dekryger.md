@@ -6,8 +6,8 @@ tags        = [ "Team Highlight" ]
 category    = "News"
 slug        = "matt-dekryger"
 header_img	= "assets/img/blog/matt-dekryger.jpg"
-author		= "Adam Walter"
-author_title= "Marketing Intern"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Matt is from Fremont, MI and embraces being a country boy. Matt spent his childhood days helping on his family’s farm, and the nights would always be capped off with some soccer in the backyard with his father. Growing up, soccer was an instrumental part of his life, and as Matt’s father is a big advocate of the game it comes as no surprise that Matt embraced soccer at an early age.
