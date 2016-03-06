@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "ben-honeycutt-signs-with-mkg"
 header_img	= "assets/img/blog/beach.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Muskegon Risers SC extends a warm welcome to Ben Honeycutt.
