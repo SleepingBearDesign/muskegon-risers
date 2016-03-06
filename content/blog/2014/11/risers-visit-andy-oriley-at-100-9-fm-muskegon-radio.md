@@ -6,8 +6,8 @@ tags        = [ "Marketing" ]
 category    = "News"
 slug        = "risers-visit-andy-oriley-at-100-9-fm-muskegon-radio"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Hear Muskegon Radio legend Andy O’Riley talk Risers with our staff! Excellent local exposure!!
