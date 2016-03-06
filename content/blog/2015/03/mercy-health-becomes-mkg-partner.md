@@ -6,8 +6,8 @@ tags        = [ "Sponsors" ]
 category    = "News"
 slug        = "mercy-health-becomes-mkg-partner"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Sports teams in any capacity hold a high level of responsibility to model health and wellness within their community. Today, Muskegon Risers SC is proud to announce that Mercy Health has become a key partner in this realm.
