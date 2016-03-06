@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "alex-tozer-signing-continues-momentum"
 header_img	= "assets/img/blog/hackley.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Alex Tozer is out to make a name for himself in the US Soccer landscape.
