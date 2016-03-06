@@ -6,8 +6,8 @@ tags        = [ "Marketing" ]
 category    = "News"
 slug        = "abk-exhibition"
 header_img	= "assets/img/blog/huddle.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Rise and grind. Rise to the challenge, and grind to accomplish the challenge. This is the motto of not only the whole Muskegon Risers organization, but the mindset that coach David Wood has been trying to create in each of his player’s heads. Through tough training sessions and scheduling challenging opponents, the Risers hope this will be the formula in building the best team on this side of the Mississippi.
