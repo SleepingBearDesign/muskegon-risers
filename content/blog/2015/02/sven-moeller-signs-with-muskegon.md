@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "sven-moeller-signs-with-muskegon"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 The Risers coaching staff is continuing to blend local and international talent ahead of year one. Sven Moeller, a native of Frankfurt, Germany, is the staff’s latest addition.
