@@ -6,8 +6,8 @@ tags        = [ "Operations" ]
 category    = "News"
 slug        = "risers-aim-for-downtown-waterfront-field"
 header_img	= "assets/img/blog/downtown.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 In June of 2011, Tom Gores was interviewed by Mitch Albom of the Detroit Free Press regarding his recent purchase of the Detroit Pistons NBA franchise. Toward the middle of his Q&A, Gores quipped, “I always want to create value; I never want to buy value.” In other words, Gores believes in building versus buying. He was probably the kind of kid who made his Halloween costumes from scratch, and the type of guy who gets a kick out of restoring vintage cars. Pure speculation, of course.
