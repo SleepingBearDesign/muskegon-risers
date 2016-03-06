@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "massive-goalkeeper-signing-reece-richardson"
 header_img	= "assets/img/blog/beach.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Reece Richardson, who stands 6’7″ in beach sand, will have massive presence at GK. His experience will be just as big, leading Forest City London to a championship in 2012 and earning several defensive honors throughout his collegiate career at Indiana Tech University.
