@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "jubenal-rodriguez-rise-and-grind"
 header_img	= "assets/img/blog/field.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Jubenal Rodriguez is a Muskegon Lakeshore product, and in speaking with him, you can tell this opportunity hits home.
