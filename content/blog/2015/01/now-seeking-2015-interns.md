@@ -6,8 +6,8 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "now-seeking-2015-interns"
 header_img	= "assets/img/blog/muskegon-proud.jpg"
-author		= "Matt Schmitt"
-author_title= "President of Operations"
+author		= "Riser Review"
+author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
 Muskegon Risers SC is now accepting resumes for 2015 internships!
