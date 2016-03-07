@@ -13,6 +13,7 @@
                         <h3 class="name">{{ .name }}</h3>
                         <p class="profession">{{ .position }}</p>
                         {{ with .hometown }}<h5><i class="fa fa-map-marker fa-fw text-muted"></i> {{ . }}</h5>{{ end }}
+                        {{ if .website }}<h5><i class="fa fa-globe fa-fw text-muted"></i> <a href="{{.website}}">{{ if .pretty_website }}{{ .pretty_website }}{{ else }}Website{{ end }}</a></h5>{{ end }}
                     </div>
                     <div class="footer">
                         <div class="social-links text-center">
