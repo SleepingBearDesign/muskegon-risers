@@ -6,7 +6,7 @@ tags        = [ "Signing" ]
 category    = "News"
 slug        = "sven-moeller-signs-with-muskegon"
 header_img	= "assets/img/blog/muskegon.jpg"
-author		= "Riser Review
+author		= "Riser Review"
 author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
 +++
