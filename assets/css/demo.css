@@ -87,6 +87,9 @@ a:hover, a:active, a:focus,
 .filter.filter-riser {
     background-color: rgba(2, 86, 150, 0.69);
 }
+.filter.filter-riser-green {
+    background-color: rgba(77, 234, 33, 0.69);
+}
 
 .btn-riser {
     color: #fff;
@@ -222,6 +225,10 @@ a:hover, a:active, a:focus,
     color: #FF3B30;
 }
 
+.add-row {
+  margin-top: 3%;
+}
+
 .product-page .tab-content {
   overflow: hidden;
   width: 100%;
@@ -258,24 +265,28 @@ a:hover, a:active, a:focus,
 .product-page .product-details .title, .product-page .product-details .price {
   font-weight: 500;
 }
+.game-page .product-details .price {
+  font-weight: 500;
+  font-size: 24px;
+}
 .product-page .actions {
   margin: 15px;
 }
-.product-page .container-border {
+.product-page .container-border, .game-page .container-border {
   border-top: 1px solid #DDDDDD;
 }
-.product-page .container-border .title {
+.product-page .container-border .title, .game-page .container-border .title {
   color: #333;
   text-align: center;
 }
-.product-page .container-border .title h4 {
+.product-page .container-border .title h4, .game-page .container-border .title h4 {
   font-weight: 500;
   margin-bottom: 0;
 }
-.product-page .container-border .title p {
+.product-page .container-border .title p, .game-page .container-border .title p {
   margin-bottom: 50px;
 }
-.product-page .viewed {
+.product-page .viewed, .game-page .viewed {
   margin-top: 30px;
 }
 .blog-page .card {
@@ -1105,7 +1116,7 @@ a:hover, a:active, a:focus,
     text-align: center;
     margin-bottom: 20px;
 }
-.card .footer {
+.card .footer-flip {
     border-top: 1px solid #EEEEEE;
     color: #999999;
     margin: 30px 0 0;
