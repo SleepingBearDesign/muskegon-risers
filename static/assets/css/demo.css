@@ -1109,7 +1109,7 @@ a:hover, a:active, a:focus,
     text-align: center;
     margin-bottom: 20px;
 }
-.card .footer {
+.card .footer-flip {
     border-top: 1px solid #EEEEEE;
     color: #999999;
     margin: 30px 0 0;

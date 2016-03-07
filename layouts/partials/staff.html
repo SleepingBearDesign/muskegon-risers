@@ -15,7 +15,7 @@
                         {{ with .hometown }}<h5><i class="fa fa-map-marker fa-fw text-muted"></i> {{ . }}</h5>{{ end }}
                         {{ if .website }}<h5><i class="fa fa-globe fa-fw text-muted"></i> <a href="{{.website}}">{{ if .pretty_website }}{{ .pretty_website }}{{ else }}Website{{ end }}</a></h5>{{ end }}
                     </div>
-                    <div class="footer">
+                    <div class="footer footer-flip">
                         <div class="social-links text-center">
 	                        {{ with .twitter }}<a href="http://twitter.com/{{.}}" target="_blank" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
                             {{ with .facebook }}<a href="http://facebook.com/{{.}}" target="_blank" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
@@ -32,7 +32,7 @@
 	                    <h4 class="text-center">Experience</h4>
                         <p>{{ .description }}</p>
 	                </div>
-	                <div class="footer">
+	                <div class="footer footer-flip">
 		                <div class="social-links text-center">
 		                    {{ with .twitter }}<a href="http://twitter.com/{{.}}" target="_blank" class="twitter btn-twitter"><i class="fa fa-twitter fa-fw"></i></a>{{ end }}
                             {{ with .facebook }}<a href="http://facebook.com/{{.}}" target="_blank" class="facebook btn-facebook"><i class="fa fa-facebook fa-fw"></i></a>{{ end }}
