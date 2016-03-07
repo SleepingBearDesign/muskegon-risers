@@ -1,0 +1,102 @@
+{{ partial "header.html" . }}
+<body class="game-page">
+  {{ partial "navbar.html" . }}
+  {{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
+  <div class="wrapper">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="tab-content">
+              <div class="tab-pane active">
+                <img class="img-responsive" src="assets/img/schedule/{{.Params.opponent | urlize }}.jpg">
+              </div>
+            </div> <!-- tab-content end -->
+          </div>
+          <div class="col-md-6">
+            <div class="product-details">
+              <h3 class="title">{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}</h3>
+              <p class="description">
+                Catch your own MKG Riser's playing {{ if .Params.home }}home against {{ else }}at {{ end }}{{.Params.opponent}} on {{ .Date.Format "Monday, Jan 2, 2006" }}! {{ if .Params.price }}You may purchase your ticket online or on game day at the field. All home games are $5.{{ else }}You may purchase your ticket on game day at the field. Prices may vary depending on the field.{{ end }} Below is a map of where the field is located.
+              </p>
+              
+              {{ if .Params.saleprice }}
+              <span class="price price-old">${{ .Params.price }}</span>
+              <span class="price price-new">${{ .Params.saleprice }}</span>
+              <div class="pull-right">
+                <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="{{ .Params.id }}"
+                  data-item-name="{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}"
+                  data-item-price="{{ .Params.saleprice }}"
+                  data-item-url="{{ .Permalink }}"
+                  data-item-image="assets/img/schedule/{{.Params.opponent | urlize }}.jpg"
+                >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
+              </div>
+              {{ else }}
+              {{ if .Params.price }}
+              <span class="price">${{ .Params.price }}</span>
+              <div class="pull-right">
+                <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="{{ .Params.id }}"
+                  data-item-name="{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}"
+                  data-item-price="{{ .Params.price }}"
+                  data-item-url="{{ .Permalink }}"
+                  data-item-image="assets/img/schedule/{{.Params.opponent | urlize }}.jpg"
+                >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
+              </div>
+              {{ end }}
+              {{ end }}
+            </div>
+            <div class="social-buttons">
+              <h3 class="title">Share</h3>
+              <button class="btn btn-social btn-round btn-fill btn-facebook" onclick="FB.ui({method: 'share', href: '{{.Permalink}}',}, function(response){});">
+              <i class="fa fa-facebook"></i>
+              </button>
+              <a href="http://twitter.com/intent/tweet?text=Come checkout {{ .Site.Params.twitter }} {{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}&url={{.Permalink}}&via={{ .Site.Params.twitter }}&related=watchmuskegon,{{ .Site.Params.twitter }}&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://plus.google.com/share?url={{.Permalink}}" onclick="javascript:window.open(this.href,
+                '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn btn-social btn-round btn-fill btn-google">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a href="http://pinterest.com/pin/create/bookmarklet/?media={{ .Site.BaseURL }}assets/img/social/pinterest.jpg&url={{.Permalink}}&is_video=false&description=Come checkout {{ .Site.Params.twitter }} {{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}" target="_blank" class="btn btn-social btn-round btn-fill btn-pinterest">
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </div>
+            <div class="card card-background">
+              <div class="map" id="map"></div>
+            </div> <!-- end card -->
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+            <script type="text/javascript">
+               initGoogleMaps();
+                function initGoogleMaps(){
+                    var myLatlng = new google.maps.LatLng({{.Params.lat}}, {{.Params.lng}});
+                    var mapOptions = {
+                      zoom: 14,
+                      center: myLatlng,
+                      scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+                    }
+                    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        title:"{{ if .Params.home }}MKG{{ else }}{{.Params.opponent}}{{ end }} Field"
+                    });
+                    // To add the marker to the map, call setMap();
+                    marker.setMap(map);
+                }
+            </script>
+          </div>
+        </div>
+      </div>  
+    </div> <!-- end section -->
+    <div class="section">
+      <div class="container container-border">
+        <div class="title">
+          <h4>Other Games</h4>
+          <p>Here are some other upcoming games!</p>
+        </div>
+        <ul class="row" id="flexiselDemo2">
+          
+        </ul>
+      </div>
+    </div> <!-- end section -->
+  </div>     
+{{ partial "footer.html" . }}

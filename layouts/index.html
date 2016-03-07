@@ -85,13 +85,29 @@
          </div>
      </div>
 
-    <div class="section">
+    <div class="section section-gray">
         <div class="container" id="staff">
             <h1 class="text-center">Staff</h1>
             <div class="row">
                 {{ range sort $.Site.Data.staff "weight" "asc"}}
                     {{ partial "staff.html" . }}
                 {{ end }}
+            </div>
+        </div><!-- end container -->
+    </div> <!-- end section -->
+
+    <div class="section">
+        <div class="container" id="schedule">
+            <h1 class="text-center">Upcoming Games</h1>
+            <div class="row">
+                {{ range first 3 (sort (where .Data.Pages "Section" "schedule") "Params.id" "asc") }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-12 text-center">
+                    <a href="schedule" class="btn btn-default btn-lg btn-round">View Entire Schedule</a>
+                </div>
             </div>
         </div><!-- end container -->
     </div> <!-- end section -->
