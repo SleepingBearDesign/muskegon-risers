@@ -14,7 +14,7 @@ Home Schedule // Saturdays at 6pm // 909 East Giles Rd.
 7/16 v Oakland County FC
 7/23 v FC Indiana"
 details = "Scarf detail includes the Howmet Playhouse, Industrial Shipping, and the Grand Haven Pier. Quotes are by the Lumbermen's Poet, Douglas Malloch."
-mini = "Comes with an MKG Lakeshore Scarf!"
+mini = "8 home games and comes with an MKG Lakeshore Scarf!"
 slug = "season-ticket-package"
 imgurl = "assets/img/store/season-tickets/Tickets1.jpg"
 prodimgs = ["assets/img/store/season-tickets/Tickets2.jpg", "assets/img/store/season-tickets/Tickets3.jpg", "assets/img/store/season-tickets/Tickets4.jpg", "assets/img/store/season-tickets/Tickets5.jpg"]
