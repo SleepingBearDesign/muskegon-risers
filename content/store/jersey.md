@@ -1,9 +1,9 @@
 +++
 id = "102"
-title = "MKG Risers Jersey"
-shorttitle = "MKG Risers Jersey"
-description = "Get your Risers Jersey now!"
-mini = "Get your Risers Jersey now!"
+title = "MKG Replica Jersey"
+shorttitle = "MKG Replica Jersey"
+description = "The freshest replica jersey in the game made by Stealth PFX!"
+mini = "Made by Stealth PFX!"
 details = "100% polyester 4.3 oz wicking material. Two-way stretch material. Light, airy, loose fit."
 slug = "replica-jersey"
 imgurl = "assets/img/store/jersey/jerseyreplicas.jpg"
