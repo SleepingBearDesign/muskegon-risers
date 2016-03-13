@@ -208,12 +208,26 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
             </div>
             <div class="card card-background">
               <div class="map" id="map"></div>
+              <div class="place-card">
+                <div class="left-side">
+                  <h2>Stoney Creek High School</h2>
+                  <p>575 E Tienken Rd, Rochester Hills, MI 48306</p>
+                  <a href="https://goo.gl/maps/eMujsK47e812" target="_blank">View larger map</a>
+                </div>
+
+                <div class="right-side">
+                  <a href="https://goo.gl/maps/eMujsK47e812" target="_blank">
+                    <img src="assets/img/google-maps-logo.png" alt="Google Maps">
+                    <span>Directions</span>
+                  </a>
+                </div>
+              </div>
             </div> 
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
             <script type="text/javascript">
                initGoogleMaps();
                 function initGoogleMaps(){
-                    var myLatlng = new google.maps.LatLng("44.433530", "26.093928");
+                    var myLatlng = new google.maps.LatLng("42.700462", "-83.1236207");
                     var mapOptions = {
                       zoom: 14,
                       center: myLatlng,
@@ -222,6 +236,7 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                     var marker = new google.maps.Marker({
                         position: myLatlng,
+                        map: map,
                         title:"Oakland County FC Field"
                     });
                     
