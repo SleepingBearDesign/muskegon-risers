@@ -3,7 +3,7 @@
         <a href="{{ .Permalink }}">
         <div class="image" style="background-image: url(&quot;assets/img/schedule/{{.Params.opponent | urlize}}.jpg&quot;); background-size: cover; background-position: 50% 50%;">
             <img src="assets/img/schedule/{{.Params.opponent | urlize }}.jpg" alt="{{.Params.opponent}}" style="display: none;">
-            <div class="filter {{ if .Params.home }}filter-riser-green{{else}}filter-riser{{ end }}"></div>
+            <div class="filter {{ if .Params.home }}filter-riser-gray{{else}}filter-riser{{ end }}"></div>
         </div>
         <div class="content">
             <h4 class="title">Purchase tickets {{ if .Params.price }}here today!{{ else }}on game day!{{ end }}</h4>

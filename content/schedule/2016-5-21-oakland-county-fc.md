@@ -5,6 +5,9 @@ opponent = "Oakland County FC"
 home = false
 price = ""
 saleprice = ""
-lat = "44.433530"
-lng = "26.093928"
+lat = "42.700462"
+lng = "-83.1236207"
+address = "575 E Tienken Rd, Rochester Hills, MI 48306"
+field_name = "Stoney Creek High School"
+google_map = "https://goo.gl/maps/eMujsK47e812"
 +++

@@ -5,6 +5,9 @@ opponent = "Detroit City FC"
 home = false
 price = ""
 saleprice = ""
-lat = "44.433530"
-lng = "26.093928"
+lat = "42.4942512"
+lng = "-83.1919527"
+address = "Robina Ave, Berkley, MI 48072"
+field_name = "Hurley Field"
+google_map = "https://goo.gl/maps/gKSsEqK2i4w"
 +++

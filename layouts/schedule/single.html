@@ -63,6 +63,20 @@
             </div>
             <div class="card card-background">
               <div class="map" id="map"></div>
+              <div class="place-card">
+                <div class="left-side">
+                  {{ with .Params.field_name }}<h2>{{ . }}</h2>{{ end }}
+                  {{ with .Params.address }}<p>{{ . }}</p>{{ end }}
+                  {{ with .Params.google_map }}<a href="{{ . }}" target="_blank">View larger map</a>{{ end }}
+                </div>
+
+                <div class="right-side">
+                  {{ with .Params.google_map }}<a href="{{ . }}" target="_blank">
+                    <img src="assets/img/google-maps-logo.png" alt="Google Maps">
+                    <span>Directions</span>
+                  </a>{{ end }}
+                </div>
+              </div>
             </div> <!-- end card -->
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
             <script type="text/javascript">
@@ -77,6 +91,7 @@
                     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                     var marker = new google.maps.Marker({
                         position: myLatlng,
+                        map: map,
                         title:"{{ if .Params.home }}MKG{{ else }}{{.Params.opponent}}{{ end }} Field"
                     });
                     // To add the marker to the map, call setMap();
