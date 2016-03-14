@@ -2,6 +2,8 @@
 id = "510"
 date = "2016-07-16"
 opponent = "Oakland County FC"
+opp_twitter = "oaklandcountyfc"
+opp_site = "http://oaklandcountyfc.com/"
 home = true
 price = "5.00"
 saleprice = ""

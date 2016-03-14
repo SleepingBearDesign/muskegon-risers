@@ -2,6 +2,8 @@
 id = "501"
 date = "2016-05-07"
 opponent = "Detroit City FC"
+opp_twitter = "DetroitCityFC"
+opp_site = "http://www.detcityfc.com/"
 home = false
 price = ""
 saleprice = ""

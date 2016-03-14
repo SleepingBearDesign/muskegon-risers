@@ -2,6 +2,8 @@
 id = "504"
 date = "2016-05-28"
 opponent = "CKS Warta SC"
+opp_twitter = "wartasoccerclub"
+opp_site = "http://ckswarta.com/"
 home = true
 price = "5.00"
 saleprice = ""

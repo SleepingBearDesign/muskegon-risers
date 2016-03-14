@@ -2,6 +2,8 @@
 id = "507"
 date = "2016-06-18"
 opponent = "Milwaukee Torrent"
+opp_twitter = "mketorrent"
+opp_site = "http://milwaukeetorrent.com/"
 home = true
 price = "5.00"
 saleprice = ""

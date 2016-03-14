@@ -2,6 +2,8 @@
 id = "511"
 date = "2016-07-23"
 opponent = "FC Indiana"
+opp_twitter = "FCIndiana"
+opp_site = "http://www.fcindiana.org/"
 home = true
 price = "5.00"
 saleprice = ""

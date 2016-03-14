@@ -2,6 +2,8 @@
 id = "502"
 date = "2016-05-14"
 opponent = "Grand Rapids FC"
+opp_twitter = "grandrapidsfc"
+opp_site = "http://grandrapidsfc.com/"
 home = false
 price = "10"
 saleprice = ""

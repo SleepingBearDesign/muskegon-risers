@@ -1,5 +1,9 @@
 {{ partial "header.html" . }}
 <body class="game-page">
+<script type="text/javascript">
+  document.title = "{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}} -- {{ .Site.Title }}";
+</script>
+  {{ partial "facebook-SDK.html" . }}
   {{ partial "navbar.html" . }}
   {{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
   <div class="wrapper">
@@ -50,7 +54,7 @@
               <button class="btn btn-social btn-round btn-fill btn-facebook" onclick="FB.ui({method: 'share', href: '{{.Permalink}}',}, function(response){});">
               <i class="fa fa-facebook"></i>
               </button>
-              <a href="http://twitter.com/intent/tweet?text=Come checkout {{ .Site.Params.twitter }} {{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}&url={{.Permalink}}&via={{ .Site.Params.twitter }}&related=watchmuskegon,{{ .Site.Params.twitter }}&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
+              <a href="http://twitter.com/intent/tweet?text=Come checkout @{{ .Site.Params.twitter }} {{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}at {{ end }}{{ if .Params.opp_twitter }}@{{ .Params.opp_twitter }}{{ else }}{{ .Params.opponent }}{{ end }}&url={{.Permalink}}&via={{ .Site.Params.twitter }}&related=watchmuskegon,{{ .Site.Params.twitter }}&hashtags=gomkg" target="_blank" class="btn btn-social btn-round btn-fill btn-twitter">
                 <i class="fa fa-twitter"></i>
               </a>
               <a href="https://plus.google.com/share?url={{.Permalink}}" onclick="javascript:window.open(this.href,
@@ -61,6 +65,7 @@
                 <i class="fa fa-pinterest"></i>
               </a>
             </div>
+            <br>
             <div class="card card-background">
               <div class="map" id="map"></div>
               <div class="place-card">

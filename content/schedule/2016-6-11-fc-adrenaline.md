@@ -2,6 +2,8 @@
 id = "506"
 date = "2016-06-11"
 opponent = "FC Adrenaline"
+opp_twitter = "fcadrenaline"
+opp_site = "http://www.fcadrenaline.com/"
 home = true
 price = "5.00"
 saleprice = ""

@@ -2,6 +2,8 @@
 id = "509"
 date = "2016-07-09"
 opponent = "Waza Flo FC"
+opp_twitter = "DetroitWazaFlo"
+opp_site = "http://www.wazaflo.com/"
 home = true
 price = "5.00"
 saleprice = ""
