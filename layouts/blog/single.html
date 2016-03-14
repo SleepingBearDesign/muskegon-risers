@@ -1,5 +1,9 @@
 {{ partial "header.html" . }}
 <body>
+<script type="text/javascript">
+  $('meta[property=og\\:image]').remove();
+  $('head').append( '<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.header_img }}">' );
+</script>
 {{ partial "facebook-SDK.html" . }}
 {{ partial "navbar.html" . }}
 <div class="wrapper">

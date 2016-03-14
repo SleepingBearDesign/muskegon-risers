@@ -2,6 +2,10 @@
 <body class="game-page">
 <script type="text/javascript">
   document.title = "{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}} -- {{ .Site.Title }}";
+  $('meta[property=og\\:title]').remove();
+  $('meta[name=twitter\\:title]').remove();
+  $('head').append( '<meta property="og:title" content="{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}} -- {{ .Site.Title }}">' );
+  $('head').append( '<meta name="twitter:title" content="{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}} -- {{ .Site.Title }}">' );
 </script>
   {{ partial "facebook-SDK.html" . }}
   {{ partial "navbar.html" . }}
