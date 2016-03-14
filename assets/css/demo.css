@@ -1273,6 +1273,9 @@ a:hover, a:active, a:focus,
 .video-container video.fillWidth {
     width: 100%;
 }
+.video-container video::-webkit-media-controls {
+    display:none !important;
+}
 
 .video-container .title-container {
     z-index: 1000;
