@@ -11,5 +11,5 @@ price = "19.00"
 sizes = ["Small","Medium","Large","XL","XXL"]
 colors = ["Lime","Blue","Black"]
 customizable = false
-freeshipping = false
+shippable = true
 +++

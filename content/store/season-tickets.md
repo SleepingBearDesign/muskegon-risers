@@ -11,5 +11,5 @@ prodimgs = ["assets/img/store/season-tickets/Tickets2.jpg", "assets/img/store/se
 price = "63.00"
 saleprice = "39.00"
 customizable = false
-freeshipping = false
+shippable = true
 +++

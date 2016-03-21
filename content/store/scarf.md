@@ -10,5 +10,5 @@ imgurl = "assets/img/store/scarf/scarf3.jpg"
 prodimgs = ["assets/img/store/scarf/Scarf1.jpg", "assets/img/store/scarf/scarf.jpg"]
 price = "24.00"
 customizable = false
-freeshipping = false
+shippable = true
 +++

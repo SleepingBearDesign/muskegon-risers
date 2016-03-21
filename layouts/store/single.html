@@ -146,6 +146,7 @@
                       data-item-name="{{ .Title }}"
                       data-item-price="{{ if .Params.saleprice }}{{ .Params.saleprice }}{{else}}{{ .Params.price }}{{end}}"
                       data-item-weight="{{ .Params.weight }}"
+                      data-item-shippable="{{ .Params.shippable }}"
                       data-item-url="{{ .Permalink }}"
                       data-item-image="{{ .Params.imgurl }}"
                     >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>

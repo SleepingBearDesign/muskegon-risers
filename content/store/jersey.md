@@ -12,5 +12,5 @@ price = "44.00"
 sizes = ["Youth Small","Youth Medium","Youth Large","Youth XL","Small","Medium","Large","XL","XXL"]
 colors = ["Charcoal", "Lime"]
 customizable = true
-freeshipping = false
+shippable = true
 +++
