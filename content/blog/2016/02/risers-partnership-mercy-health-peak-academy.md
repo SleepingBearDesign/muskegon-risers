@@ -1,11 +1,11 @@
 +++
-date        = "2016-03-24T12:00:00-05:00"
+date        = "2016-04-07T11:00:00-05:00"
 title       = "Risers Announce Strong Partnerships with Mercy Health, PEAK Training Academy"
 description = "The Muskegon Risers have a clear vision for positive social and economic change in MKG through the game of soccer."
 tags        = [ "Sponsors", "Community", "Training" ]
 category    = "News"
 slug        = "risers-partnership-mercy-health-peak-academy"
-header_img	= "assets/img/blog/arena.jpg"
+header_img	= "assets/img/blog/Peak-Mercy-header.jpg"
 author		= "Riser Review"
 author_title= "Blogger"
 author_url	= "https://twitter.com/RisersSC"
