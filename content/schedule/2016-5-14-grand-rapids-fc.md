@@ -7,6 +7,7 @@ opp_site = "http://grandrapidsfc.com/"
 home = false
 price = "10"
 saleprice = ""
+shippable = false
 lat = "42.9650597"
 lng = "-85.6491803"
 address = "901 Fountain St NE. Grand Rapids, Michigan 49503"

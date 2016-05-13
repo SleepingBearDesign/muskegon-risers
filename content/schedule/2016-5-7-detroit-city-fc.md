@@ -7,6 +7,7 @@ opp_site = "http://www.detcityfc.com/"
 home = false
 price = ""
 saleprice = ""
+shippable = false
 lat = "42.4942512"
 lng = "-83.1919527"
 address = "Robina Ave, Berkley, MI 48072"
