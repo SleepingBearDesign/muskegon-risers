@@ -6,7 +6,7 @@
             <div class="filter {{ if .Params.home }}filter-riser-gray{{else}}filter-riser{{ end }}"></div>
         </div>
         <div class="content">
-            <h4 class="title">Purchase tickets {{ if .Params.price }}here today!{{ else }}on game day!{{ end }}</h4>
+            <h4 class="title">{{ if .Params.completed }}Thanks for coming out!{{ else }}Purchase tickets {{ if .Params.price }}here today!{{ else }}on game day!{{ end }}{{ end }}</h4>
         </div>
         <div class="footer">
             <h4 class="title">{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}</h4>

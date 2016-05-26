@@ -8,6 +8,7 @@ home = false
 price = ""
 saleprice = ""
 shippable = true
+completed = false
 lat = "43.14669"
 lng = "-88.0003183"
 address = "7101 W Good Hope Rd, Milwaukee, WI 53223"

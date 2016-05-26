@@ -8,6 +8,7 @@ home = true
 price = "5.00"
 saleprice = ""
 shippable = true
+completed = false
 lat = "43.2791209"
 lng = "-86.2216949"
 address = "909 Giles Rd, Muskegon, MI"

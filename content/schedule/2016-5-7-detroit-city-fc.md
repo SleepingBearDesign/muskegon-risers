@@ -8,6 +8,7 @@ home = false
 price = ""
 saleprice = ""
 shippable = false
+completed = true
 lat = "42.4942512"
 lng = "-83.1919527"
 address = "Robina Ave, Berkley, MI 48072"
