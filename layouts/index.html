@@ -121,12 +121,27 @@
                    </h2>
                     <p>Get the latest news about MKG!</p>
                     <div class="col-sm-12 text-center">
-                        <a href="blog" class="btn btn-default btn-lg btn-round">View All Stories</a>
+                        <a href="https://blog.muskegonrisers.com" class="btn btn-default btn-lg btn-round">View All Stories</a>
                     </div>
                  </div>
-                {{ range first 1 (where .Data.Pages "Section" "blog") }}
-                    {{ .Render "li"}}
-                {{ end }}
+                 <div class="col-md-8">
+                    <div class="card">
+                        <div class="image" style="background-image: url(&quot;assets/img/dog-pile.jpg&quot;); background-size: cover; background-position: 50% 50%;">
+                            <img src="assets/img/dog-pile.jpg" alt="Riser Review" style="display: none;">
+                            <div class="filter filter-riser">
+                                <a href="https://blog.muskegonrisers.com" type="button" class="btn btn-riser btn-round btn-fill">
+                                    <i class="fa fa-align-left"></i> Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="category">Blog</p>
+                            <a class="card-link" href="https://blog.muskegonrisers.com">
+                                <h4 class="title">Riser Review</h4>
+                            </a>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
             </div>
         </div><!-- end container -->
     </div> <!-- end section -->
