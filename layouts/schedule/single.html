@@ -25,7 +25,7 @@
             <div class="product-details">
               <h3 class="title">{{ .Date.Format "1/2" }} {{ if .Params.home }}V {{ else }}@ {{ end }}{{.Params.opponent}}</h3>
               <p class="description">
-                Catch your own MKG Riser's playing {{ if .Params.home }}home against {{ else }}at {{ end }}{{.Params.opponent}} on {{ .Date.Format "Monday, Jan 2, 2006" }}! {{ if .Params.price }}You may purchase your ticket online or on game day at the field. All home games are $5.{{ if .Params.shippable }} These tickets will be shipped too your provided address.{{ else }} Tickets will be picked up at will call on the day of the game.{{ end }} {{ else }}You may purchase your ticket on game day at the field. Prices may vary depending on the field.{{ end }} Below is a map of where the field is located.
+                Catch your own MKG Riser's playing {{ if .Params.home }}home against {{ else }}at {{ end }}{{.Params.opponent}} on {{ .Date.Format "Monday, Jan 2, 2006" }}! {{ if .Params.price }}You may purchase your ticket online or on game day at the field. All home games are $5.{{ if .Params.shippable }} These tickets will be shipped to your provided address.{{ else }} Tickets will be picked up at will call on the day of the game.{{ end }} {{ else }}You may purchase your ticket on game day at the field. Prices may vary depending on the field.{{ end }} Below is a map of where the field is located.
               </p>
               
               {{ if .Params.saleprice }}
