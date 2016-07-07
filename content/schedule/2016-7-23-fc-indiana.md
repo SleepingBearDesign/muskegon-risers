@@ -11,7 +11,7 @@ shippable = true
 completed = false
 lat = "43.2791209"
 lng = "-86.2216949"
-address = "909 Giles Rd, Muskegon, MI"
-field_name = "Reeths-Puffer High School"
-google_map = "https://goo.gl/maps/WDerCvTCdvM2"
+address = "550 W Grand Ave, Muskegon, MI"
+field_name = "Nelson Field"
+google_map = "https://goo.gl/maps/9HHpsvHka4Q2"
 +++
