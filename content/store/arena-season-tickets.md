@@ -10,7 +10,7 @@ The Risers home schedule will consist of 5 games at L.C. Walker Arena, a 5,500 s
 -Mustangs Premier
 -FC Adrenaline
 -Illinois Shock Wave"
-mini = "5 home games and includes gear!" 
+mini = "5 home games and includes new MKG Lakeshore Scarf!" 
 slug = "arena-season-ticket-package" 
 imgurl = "assets/img/store/season-tickets/arena 1.jpeg" 
 prodimgs = ["assets/img/store/season-tickets/arena 1.jpeg", "assets/img/store/season-tickets/arena 2.jpeg", "assets/img/store/season-tickets/arena 3.jpeg", "assets/img/store/season-tickets/Muskegon Risers Scarf black and silver.jpg"] 
