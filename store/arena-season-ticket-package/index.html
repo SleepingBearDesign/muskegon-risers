@@ -254,7 +254,7 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                      Arena soccer action has returned to the Lakeshore! Get your season tickets for the Risers upcoming 2017 Arena Season. Package includes the new charcoal and black MKG Lakeshore Scarf!<br><br>5 home games. Full schedule released in late 2016.
+                      Arena soccer action has returned to the Lakeshore! Get your season tickets for the Risers upcoming 2017 Premier Arena Soccer League season. Package includes the NEW Silver & Black MKG Lakeshore Scarf!<br><br>Seating is General Admission OR select the Port City Supporters (PCS) Party Deck. The PCS Party Deck is just as it sounds, so be prepared to hang with a more rowdy crowd.<br><br>5 home games: 1/13, 1/14, 2/3, 3/3, and 3/4. Exact opponents released by the league in late 2016!
                     </div>
                   </div>
                 </div>
@@ -284,6 +284,22 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                     
                     
                     
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Select Seating</label>
+                        <div class="form-group">
+                          <select id="my-seating" name="huge" class="selectpicker" data-style="form-control" title="Select Seating">
+                            
+                            <option value="General Admission">General Admission</option>
+                            
+                            <option value="PCS Party Deck">PCS Party Deck</option>
+                            
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
                   </div>
                   <div class="pull-right">
                     <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="106"
@@ -297,6 +313,14 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                     <script type="text/javascript">
                     
                     
+                    
+                    
+                    $('#addtocart').data('item-custom5-name', 'Seating');
+                    $('#addtocart').data('item-custom5-required', 'true');
+                    $('#addtocart').data('item-custom5-options', 'General Admission|PCS Party Deck');
+                    $('#my-seating').on('changed.bs.select', function() {
+                    $('#addtocart').data('item-custom5-value', $(this).find("option:selected").val());
+                    });
                     
                     </script>
                   </div>
