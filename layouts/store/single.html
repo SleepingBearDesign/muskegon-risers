@@ -122,6 +122,20 @@
                       </div>
                     </div>
                     {{ end }}
+                    {{ if .Params.seating }}
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Select Seating</label>
+                        <div class="form-group">
+                          <select id="my-seating" name="huge" class="selectpicker" data-style="form-control" title="Select Seating">
+                            {{ range .Params.seating }}
+                            <option value="{{.}}">{{.}}</option>
+                            {{ end }}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    {{ end }}
                     {{ if .Params.customizable }}
                     <div class="form-group">
                       <div class="btn-group bootstrap-select">
@@ -177,6 +191,14 @@
                     $('#addtocart').data('item-custom4-value', $(this).val());
                     });
                     $('#addtocart').data('item-stackable', 'false');
+                    {{ end }}
+                    {{ if .Params.seating }}
+                    $('#addtocart').data('item-custom5-name', 'Seating');
+                    $('#addtocart').data('item-custom5-required', 'true');
+                    $('#addtocart').data('item-custom5-options', '{{ delimit .Params.seating "|" }}');
+                    $('#my-seating').on('changed.bs.select', function() {
+                    $('#addtocart').data('item-custom5-value', $(this).find("option:selected").val());
+                    });
                     {{ end }}
                     </script>
                   </div>
