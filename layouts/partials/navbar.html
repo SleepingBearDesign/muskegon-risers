@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default {{ if .IsHome }}navbar-transparent{{end}} navbar-fixed-top" role="navigation">
     {{ if .IsHome }}
     {{ with .Site.Params.notification }}
-    <div class="alert alert-riser">        
+    <div class="alert alert-riser">
         <div class="container text-center">
             {{ . | safeHTML }}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -57,7 +57,7 @@
                 </li>
                 <li> <a href="{{ .Site.BaseURL }}schedule">Schedule</a>
                 </li>
-                <li> <a href="{{ .Site.BaseURL }}tryouts">Tryouts</a>
+                <li> <a href="{{ .Site.BaseURL }}tryouts/arena-season-tryouts">Tryouts</a>
                 </li>
                 <li> <a href="https://blog.muskegonrisers.com/">Blog</a>
                 </li>
