@@ -26,7 +26,7 @@
                     <img src="{{ .Params.imgurl }}"/>
                   </a>
                 </li>
-                
+
                 {{ $.Scratch.Set "tagCounter" 2 }}
                 {{ range .Params.prodimgs }}
                 <li class="">
@@ -36,11 +36,11 @@
                 </li>
                 {{ $.Scratch.Add "tagCounter" 1 }}
                 {{ end }}
-                
+
               </ul>
               <div class="clearfix"></div>
-              
-              
+
+
             </div>
             <div class="col-md-6">
               <div class="product-details">
@@ -48,7 +48,7 @@
                 <p class="description">
                   {{ .Params.mini }}
                 </p>
-                
+
                 {{ if .Params.saleprice }}
                 <span class="price price-old">${{ .Params.price }}</span>
                 <span class="price price-new">${{ .Params.saleprice }}</span>
@@ -94,62 +94,44 @@
               <div class="col-md-6 col-md-offset-6">
                 <div class="actions">
                   <div class="pull-left">
-                    {{ if .Params.colors }}
+                    {{ if .Params.collectinfo }}
                     <div class="form-group">
                       <div class="btn-group bootstrap-select">
-                        <label>Select Color</label>
+                        <label>Name</label>
                         <div class="form-group">
-                          <select id="my-color" name="huge" class="selectpicker" data-style="form-control" title="Select a Color">
-                            {{ range .Params.colors }}
-                            <option value="{{.}}">{{.}}</option>
-                            {{ end }}
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    {{ end }}
-                    {{ if .Params.sizes }}
-                    <div class="form-group">
-                      <div class="btn-group bootstrap-select">
-                        <label>Select Size</label>
-                        <div class="form-group">
-                          <select id="my-size" name="huge" class="selectpicker" data-style="form-control" title="Select a Size">
-                            {{ range .Params.sizes }}
-                            <option value="{{.}}">{{.}}</option>
-                            {{ end }}
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    {{ end }}
-                    {{ if .Params.seating }}
-                    <div class="form-group">
-                      <div class="btn-group bootstrap-select">
-                        <label>Select Seating</label>
-                        <div class="form-group">
-                          <select id="my-seating" name="huge" class="selectpicker" data-style="form-control" title="Select Seating">
-                            {{ range .Params.seating }}
-                            <option value="{{.}}">{{.}}</option>
-                            {{ end }}
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    {{ end }}
-                    {{ if .Params.customizable }}
-                    <div class="form-group">
-                      <div class="btn-group bootstrap-select">
-                        <label>Select Name</label>
-                        <div class="form-group">
-                          <input id="my-name" type="text" value="" placeholder="Name on Back" class="form-control" />
+                          <input id="my-name" type="text" value="" placeholder="Full Name" class="form-control" />
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
                       <div class="btn-group bootstrap-select">
-                        <label>Select Number</label>
+                        <label>Email</label>
                         <div class="form-group">
-                          <input id="my-number" type="number" value="" placeholder="Number on Back" class="form-control" />
+                          <input id="my-email" type="text" value="" placeholder="Email Address" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Phone Number</label>
+                        <div class="form-group">
+                          <input id="my-phone" type="number" value="" placeholder="Phone Number" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Position</label>
+                        <div class="form-group">
+                          <input id="my-position" type="text" value="" placeholder="Position" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Playing Experience</label>
+                        <div class="form-group">
+                          <input id="my-experience" type="text" value="" placeholder="Previous Playing Experience" class="form-control" />
                         </div>
                       </div>
                     </div>
@@ -163,42 +145,34 @@
                       data-item-shippable="{{ .Params.shippable }}"
                       data-item-url="{{ .Permalink }}"
                       data-item-image="{{ .Params.imgurl }}"
-                    >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
+                    disabled>Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
                     <script type="text/javascript">
-                    {{ if .Params.sizes }}
-                    $('#addtocart').data('item-custom1-name', 'Size');
-                    $('#addtocart').data('item-custom1-options', '{{ delimit .Params.sizes "|" }}');
-                    $('#my-size').on('changed.bs.select', function() {
-                    $('#addtocart').data('item-custom1-value', $(this).find("option:selected").val());
-                    });
-                    {{ end }}
-                    {{ if .Params.colors }}
-                    $('#addtocart').data('item-custom2-name', 'Color');
-                    $('#addtocart').data('item-custom2-options', '{{ delimit .Params.colors "|" }}');
-                    $('#my-color').on('changed.bs.select', function() {
-                    $('#addtocart').data('item-custom2-value', $(this).find("option:selected").val());
-                    });
-                    {{ end }}
-                    {{ if .Params.customizable }}
-                    $('#addtocart').data('item-custom3-name', 'Name');
-                    $('#addtocart').data('item-custom3-required', 'true');
+                    {{ if .Params.collectinfo }}
+                    $('#addtocart').data('item-custom1-name', 'Name');
+                    $('#addtocart').data('item-custom1-required', 'true');
                     $('#my-name').on('change', function() {
+                    $('#addtocart').data('item-custom1-value', $(this).val());
+                    });
+
+                    $('#addtocart').data('item-custom2-name', 'Email');
+                    $('#addtocart').data('item-custom2-required', 'true');
+                    $('#my-email').on('change', function() {
+                    $('#addtocart').data('item-custom2-value', $(this).val());
+                    });
+
+                    $('#addtocart').data('item-custom3-name', 'Phone');
+                    $('#addtocart').data('item-custom3-required', 'true');
+                    $('#my-phone').on('change', function() {
                     $('#addtocart').data('item-custom3-value', $(this).val());
                     });
-                    $('#addtocart').data('item-custom4-name', 'Number');
+
+                    $('#addtocart').data('item-custom4-name', 'Experience');
                     $('#addtocart').data('item-custom4-required', 'true');
-                    $('#my-number').on('change', function() {
+                    $('#my-experience').on('change', function() {
                     $('#addtocart').data('item-custom4-value', $(this).val());
                     });
+
                     $('#addtocart').data('item-stackable', 'false');
-                    {{ end }}
-                    {{ if .Params.seating }}
-                    $('#addtocart').data('item-custom5-name', 'Seating');
-                    $('#addtocart').data('item-custom5-required', 'true');
-                    $('#addtocart').data('item-custom5-options', '{{ delimit .Params.seating "|" }}');
-                    $('#my-seating').on('changed.bs.select', function() {
-                    $('#addtocart').data('item-custom5-value', $(this).find("option:selected").val());
-                    });
                     {{ end }}
                     </script>
                   </div>
@@ -207,5 +181,5 @@
             </div>
           </div>
         </div>
-        
+
         {{ partial "footer.html" . }}
