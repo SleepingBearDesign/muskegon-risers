@@ -91,7 +91,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 col-md-offset-6">
+              <div class="col-md-8 col-md-offset-2">
                 <div class="actions">
                   <div class="pull-left">
                     {{ if .Params.collectinfo }}
@@ -107,7 +107,7 @@
                       <div class="btn-group bootstrap-select">
                         <label>Email</label>
                         <div class="form-group">
-                          <input id="my-email" type="text" value="" placeholder="Email Address" class="form-control" />
+                          <input id="my-email" type="email" value="" placeholder="Email Address" class="form-control" />
                         </div>
                       </div>
                     </div>
@@ -115,7 +115,7 @@
                       <div class="btn-group bootstrap-select">
                         <label>Phone Number</label>
                         <div class="form-group">
-                          <input id="my-phone" type="number" value="" placeholder="Phone Number" class="form-control" />
+                          <input id="my-phone" type="text" value="" placeholder="Phone Number" class="form-control" />
                         </div>
                       </div>
                     </div>
@@ -138,6 +138,19 @@
                     {{ end }}
                   </div>
                   <div class="pull-right">
+                    {{ if .Params.collectinfo }}
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Release Form</label>
+                        <div class="form-group">
+                          <input id="my-waiver" type="checkbox" name="checkbox" class="form-control" />
+                          <label for="checkbox">
+                            I agree to the tryout release form. <a target="_blank" href="assets/img/tryouts/tryout_release_form.pdf">View release form</a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    {{ end }}
                     <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="{{ .Params.id }}"
                       data-item-name="{{ .Title }}"
                       data-item-price="{{ if .Params.saleprice }}{{ .Params.saleprice }}{{else}}{{ .Params.price }}{{end}}"
@@ -145,7 +158,7 @@
                       data-item-shippable="{{ .Params.shippable }}"
                       data-item-url="{{ .Permalink }}"
                       data-item-image="{{ .Params.imgurl }}"
-                    disabled>Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
+                    >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
                     <script type="text/javascript">
                     {{ if .Params.collectinfo }}
                     $('#addtocart').data('item-custom1-name', 'Name');
@@ -166,11 +179,24 @@
                     $('#addtocart').data('item-custom3-value', $(this).val());
                     });
 
-                    $('#addtocart').data('item-custom4-name', 'Experience');
+                    $('#addtocart').data('item-custom4-name', 'Position');
                     $('#addtocart').data('item-custom4-required', 'true');
-                    $('#my-experience').on('change', function() {
+                    $('#my-position').on('change', function() {
                     $('#addtocart').data('item-custom4-value', $(this).val());
                     });
+
+                    $('#addtocart').data('item-custom5-name', 'Experience');
+                    $('#addtocart').data('item-custom5-required', 'true');
+                    $('#my-experience').on('change', function() {
+                    $('#addtocart').data('item-custom5-value', $(this).val());
+                    });
+
+                    $('#my-waiver').change(function () {
+                        $('#addtocart').prop("disabled", !this.checked);
+                        $('#addtocart').toggleClass('disabled');
+                    }).change()
+
+
 
                     $('#addtocart').data('item-stackable', 'false');
                     {{ end }}
