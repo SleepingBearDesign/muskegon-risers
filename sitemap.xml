@@ -4,6 +4,7 @@
   <url>
     <loc>https://muskegonrisers.com/</loc>
     <lastmod>2016-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -81,6 +82,10 @@
   
   <url>
     <loc>https://muskegonrisers.com/tryouts/arena-season-tryouts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/store/pasl-jersey/</loc>
   </url>
   
   <url>
