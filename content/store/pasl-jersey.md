@@ -2,7 +2,9 @@
 id = "104"
 title = "Authentic Risers PASL Jersey"
 shorttitle = "Authentic Risers PASL Jersey"
-description = "This custom, authentic longsleeve arena soccer jersey was designed exclusively for the Muskegon Risers PASL season by Stealth PFX!"
+description = "The Risers inaugural PASL season jersey is now available for preorder! The preorder window runs through Sunday, November 27!
+
+This custom, authentic longsleeve arena soccer jersey was designed exclusively for the Muskegon Risers PASL season by Stealth PFX!"
 mini = "Made in the USA by Stealth PFX!"
 details = "Made in the USA. Dye-sublimation. 100% polyester 4.3 oz wicking material. Two-way stretch material."
 slug = "pasl-jersey"
