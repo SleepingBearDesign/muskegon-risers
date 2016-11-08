@@ -1,0 +1,233 @@
+{{ partial "header.html" . }}
+<body class="product-page">
+  {{ partial "navbar.html" . }}
+  {{ if .Site.Params.fbpixel }}<script type="text/javascript">fbq('track', 'ViewContent');</script>{{ end }}
+  <div class="wrapper">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="tab-content">
+              <div class="tab-pane active" id="product-page1">
+                <img src="{{ .Params.imgurl }}">
+              </div>
+              {{ $.Scratch.Set "altTxt" .Title }}
+              {{ $.Scratch.Set "tagCounter" 2 }}
+              {{ range .Params.prodimgs }}
+              <div class="tab-pane" id="product-page{{ $.Scratch.Get "tagCounter" }}">
+                <img src="{{ . }}" class="img-responsive" alt="{{ $.Scratch.Get "altTxt" }}">
+              </div>
+              {{ $.Scratch.Add "tagCounter" 1 }}
+              {{ end }}
+              </div> <!-- tab-content end -->
+              <ul class="nav nav-text" role="tablist" id="flexiselDemo1">
+                <li class="active">
+                  <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
+                    <img src="{{ .Params.imgurl }}"/>
+                  </a>
+                </li>
+
+                {{ $.Scratch.Set "tagCounter" 2 }}
+                {{ range .Params.prodimgs }}
+                <li class="">
+                  <a href="#product-page{{ $.Scratch.Get "tagCounter" }}" role="tab" data-toggle="tab" aria-expanded="false">
+                    <img src="{{ . }}"/>
+                  </a>
+                </li>
+                {{ $.Scratch.Add "tagCounter" 1 }}
+                {{ end }}
+
+              </ul>
+              <div class="clearfix"></div>
+
+
+            </div>
+            <div class="col-md-6">
+              <div class="product-details">
+                <h3 class="title">{{ .Title }}</h3>
+                <p class="description">
+                  {{ .Params.mini }}
+                </p>
+
+                {{ if .Params.saleprice }}
+                <span class="price price-old">${{ .Params.price }}</span>
+                <span class="price price-new">${{ .Params.saleprice }}</span>
+                {{ else }}
+                <span class="price">${{ .Params.price }}</span>
+                {{ end }}
+              </div>
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Tournament Information
+                    </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      {{ .Description | safeHTML }}
+                    </div>
+                  </div>
+                </div>
+                {{ with .Params.details }}
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Details
+                    </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      {{ . | safeHTML }}
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+                </div> <!-- Acordeon  -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="actions">
+                  <div class="pull-left">
+                    {{ if .Params.collectinfo }}
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Team Name</label>
+                        <div class="form-group">
+                          <input id="team-name" type="text" value="" placeholder="Team Name" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Contact Name</label>
+                        <div class="form-group">
+                          <input id="my-name" type="text" value="" placeholder="Contact Name" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Contact Email</label>
+                        <div class="form-group">
+                          <input id="my-email" type="email" value="" placeholder="Email Address" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Contact Phone Number</label>
+                        <div class="form-group">
+                          <input id="my-phone" type="text" value="" placeholder="Phone Number" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Select Division</label>
+                        <div class="form-group">
+                          <select id="my-division" name="division" class="selectpicker" data-style="form-control" title="Select a Division">
+                            {{ range .Params.divisions }}
+                            <option value="{{.}}">{{.}}</option>
+                            {{ end }}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Select Age Group</label>
+                        <div class="form-group">
+                          <select id="my-age" name="age" class="selectpicker" data-style="form-control" title="Select an Age Group">
+                            {{ range .Params.ages }}
+                            <option value="{{.}}">{{.}}</option>
+                            {{ end }}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    {{ end }}
+                  </div>
+                  <div class="pull-right">
+                    {{ if .Params.collectinfo }}
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Rules</label>
+                        <div class="form-group">
+                          <input id="my-rules" type="checkbox" name="checkbox" class="form-control" />
+                          <label for="checkbox">
+                            I agree to the tournament rules. <a target="_blank" href="assets/img/store/tournaments/orbit-3v3-rules.pdf">View rules</a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    {{ end }}
+                    <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="{{ .Params.id }}"
+                      data-item-name="{{ .Title }}"
+                      data-item-price="{{ if .Params.saleprice }}{{ .Params.saleprice }}{{else}}{{ .Params.price }}{{end}}"
+                      data-item-weight="{{ .Params.weight }}"
+                      data-item-shippable="{{ .Params.shippable }}"
+                      data-item-url="{{ .Permalink }}"
+                      data-item-image="{{ .Params.imgurl }}"
+                    >Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></a>
+                    <script type="text/javascript">
+                    {{ if .Params.collectinfo }}
+                    $('#addtocart').data('item-custom1-name', 'Team Name');
+                    $('#addtocart').data('item-custom1-required', 'true');
+                    $('#team-name').on('change', function() {
+                    $('#addtocart').data('item-custom1-value', $(this).val());
+                    });
+
+                    $('#addtocart').data('item-custom2-name', 'Contact Name');
+                    $('#addtocart').data('item-custom2-required', 'true');
+                    $('#my-name').on('change', function() {
+                    $('#addtocart').data('item-custom2-value', $(this).val());
+                    });
+
+                    $('#addtocart').data('item-custom3-name', 'Email');
+                    $('#addtocart').data('item-custom3-required', 'true');
+                    $('#my-email').on('change', function() {
+                    $('#addtocart').data('item-custom3-value', $(this).val());
+                    });
+
+                    $('#addtocart').data('item-custom4-name', 'Phone');
+                    $('#addtocart').data('item-custom4-required', 'true');
+                    $('#my-phone').on('change', function() {
+                    $('#addtocart').data('item-custom4-value', $(this).val());
+                    });
+
+                    $('#addtocart').data('item-custom5-name', 'Division');
+                    $('#addtocart').data('item-custom5-required', 'true');
+                    $('#my-division').on('change', function() {
+                    $('#addtocart').data('item-custom5-value', $(this).val());
+                    });
+
+                    $('#addtocart').data('item-custom6-name', 'Age Group');
+                    $('#addtocart').data('item-custom6-required', 'true');
+                    $('#my-age').on('change', function() {
+                    $('#addtocart').data('item-custom6-value', $(this).val());
+                    });
+
+                    $('#my-rules').change(function () {
+                        $('#addtocart').prop("disabled", !this.checked);
+                        $('#addtocart').toggleClass('disabled');
+                    }).change()
+
+
+
+                    $('#addtocart').data('item-stackable', 'false');
+                    {{ end }}
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{ partial "footer.html" . }}
