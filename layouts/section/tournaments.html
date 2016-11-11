@@ -5,7 +5,7 @@
 <div class="wrapper">
     <div class="section section-gray">
         <div class="container" id="tournaments">
-           <h1 class="text-center">{{ .Title | pluralize }}</h1>
+           <h1 class="text-center">Orbit 3v3 by MKG</h1>
            <div class="row">
                 {{ range sort (where .Data.Pages "Section" "tournaments") "Params.id" "asc" }}
                     {{ .Render "summary"}}
