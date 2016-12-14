@@ -1,5 +1,5 @@
 +++
-id = "201"
+id = "202"
 title = "Boulder, CO - Open Tryouts"
 shorttitle = "Boulder, CO - Open Tryouts"
 description = "Open Tryouts in Boulder, CO for MKG's 2017 Premier League of America and 2018 Premier Arena Soccer League rosters will be held at 6pm on Thursday, March 9 at Boulder Indoor Soccer (3203 Pearl St, Boulder, CO 80301). Tryouts will run from 6pm to 8pm and the cost of entry is $50 online, or $75 at the door. Online registration closes at midnight on Wednesday, March 8.<br><br>Please direct any further questions to riserssc@gmail.com.<br>"
