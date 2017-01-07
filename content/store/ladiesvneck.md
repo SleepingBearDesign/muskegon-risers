@@ -8,7 +8,7 @@ description = "Ringspun cotton and polyester ensures a comfortable feel with thi
 -36 singles thread weight
 -Fabric weight: 3.7 oz
 -Heather Grey is 90/10 combed ringspun cotton/polyester
--Satin label
+-Satin label"
 mini = "Choose from 2 different colors!"
 slug = "ladies-deep-vneck"
 imgurl = "assets/img/store/ladiesvneck/GreyWomen'sVneck.jpg"

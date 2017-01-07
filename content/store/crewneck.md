@@ -9,7 +9,7 @@ description = "This sweatshirt will last for years. It is very comfortable and g
 -Reduced pilling and softer air-jet spun yarn
 -1x1 athletic rib knit collar, cuffs and waistband, with spandex
 -Double-needle stitched collar, shoulders, armholes, cuffs and waistband
--Quarter-Turned To Eliminate Centre Crease
+-Quarter-Turned To Eliminate Centre Crease"
 mini = "Very comfortable and great for any season."
 slug = "crewneck-sweatshirt"
 imgurl = "assets/img/store/crewneck/BlackCrewneck.jpg"

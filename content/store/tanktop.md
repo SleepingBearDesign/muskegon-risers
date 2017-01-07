@@ -1,15 +1,21 @@
 +++
-id = "101"
-title = "MKG Risers Shirt"
-shorttitle = "MKG Risers Shirt"
-description = "Hang with the crowd by rocking your MKG 50/50 blend tee... Choose from 3 different colors!"
-mini = "Choose from 3 different colors!"
-slug = "mkg-shirt"
-imgurl = "assets/img/store/shirts/ShirtGrid.jpg"
-prodimgs = ["assets/img/store/shirts/Green1.jpg", "assets/img/store/shirts/Green2.jpg", "assets/img/store/shirts/Green3.jpg", "assets/img/store/shirts/Green4.jpg", "assets/img/store/shirts/Blue1.jpg", "assets/img/store/shirts/Blue2.jpg", "assets/img/store/shirts/Black1.jpg", "assets/img/store/shirts/Black2.jpg", "assets/img/store/shirts/Black3.jpg"]
-price = "19.00"
-sizes = ["Small","Medium","Large","XL","XXL"]
-colors = ["Lime","Blue","Black"]
+id = "117"
+title = "Jersey Tank Top"
+shorttitle = "Jersey Tank Top"
+description = "This unisex tank boasts a nice drape, which is ideal for layering or dealing with the summer heat. With true style, this tank is extremely smooth and soft, and has reinforced smooth arm and head holes. The t-shirt is made out of 100% cotton jersey, except for the grey color (90% cotton, 10% polyester).
+
+-100% fine jersey
+-Banded arm and head holes
+-Direct-to-garment printing
+-Made in the USA
+-Fabric weight 4.3 oz/yd² (146 g/m²)"
+mini = "With true style, this tank is extremely smooth and soft."
+slug = "tank-top"
+imgurl = "assets/img/store/tanktop/BlackTank.jpg"
+prodimgs = ["assets/img/store/tanktop/BlackTank.jpg", "assets/img/store/tanktop/GreyTank.jpg"]
+price = "30.00"
+sizes = ["XS","Small","Medium","Large","XL"]
+colors = ["Black","Grey"]
 customizable = false
 shippable = true
 +++

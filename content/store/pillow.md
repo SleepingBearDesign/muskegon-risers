@@ -11,7 +11,7 @@ description = "This pillow's rectangular shape is perfect for a decorative accen
 -Rectangular shape
 -Double-sided printing
 -Concealed zipper
--Printed, cut and sewn in the USA
+-Printed, cut and sewn in the USA"
 mini = "Comfortable with a more high-end feel."
 slug = "throw-pillow"
 imgurl = "assets/img/store/pillow/RectangularPillow.jpg"

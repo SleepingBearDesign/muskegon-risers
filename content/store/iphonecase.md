@@ -9,7 +9,7 @@ description = "This case looks sleek and tough. It fits your phone perfectly wit
 -Holes line up with phone's functions
 -Back is solid and scratch resistant
 -Graphics are UV printed on the back of the case; sides are transparent
--Printed in the USA
+-Printed in the USA"
 mini = "Sleek and tough."
 slug = "iphonecase"
 imgurl = "assets/img/store/iphonecase/iPhoneCase.jpg"

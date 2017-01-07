@@ -8,7 +8,7 @@ description = "This sturdy white, glossy ceramic mug is an essential to your cup
 -Dishwasher safe
 -Microwave safe
 -Available in 11 oz and 15 oz sizes
--White, glossy
+-White, glossy"
 mini = "An essential to your cupboard."
 slug = "coffee-mug"
 imgurl = "assets/img/store/mug/Mug.jpg"

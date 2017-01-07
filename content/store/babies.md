@@ -7,8 +7,7 @@ description = "This baby onesie is designed for maximum comfort. Made of 100% fi
 -100% baby rib cotton construction
 -Neckband designed for easy on-and-off
 -Not intended for sleepwear
--Shrinkage: will shrink on average 1 size when put in dryer
-"
+-Shrinkage: will shrink on average 1 size when put in dryer"
 mini = "Designed for maximum comfort!"
 slug = "baby-one-piece"
 imgurl = "assets/img/store/babies/GreyBaby'sRib.jpg"

@@ -10,7 +10,7 @@ description = "This is your favorite hooded sweatshirt, it's soft, smooth and st
 -Double-lined hood with matching drawcord (adult style only)
 -1x1 athletic rib knit cuffs and waistband with spandex
 -Double-needle stitching throughout
--Front pouch pocket
+-Front pouch pocket"
 mini = "Perfect for cooler evenings."
 slug = "hooded-sweatshirt"
 imgurl = "assets/img/store/hoodie/BlackHoodie.jpg"
