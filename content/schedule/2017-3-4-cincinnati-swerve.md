@@ -6,7 +6,7 @@ opp_twitter = ""
 opp_site = ""
 home = true
 price = "5.00"
-game_time = "7pm"
+game_time = "7:00 pm"
 ticket_url = "http://www.ticketingcentral.com/V2/Home.aspx?I=%2fUQKJwAAAADtovd%2fAQAAAACy%2fv%2f%2f%2fwBLAAAAAAD%2f%2f%2f%2f%2f%2f%2f%2f%2f%2fw%3d%3d"
 saleprice = ""
 shippable = false
