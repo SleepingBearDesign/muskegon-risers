@@ -7,7 +7,7 @@ opp_site = "http://www.wazaflo.com/"
 home = true
 price = "5.00"
 game_time = "7pm"
-url = "http://www.ticketingcentral.com/V2/Home.aspx?I=%2fUQKJwAAAACCgfd%2fAQAAAAB3%2fv%2f%2f%2fwBLAAAAAAD%2f%2f%2f%2f%2f%2f%2f%2f%2f%2fw%3d%3d"
+ticket_url = "http://www.ticketingcentral.com/V2/Home.aspx?I=%2fUQKJwAAAACCgfd%2fAQAAAAB3%2fv%2f%2f%2fwBLAAAAAAD%2f%2f%2f%2f%2f%2f%2f%2f%2f%2fw%3d%3d"
 saleprice = ""
 shippable = false
 completed = false
