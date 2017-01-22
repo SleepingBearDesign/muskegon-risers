@@ -1,9 +1,9 @@
 +++
 id = "516"
 date = "2017-03-03"
-opponent = "Non-Conference Matchup (TBA)"
-opp_twitter = ""
-opp_site = ""
+opponent = "Waza Flo FC"
+opp_twitter = "DetroitWazaFlo"
+opp_site = "http://www.wazaflo.com/"
 home = true
 price = "5.00"
 game_time = "7:00 pm"
