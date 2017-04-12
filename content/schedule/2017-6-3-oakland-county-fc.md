@@ -1,5 +1,5 @@
 +++
-id = "513"
+id = "505"
 date = "2017-06-03"
 opponent = "Oakland County FC"
 opp_twitter = "oaklandcountyfc"

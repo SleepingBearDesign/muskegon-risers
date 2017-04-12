@@ -1,5 +1,5 @@
 +++
-id = "512"
+id = "504"
 date = "2017-05-26"
 opponent = "Milwaukee Torrent"
 opp_twitter = "mketorrent"

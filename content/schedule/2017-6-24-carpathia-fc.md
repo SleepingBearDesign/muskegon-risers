@@ -1,5 +1,5 @@
 +++
-id = "505"
+id = "509"
 date = "2017-06-24"
 opponent = "Carpathia FC"
 opp_twitter = "fccarpathia"

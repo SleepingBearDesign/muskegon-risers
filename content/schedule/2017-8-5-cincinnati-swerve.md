@@ -1,5 +1,5 @@
 +++
-id = "507"
+id = "513"
 date = "2017-08-05"
 opponent = "Cincinnati Swerve"
 opp_twitter = ""
