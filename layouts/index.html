@@ -41,7 +41,7 @@
         <div class="container" id="store">
            <h1 class="text-center">Store</h1>
            <div class="row">
-                {{ range first 3 (where .Data.Pages "Section" "store") }}
+                {{ range first 3 (sort (where .Data.Pages "Section" "store") "Params.id" "asc") }}
                     {{ .Render "summary"}}
                 {{ end }}
             </div>
