@@ -100,7 +100,7 @@
         <div class="container" id="schedule">
             <h1 class="text-center">Upcoming Games</h1>
             <div class="row">
-                {{ range last 12 (sort (where .Data.Pages "Section" "schedule") "Params.id" "asc") }}
+                {{ range last 9 (sort (where .Data.Pages "Section" "schedule") "Params.id" "asc") }}
                     {{ .Render "summary"}}
                 {{ end }}
             </div>
