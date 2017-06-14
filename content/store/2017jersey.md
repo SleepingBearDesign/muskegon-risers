@@ -8,8 +8,8 @@ slug = "2017-NB-launch-jersey"
 imgurl = "assets/img/store/jersey/2017jersey1.jpg"
 prodimgs = ["assets/img/store/jersey/2017jersey1.jpg", "assets/img/store/jersey/2017jersey2.jpg", "assets/img/store/jersey/2017jersey3.jpg", "assets/img/store/jersey/2017jersey4.jpg"]
 price = "55.00"
-sizes = ["Small","Medium","Large","XL"]
+sizes = ["Small","Medium","Large","XL", "XXL"]
 colors = ["Lime"]
-customizable = false
+customizable = true
 shippable = true
 +++
