@@ -1,5 +1,5 @@
 +++
-id = "118"
+id = "102"
 title = "2017 New Balance Launch Jersey"
 shorttitle = "2017 NB Launch Jersey"
 description = "The jersey that launched it all. New Balance and the Muskegon Risers have signed a massive 3-year deal through 2020, and this jersey launched the partnership. Please allow 2 weeks from order placement to delivery at your doorstep!"
