@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Muskegon Risers"
 googleanalytics = "UA-74374211-1"
 copyright = "© 2016 Muskegon Risers Soccer Club. All Rights Reserved"
-disableRSS = true
+disableKinds=["RSS"]
 
 [params]
   description = "Muskegon Risers SC strives to represent the spirit of our area's people in past, present and future tense."
