@@ -2,7 +2,7 @@ baseurl = "https://muskegonrisers.com/"
 languageCode = "en-us"
 title = "Muskegon Risers"
 googleanalytics = "UA-74374211-1"
-copyright = "© 2016 Muskegon Risers Soccer Club. All Rights Reserved"
+copyright = "© 2017 Muskegon Risers Soccer Club. All Rights Reserved"
 disableKinds=["RSS"]
 
 [params]
@@ -18,4 +18,4 @@ disableKinds=["RSS"]
   fbpixel = "1722595211311008"
   instagram = "riserssc"
   email = "riserssc@gmail.com"
-  notification = "<i class=\"fa fa-soccer-ball-o\"></i> Have you saved your seat?!? Grab your 2017 Season Tickets <a href=\"store/season-ticket-package/\">now</a>! <i class=\"fa fa-soccer-ball-o\"></i>"
+  notification = "<i class=\"fa fa-soccer-ball-o\"></i> Have you saved your seat?!? Grab your 2018 Season Tickets <a href=\"store/season-ticket-package/\">now</a>! <i class=\"fa fa-soccer-ball-o\"></i>"
