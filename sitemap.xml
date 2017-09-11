@@ -1,68 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://muskegonrisers.com/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-8-12-milwaukee-torrent/</loc>
     <lastmod>2017-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-8-12-milwaukee-torrent/</loc>
-    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://muskegonrisers.com/schedule/2017-8-5-cincinnati-swerve/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-8-5-cincinnati-swerve/</loc>
     <lastmod>2017-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-7-22-toledo-villa-fc/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-7-22-toledo-villa-fc/</loc>
     <lastmod>2017-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-7-15-rwb-adria/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-7-15-rwb-adria/</loc>
     <lastmod>2017-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-7-8-oakland-county-fc/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-7-8-oakland-county-fc/</loc>
     <lastmod>2017-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-6-24-carpathia-fc/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-6-24-carpathia-fc/</loc>
     <lastmod>2017-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-6-17-fort-wayne-sc/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-6-17-fort-wayne-sc/</loc>
     <lastmod>2017-06-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-6-16-grand-rapids-ole/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-6-16-grand-rapids-ole/</loc>
     <lastmod>2017-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-6-10-grand-rapids-ole/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-6-10-grand-rapids-ole/</loc>
     <lastmod>2017-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-6-3-oakland-county-fc/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-6-3-oakland-county-fc/</loc>
     <lastmod>2017-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-5-28-milwaukee-torrent/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-5-28-milwaukee-torrent/</loc>
     <lastmod>2017-05-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-5-21-toledo-villa-fc/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-5-21-toledo-villa-fc/</loc>
     <lastmod>2017-05-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -72,12 +68,12 @@
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-5-13-carpathia-fc/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-5-13-carpathia-fc/</loc>
     <lastmod>2017-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2017-5-6-rwb-adria/</loc>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/2017-5-6-rwb-adria/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -172,7 +168,25 @@
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/store/2017-NB-launch-jersey/</loc>
+    <loc>https://muskegonrisers.com/2016-schedule-archived/</loc>
+    <lastmod>2016-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/store/2017-nb-launch-jersey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/2017-arena-schedule-archived/</loc>
+    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/2017-schedule-archived/</loc>
+    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -185,6 +199,11 @@
   
   <url>
     <loc>https://muskegonrisers.com/tryouts/boulder-open-tryouts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -224,11 +243,43 @@
   </url>
   
   <url>
+    <loc>https://muskegonrisers.com/</loc>
+    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://muskegonrisers.com/tournaments/orbit-3v3/</loc>
   </url>
   
   <url>
+    <loc>https://muskegonrisers.com/roster/</loc>
+    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/store/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://muskegonrisers.com/store/throw-pillow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/tournaments/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/tryouts/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
