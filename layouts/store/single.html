@@ -195,7 +195,7 @@
                     {{ if .Params.seating }}
                     $('#addtocart').data('item-custom5-name', 'Seating');
                     $('#addtocart').data('item-custom5-required', 'true');
-                    $('#addtocart').data('item-custom5-options', '{{ delimit .Params.seating "|" }}');
+                    $('#addtocart').data('item-custom5-options', '{{ delimit .Params.seatingprices "|" }}');
                     $('#my-seating').on('changed.bs.select', function() {
                     $('#addtocart').data('item-custom5-value', $(this).find("option:selected").val());
                     });
