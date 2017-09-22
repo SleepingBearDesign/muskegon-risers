@@ -1,8 +1,8 @@
 +++
-id = "119"
+id = "120"
 title = "2018 Arena Season Ticket Package"
 shorttitle = "2018 Arena Season Tickets"
-description = "Get your season tickets for the 2018 Arena Season. Once you place your order here, your tickets will be immediately available for pickup at the LC Walker Arena Box Office! You will also get a RISE AND GRIND New Balance Shirt, to be picked-up at the first home game you attend!<br><br>5 home games, all starting at 7:00pm!<br><br>January 5<br>January 6<br>February 3<br>February 16<br>February 17"
+description = "Get your season tickets for the 2018 Arena Season. Once you place your order here, your tickets will be immediately available for pickup at the LC Walker Arena Box Office! You will also get a RISE AND GRIND New Balance Shirt, to be picked-up at the first home game you attend!<br><br>If ordering the 12 or 16 person suites, please email us all 12 or 16 shirt sizes separately and we'll accomadate them on your first home game!<br><br>5 home games, all starting at 7:00pm!<br><br>January 5<br>January 6<br>February 3<br>February 16<br>February 17"
 mini = "5 home games and tickets come with a RISE AND GRIND New Balance Shirt!"
 slug = "season-ticket-package"
 imgurl = "assets/img/store/season-tickets/2018-arena/tickets1.jpg"
