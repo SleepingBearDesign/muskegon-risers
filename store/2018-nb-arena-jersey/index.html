@@ -347,6 +347,23 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                     
                     
                     
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Select Name</label>
+                        <div class="form-group">
+                          <input id="my-name" type="text" value="" placeholder="Name on Back" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Select Number</label>
+                        <div class="form-group">
+                          <input id="my-number" type="number" value="" placeholder="Number on Back" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
                   <div class="pull-right">
                     <a id="addtocart" href="#" class="btn btn-default btn-fill btn-lg snipcart-add-item" data-item-id="121"
@@ -372,6 +389,18 @@ src="https://www.facebook.com/tr?id=1722595211311008&ev=PageView&noscript=1"
                     $('#addtocart').data('item-custom2-value', $(this).find("option:selected").val());
                     });
                     
+                    
+                    $('#addtocart').data('item-custom3-name', 'Name');
+                    $('#addtocart').data('item-custom3-required', 'true');
+                    $('#my-name').on('change', function() {
+                    $('#addtocart').data('item-custom3-value', $(this).val());
+                    });
+                    $('#addtocart').data('item-custom4-name', 'Number');
+                    $('#addtocart').data('item-custom4-required', 'true');
+                    $('#my-number').on('change', function() {
+                    $('#addtocart').data('item-custom4-value', $(this).val());
+                    });
+                    $('#addtocart').data('item-stackable', 'false');
                     
                     
                     </script>
