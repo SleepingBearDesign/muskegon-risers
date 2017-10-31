@@ -10,6 +10,6 @@ prodimgs = ["assets/img/store/jersey/2018arenajersey1front.jpg", "assets/img/sto
 price = "55.00"
 sizes = ["XS","Small","Medium","Large","XL","XXL"]
 colors = ["Black","White","Blue"]
-customizable = false
+customizable = true
 shippable = true
 +++
