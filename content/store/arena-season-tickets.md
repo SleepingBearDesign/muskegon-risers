@@ -10,7 +10,7 @@ prodimgs = ["assets/img/store/season-tickets/2018-arena/tickets2.jpg", "assets/i
 price = "30.00"
 sizes = ["Youth Small","Youth Medium","Youth Large","Small","Medium","Large","XL","XXL"]
 seating = ["General Admission ($30)","Party Deck ($30)","12-person Suite ($1,440)","16-person Suite ($1,920)"]
-seatingprices = ["General Admission ($30)","Party Deck ($30)","12-person Suite ($1,440)[+1175]","16-person Suite ($1,920)[+1575]"]
+seatingprices = ["General Admission ($30)","Party Deck ($30)","12-person Suite ($1,440)[+1410]","16-person Suite ($1,920)[+1890]"]
 customizable = false
 shippable = false
 +++
