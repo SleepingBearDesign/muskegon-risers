@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://muskegonrisers.com/schedule/2018-2-17-chicago-mustangs/</loc>
+    <lastmod>2018-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/schedule/2018-2-16-cincinnati-swerve/</loc>
+    <lastmod>2018-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/schedule/2018-2-3-cincinnati-swerve/</loc>
+    <lastmod>2018-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/schedule/2018-1-19-waza-flo-fc/</loc>
+    <lastmod>2018-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/schedule/2018-1-6-waza-flo-fc/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/schedule/2018-1-5-chicago-mustangs/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://muskegonrisers.com/2017-schedule-archived/2017-8-12-milwaukee-torrent/</loc>
     <lastmod>2017-08-12T00:00:00+00:00</lastmod>
   </url>
@@ -248,7 +278,7 @@
   
   <url>
     <loc>https://muskegonrisers.com/</loc>
-    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -259,6 +289,12 @@
   <url>
     <loc>https://muskegonrisers.com/roster/</loc>
     <lastmod>2017-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/schedule/</loc>
+    <lastmod>2018-02-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
