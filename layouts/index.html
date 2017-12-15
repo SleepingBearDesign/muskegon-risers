@@ -99,8 +99,8 @@
     <div class="section">
         <div class="container" id="schedule">
             <h1 class="text-center">Upcoming Games</h1>
-            <!-- <div class="row">
-                {{ range last 3 (sort (where .Data.Pages "Section" "schedule") "Params.id" "asc") }}
+            <div class="row">
+                {{ range last 6 (sort (where .Data.Pages "Section" "schedule") "Params.id" "asc") }}
                     {{ .Render "summary"}}
                 {{ end }}
             </div>
@@ -108,12 +108,12 @@
                 <div class="col-md-4 col-md-offset-4 col-sm-12 text-center">
                     <a href="schedule" class="btn btn-default btn-lg btn-round">View Entire Schedule</a>
                 </div>
-            </div> -->
-            <div class="row">
+            </div>
+<!--             <div class="row">
                 <div class="col-md-4 col-md-offset-4 col-sm-12 text-center">
                     <p>Coming soon...</p>
                 </div>
-            </div>
+            </div> -->
         </div><!-- end container -->
     </div> <!-- end section -->
 

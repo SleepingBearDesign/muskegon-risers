@@ -1,13 +1,13 @@
 +++
-id = "517"
-date = "2018-02-03"
+id = "519"
+date = "2018-02-16"
 opponent = "Cincinnati Swerve"
 opp_twitter = ""
 opp_site = "http://cincinnatiswerve.com/"
 home = true
 price = "5.00"
 seating = ["General Admission ($5)","Party Deck ($5)","12-person Suite ($240)","16-person Suite ($320)"]
-seatingprices = ["General Admission ($5)","Party Deck ($5)","12-person Suite ($240)[+1175]","16-person Suite ($320)[+1575]"]
+seatingprices = ["General Admission ($5)","Party Deck ($5)","12-person Suite ($240)[+235]","16-person Suite ($320)[+315]"]
 game_time = "7:00 pm"
 saleprice = ""
 shippable = false
@@ -18,4 +18,3 @@ address = "470 W Western Ave, Muskegon, MI 49440"
 field_name = "LC Walker Arena"
 google_map = "https://goo.gl/maps/SqQYpy4qmnS2"
 +++
-
