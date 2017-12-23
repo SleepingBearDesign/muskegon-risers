@@ -13,4 +13,5 @@ seating = ["General Admission ($30)","Party Deck ($30)","12-person Suite ($1,440
 seatingprices = ["General Admission ($30)","Party Deck ($30)","12-person Suite ($1,440)[+1410]","16-person Suite ($1,920)[+1890]"]
 customizable = false
 shippable = false
+draft = true
 +++
