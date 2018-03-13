@@ -1,5 +1,5 @@
 +++
-id = "505"
+id = "509"
 date = "2018-06-29"
 opponent = "Oakland County FC"
 opp_twitter = "oaklandcountyfc"
@@ -10,9 +10,9 @@ game_time = "7:30 pm"
 saleprice = ""
 shippable = false
 completed = false
-lat = "42.523548"
-lng = "-83.162329"
-address = "1500 Lexington Blvd, Royal Oak, MI 48073"
-field_name = "Royal Oak High School"
-google_map = "https://goo.gl/maps/Gd6rLRhdynF2"
+lat = "42.5415428"
+lng = "-83.1552506"
+address = "935 N Custer Avenue, Clawson MI, 48017"
+field_name = "Clawson Stadium"
+google_map = "https://goo.gl/maps/3MgBiUm1xj52"
 +++

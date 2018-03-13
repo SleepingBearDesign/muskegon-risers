@@ -1,9 +1,9 @@
 +++
-id = "506"
-date = "2018-06-09"
-opponent = "Carpathia FC"
-opp_twitter = "fccarpathia"
-opp_site = "http://www.carpathiafc.com/"
+id = "513"
+date = "2018-07-21"
+opponent = "USA of Indiana Old Bhoys"
+opp_twitter = "USAiOldBhoys"
+opp_site = "http://www.usaioldbhoys.com/"
 home = true
 price = "5.00"
 game_time = "7:30 pm"

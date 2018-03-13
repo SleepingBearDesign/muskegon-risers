@@ -1,9 +1,9 @@
 +++
-id = "506"
-date = "2018-06-09"
-opponent = "Carpathia FC"
-opp_twitter = "fccarpathia"
-opp_site = "http://www.carpathiafc.com/"
+id = "505"
+date = "2018-06-02"
+opponent = Ann Arbor FC"
+opp_twitter = "annarborfc"
+opp_site = "http://www.annarborfc.com/"
 home = true
 price = "5.00"
 game_time = "7:30 pm"

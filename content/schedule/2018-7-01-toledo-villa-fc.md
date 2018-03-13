@@ -1,12 +1,12 @@
 +++
-id = "503"
-date = "2017-05-21"
+id = "510"
+date = "2017-07-01"
 opponent = "Toledo Villa FC"
 opp_twitter = "toledovillafc"
 opp_site = "http://toledovillafc.com/"
 home = false
 price = ""
-game_time = "7:30 pm"
+game_time = "2 pm"
 saleprice = ""
 shippable = false
 completed = true
