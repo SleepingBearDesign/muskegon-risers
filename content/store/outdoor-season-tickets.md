@@ -9,6 +9,6 @@ imgurl = "assets/img/store/season-tickets/2018-outdoor/tickets1.jpg"
 prodimgs = ["assets/img/store/season-tickets/2018-outdoor/tickets2.jpg", "assets/img/store/season-tickets/2018-outdoor/tickets3.jpg", "assets/img/store/season-tickets/2018-outdoor/tickets4.jpg", "assets/img/store/season-tickets/2018-outdoor/tickets5.jpg", "assets/img/store/season-tickets/2018-outdoor/tickets6.jpg", "assets/img/store/season-tickets/2018-outdoor/tickets7.jpg", "assets/img/store/season-tickets/2018-outdoor/tickets8.jpg"]
 price = "30.00"
 customizable = false
-shippable = false
+shippable = true
 draft = true
 +++
