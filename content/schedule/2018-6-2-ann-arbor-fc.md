@@ -1,7 +1,7 @@
 +++
 id = "505"
 date = "2018-06-02"
-opponent = Ann Arbor FC"
+opponent = "Ann Arbor FC"
 opp_twitter = "annarborfc"
 opp_site = "http://www.annarborfc.com/"
 home = true

@@ -136,6 +136,20 @@
                       </div>
                     </div>
                     {{ end }}
+                    {{ if .Params.package }}
+                    <div class="form-group">
+                      <div class="btn-group bootstrap-select">
+                        <label>Select Package</label>
+                        <div class="form-group">
+                          <select id="my-package" name="huge" class="selectpicker" data-style="form-control" title="Select Package">
+                            {{ range .Params.package }}
+                            <option value="{{.}}">{{.}}</option>
+                            {{ end }}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    {{ end }}
                     {{ if .Params.customizable }}
                     <div class="form-group">
                       <div class="btn-group bootstrap-select">
@@ -198,6 +212,14 @@
                     $('#addtocart').data('item-custom5-options', '{{ delimit .Params.seatingprices "|" }}');
                     $('#my-seating').on('changed.bs.select', function() {
                     $('#addtocart').data('item-custom5-value', $(this).find("option:selected").val());
+                    });
+                    {{ end }}
+                    {{ if .Params.package }}
+                    $('#addtocart').data('item-custom6-name', 'Package');
+                    $('#addtocart').data('item-custom6-required', 'true');
+                    $('#addtocart').data('item-custom6-options', '{{ delimit .Params.packageprices "|" }}');
+                    $('#my-package').on('changed.bs.select', function() {
+                    $('#addtocart').data('item-custom6-value', $(this).find("option:selected").val());
                     });
                     {{ end }}
                     </script>

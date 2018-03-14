@@ -2,7 +2,7 @@ baseurl = "https://muskegonrisers.com/"
 languageCode = "en-us"
 title = "Muskegon Risers"
 googleanalytics = "UA-74374211-1"
-copyright = "© 2017 Muskegon Risers Soccer Club. All Rights Reserved"
+copyright = "© 2018 Muskegon Risers Soccer Club. All Rights Reserved"
 disableKinds=["RSS"]
 
 [params]
