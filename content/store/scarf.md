@@ -1,14 +1,14 @@
 +++
 id = "103"
-title = "MKG Lakeshore Scarf"
-shorttitle = "MKG Lakeshore Scarf"
-description = "Scarf detail includes the Howmet Playhouse, Industrial Shipping, and the Grand Haven Pier. Quotes are by the Lumbermen's Poet, Douglas Malloch."
-mini = "Get your MKG Lakeshore Scarf today!"
+title = "THIS IS MKG Scarf"
+shorttitle = "THIS IS MKG Scarf"
+description = "Scarf detail inspired by the Muskegon County Seal and includes the county's founding date (1859) and slogan "PROGRADATIM"."
+mini = "Get your THIS IS MKG Scarf today!"
 details = "100% acrylic. Approximately 18cm x 156cm"
 slug = "scarf"
-imgurl = "assets/img/store/scarf/scarf3.jpg"
-prodimgs = ["assets/img/store/scarf/Scarf1.jpg", "assets/img/store/scarf/scarf.jpg"]
-price = "24.00"
+imgurl = "assets/img/store/scarf/scarf7.jpg"
+prodimgs = ["assets/img/store/scarf/Scarf7.jpg"]
+price = "20.00"
 customizable = false
 shippable = true
 +++
