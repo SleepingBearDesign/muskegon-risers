@@ -8,9 +8,9 @@ slug = "season-ticket-package"
 imgurl = "assets/img/store/season-tickets/2019-arena/tickets1.jpg"
 prodimgs = ["assets/img/store/beanie/knitcap.jpg","assets/img/store/scarf/scarf8.jpg","assets/img/store/season-tickets/2019-arena/tickets2.jpg","assets/img/store/season-tickets/2019-arena/tickets3.jpg","assets/img/store/season-tickets/2019-arena/tickets4.jpg","assets/img/store/season-tickets/2019-arena/tickets5.jpg"]
 price = "35.00"
-seating = ["Youth Tickets w/ Knit Cap ($35)","Youth Tickets w/ Scarf ($35)","Adult Tickets w/ Knit Cap ($45)","Adult Tickets w/ Scarf ($45)"]
-seatingprices = ["Youth Tickets w/ Knit Cap ($35)","Youth Tickets w/ Scarf ($35)","Adult Tickets w/ Knit Cap ($45)[+10]","Adult Tickets w/ Scarf ($45)[+10]"]
 customizable = false
+package = ["Youth (17 & Under) Tickets with Knit Cap ($35)","Youth Tickets (17 & Under) with Scarf ($35)","Adult Tickets with Knit Cap ($45)","Adult Tickets with Scarf ($45)"]
+packageprices = ["Youth (17 & Under) Tickets with Knit Cap ($35)","Youth (17 & Under) Tickets with Scarf ($35)","Adult Tickets with Knit Cap ($45)[+10]","Adult Tickets with Scarf ($45)[+10]"]
 shippable = false
 draft = true
 +++
