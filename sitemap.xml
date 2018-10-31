@@ -3,57 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-7-21-usa-of-indiana-old-bhoys/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-7-21-usa-of-indiana-old-bhoys/</loc>
     <lastmod>2018-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-7-14-oakland-county-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-7-14-oakland-county-fc/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-7-7-ann-arbor-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-7-7-ann-arbor-fc/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-6-29-oakland-county-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-6-29-oakland-county-fc/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-6-23-toledo-villa-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-6-23-toledo-villa-fc/</loc>
     <lastmod>2018-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-6-16-usa-of-indiana-old-bhoys/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-6-16-usa-of-indiana-old-bhoys/</loc>
     <lastmod>2018-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-6-9-carpathia-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-6-9-carpathia-fc/</loc>
     <lastmod>2018-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-6-2-ann-arbor-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-6-2-ann-arbor-fc/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-5-25-grand-rapids-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-5-25-grand-rapids-fc/</loc>
     <lastmod>2018-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-5-19-grand-rapids-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-5-19-grand-rapids-fc/</loc>
     <lastmod>2018-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-5-12-carpathia-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-5-12-carpathia-fc/</loc>
     <lastmod>2018-05-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -113,7 +113,7 @@
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/2018-7-01-toledo-villa-fc/</loc>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/2018-7-01-toledo-villa-fc/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -284,13 +284,23 @@
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/store/season-ticket-package/</loc>
+    <loc>https://muskegonrisers.com/store-archived/season-ticket-package/</loc>
   </url>
   
   <url>
     <loc>https://muskegonrisers.com/2018-arena-schedule-archived/</loc>
     <lastmod>2018-02-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/2018-outdoor-schedule-archived/</loc>
+    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://muskegonrisers.com/store/season-ticket-package/</loc>
   </url>
   
   <url>
@@ -335,10 +345,6 @@
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/store/scarf/</loc>
-  </url>
-  
-  <url>
     <loc>https://muskegonrisers.com/store-archived/mkg-shirt/</loc>
   </url>
   
@@ -359,12 +365,6 @@
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/schedule/</loc>
-    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://muskegonrisers.com/store-archived/</loc>
     <priority>0</priority>
   </url>
@@ -375,12 +375,16 @@
   </url>
   
   <url>
+    <loc>https://muskegonrisers.com/store/scarf/</loc>
+  </url>
+  
+  <url>
     <loc>https://muskegonrisers.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://muskegonrisers.com/store/throw-pillow/</loc>
+    <loc>https://muskegonrisers.com/store-archived/throw-pillow/</loc>
   </url>
   
   <url>
