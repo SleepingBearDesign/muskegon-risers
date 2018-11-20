@@ -1,5 +1,5 @@
 +++
-id = "12019"
+id = "120"
 title = "2019 Arena Season Ticket Package"
 shorttitle = "2019 Arena Season Tickets"
 description = "Get your season tickets for the 2019 Major Arena Soccer League II (M2) Season. Once you place your order here, we will email you to coordinate assigned seats and your tickets will be immediately available for pickup at the LC Walker Arena Box Office! You will also get a your choice of a Knit Cap or Scarf, to be picked-up at the first home game you attend!<br><br>6 home games, all starting at 7:15pm!<br><br>December 21<br>January 5<br>January 11<br>February 2<br>February 22<br>March 2"
