@@ -7,7 +7,7 @@ opp_site = "https://www.rochesterlancers.com/"
 home = true
 price = "9.00"
 game_time = "7:15 pm"
-ticket_url = "https://ticketing.axs.com/PickASection.aspx?t=6DB0060A8D64E024D8D4EEA&og=-1"
+ticket_url = "https://startickets.com/events/item/muskegon-risers-fri-01-11-19-7-15-pm-copy"
 saleprice = ""
 shippable = false
 completed = false

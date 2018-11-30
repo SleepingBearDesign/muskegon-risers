@@ -7,7 +7,7 @@ opp_site = "http://cincinnatiswerve.com/"
 home = true
 price = "9.00"
 game_time = "7:15 pm"
-ticket_url = "https://ticketing.axs.com/PickASection.aspx?t=6DB0060A8D64E0226C5710B&og=-1"
+ticket_url = "https://startickets.com/events/item/muskegon-risers-fri-12-21-18-7-15-pm"
 saleprice = ""
 shippable = false
 completed = false

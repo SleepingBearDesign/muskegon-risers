@@ -7,7 +7,7 @@ opp_site = "http://www.chicagomustangspro.com/"
 home = true
 price = "9.00"
 game_time = "7:15 pm"
-ticket_url = "https://ticketing.axs.com/PickASection.aspx?t=6DB0060A8D64E0238C479A3&og=-1"
+ticket_url = "https://startickets.com/events/item/muskegon-risers-sat-01-05-19-7-15-pm"
 saleprice = ""
 shippable = false
 completed = false
