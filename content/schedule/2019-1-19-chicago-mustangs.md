@@ -7,7 +7,7 @@ opp_site = "http://www.chicagomustangspro.com/"
 home = false
 price = ""
 game_time = "7:00 pm"
-ticket_url = "https://ticketing.axs.com/Home.aspx?I=%2fUQKJwAAAABJ%2bzLUAQAAAADl%2fv%2f%2f%2fwBLAAAAA3N0cAD%2f%2f%2f%2f%2f%2f%2f%2f%2f%2fw%3d%3d"
+ticket_url = "https://www.chicagomustangspro.com/"
 saleprice = ""
 shippable = false
 completed = false
