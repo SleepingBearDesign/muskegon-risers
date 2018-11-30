@@ -7,7 +7,7 @@ opp_site = "https://www.rochesterlancers.com/"
 home = false
 price = ""
 game_time = "7:00 pm"
-ticket_url = "https://ticketing.axs.com/Home.aspx?I=%2fUQKJwAAAAARmz7UAQAAAABa%2fv%2f%2f%2fwBLAAAAA3N0cAD%2f%2f%2f%2f%2f%2f%2f%2f%2f%2fw%3d%3d"
+ticket_url = "https://www.rochesterlancers.com/"
 saleprice = ""
 shippable = false
 completed = false

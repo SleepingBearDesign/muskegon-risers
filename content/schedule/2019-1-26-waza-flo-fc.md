@@ -7,7 +7,7 @@ opp_site = "http://www.wazaflo.com/"
 home = false
 price = ""
 game_time = "5:50 pm"
-ticket_url = "https://ticketing.axs.com/Home.aspx?I=%2fUQKJwAAAABj7jbUAQAAAACl%2fv%2f%2f%2fwBLAAAAA3N0cAD%2f%2f%2f%2f%2f%2f%2f%2f%2f%2fw%3d%3d"
+ticket_url = "https://wazaflo.soccershift.com"
 saleprice = ""
 shippable = false
 completed = false
