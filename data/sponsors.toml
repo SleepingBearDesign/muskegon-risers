@@ -1,7 +1,5 @@
-row1 = ["Mercy Health","Stealth","PEGLIYL","Sleeping Bear Design"]
-row2 = ["West Michigan Symphony","MKG Farmers Market","Muskegon Yoga","Pigeon Hill"]
-row3 = ["The Block","Drip Drop Drink","Family Farm","Ginman Tire"]
-row4 = ["Graphics House Imaging","Hometown Pharmacy","Hooker DeJong","iCare Repair"]
-row5 = ["The Morg","Just For Kicks","Mart Dock","Lumberjacks"]
-row6 = ["Unruly","Rebel Pies","Ramos","Shoreline Soccer Club"]
-row7 = ["Wantzs Computers","Wesco","Webb"]
+row1 = ["Mercy Health","Sleeping Bear Design","Webb"]
+row2 = ["MKG Farmers Market","Muskegon Yoga","Pigeon Hill"]
+row3 = ["Family Farm","Graphics House Imaging","New Balance"]
+row4 = ["Just For Kicks","18th","Shoreline Soccer Club"]
+
